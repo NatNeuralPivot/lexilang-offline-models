@@ -1,0 +1,943 @@
+{
+  "input": {
+    "id": "004570010",
+    "audio_sha256": "ac8ed9577744e63842631b913e5516d449c93418273c64f3b2dc0ed943fe5c4d",
+    "input_manifest_sha256": "41d0596090363e28b0f857323b7e1e79bd9048ee5c750d1ee2cac6f27b1266f7"
+  },
+  "result": {
+    "lang": "en",
+    "text": "AFTER ALL THEY ONLY HAVE THEY OWN PROPERTY AT RISK",
+    "prob": 0.9267954513802049,
+    "strictness": 0.5,
+    "words": [
+      {
+        "text": "AFTER",
+        "prob": 0.9901839446757891,
+        "start": 0.65,
+        "end": 0.99,
+        "phones": [
+          {
+            "ipa": "æ",
+            "prob": 0.9922443787268731,
+            "start": 0.65,
+            "end": 0.67,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.026152765116442822,
+              "llr_del": 5.6914613775573315,
+              "z_llr_sub": 0.32136940094247524,
+              "n_frames": 1.0,
+              "peak_post": 0.9877710342407227,
+              "p_lenient": 0.9972145767971453,
+              "p_strict": 0.9785959124565126
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "f",
+            "prob": 0.998672828816163,
+            "start": 0.75,
+            "end": 0.79,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.01933181093010461,
+              "llr_del": 5.902344037890003,
+              "z_llr_sub": 0.3618462260581682,
+              "n_frames": 2.0,
+              "peak_post": 0.9458560347557068,
+              "p_lenient": 0.9989450165421361,
+              "p_strict": 0.9983305335044861
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "t",
+            "prob": 0.9955550814947838,
+            "start": 0.83,
+            "end": 0.87,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.028155591742802244,
+              "llr_del": 5.314647566196989,
+              "z_llr_sub": 0.4448086413164955,
+              "n_frames": 2.0,
+              "peak_post": 0.9761139154434204,
+              "p_lenient": 0.9976158166465333,
+              "p_strict": 0.9917279481887816
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "ɜ˞",
+            "prob": 0.991558490341741,
+            "start": 0.91,
+            "end": 0.99,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.3336841447757948,
+              "llr_del": 8.617913108684363,
+              "z_llr_sub": 0.6895834069872088,
+              "n_frames": 4.0,
+              "peak_post": 0.9733490347862244,
+              "p_lenient": 0.9953725949251075,
+              "p_strict": 0.9846491217613219
+            },
+            "length_expected": null,
+            "length_prob": null
+          }
+        ],
+        "syllables": [
+          {
+            "text": "",
+            "start": 0.65,
+            "end": 0.79,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 1,
+            "stress_prob": 0.9275550350219596
+          },
+          {
+            "text": "",
+            "start": 0.83,
+            "end": 0.99,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 0,
+            "stress_prob": null
+          }
+        ],
+        "sounds_prob": 0.9939402161018156,
+        "stress_prob": 0.9964309097165045,
+        "tone_prob": null,
+        "present_prob": 0.999789165401731,
+        "omitted": false,
+        "length_prob": null,
+        "contrast_prob": null
+      },
+      {
+        "text": "ALL",
+        "prob": 0.9792703593801901,
+        "start": 1.11,
+        "end": 1.27,
+        "phones": [
+          {
+            "ipa": "ɔ",
+            "prob": 0.991873190155294,
+            "start": 1.11,
+            "end": 1.13,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.15771467035414588,
+              "llr_del": 4.443032308592933,
+              "z_llr_sub": 0.4176224251565085,
+              "n_frames": 1.0,
+              "peak_post": 0.8984997272491455,
+              "p_lenient": 0.9987639432199715,
+              "p_strict": 0.9485469460487366
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "l̴",
+            "prob": 0.9897670923378704,
+            "start": 1.23,
+            "end": 1.27,
+            "heard": null,
+            "features": {
+              "llr_sub": -1.3345326185428021,
+              "llr_del": 1.9831422043584155,
+              "z_llr_sub": 0.4252850084356749,
+              "n_frames": 2.0,
+              "peak_post": 0.6574003100395203,
+              "p_lenient": 0.9972076470629446,
+              "p_strict": 0.9632313251495361
+            },
+            "length_expected": null,
+            "length_prob": null
+          }
+        ],
+        "syllables": [
+          {
+            "text": "",
+            "start": 1.11,
+            "end": 1.27,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 0,
+            "stress_prob": null
+          }
+        ],
+        "sounds_prob": 0.980068928197579,
+        "stress_prob": null,
+        "tone_prob": null,
+        "present_prob": 0.9991851911693013,
+        "omitted": false,
+        "length_prob": null,
+        "contrast_prob": null
+      },
+      {
+        "text": "THEY",
+        "prob": 0.9584022671694974,
+        "start": 1.43,
+        "end": 1.57,
+        "phones": [
+          {
+            "ipa": "ð",
+            "prob": 0.9673817123892798,
+            "start": 1.43,
+            "end": 1.45,
+            "heard": null,
+            "features": {
+              "llr_sub": -1.1184699769999327,
+              "llr_del": 1.943227722976701,
+              "z_llr_sub": -0.584991515116291,
+              "n_frames": 1.0,
+              "peak_post": 0.36289772391319275,
+              "p_lenient": 0.9877028110524385,
+              "p_strict": 0.9163248538970947
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "eɪ",
+            "prob": 0.9896154902768318,
+            "start": 1.49,
+            "end": 1.57,
+            "heard": null,
+            "features": {
+              "llr_sub": -1.1346264140556883,
+              "llr_del": 2.690984921544299,
+              "z_llr_sub": -0.11387828635011522,
+              "n_frames": 4.0,
+              "peak_post": 0.38842493295669556,
+              "p_lenient": 0.9971236570569828,
+              "p_strict": 0.9632313251495361
+            },
+            "length_expected": null,
+            "length_prob": null
+          }
+        ],
+        "syllables": [
+          {
+            "text": "",
+            "start": 1.43,
+            "end": 1.57,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 0,
+            "stress_prob": null
+          }
+        ],
+        "sounds_prob": 0.9622820575014023,
+        "stress_prob": null,
+        "tone_prob": null,
+        "present_prob": 0.9959681360556811,
+        "omitted": false,
+        "length_prob": null,
+        "contrast_prob": null
+      },
+      {
+        "text": "ONLY",
+        "prob": 0.9432337364703378,
+        "start": 1.71,
+        "end": 1.97,
+        "phones": [
+          {
+            "ipa": "oʊ",
+            "prob": 0.983339341585602,
+            "start": 1.71,
+            "end": 1.79,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.25195156043059797,
+              "llr_del": 7.279482394963985,
+              "z_llr_sub": 0.7062639818075584,
+              "n_frames": 4.0,
+              "peak_post": 0.9066773653030396,
+              "p_lenient": 0.9947357935913046,
+              "p_strict": 0.9485469460487366
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "n",
+            "prob": 0.9675660480131651,
+            "start": 1.87,
+            "end": 1.89,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.4749827008215277,
+              "llr_del": 1.091362850922465,
+              "z_llr_sub": 0.12666677708160165,
+              "n_frames": 1.0,
+              "peak_post": 0.7901194095611572,
+              "p_lenient": 0.9835673612217882,
+              "p_strict": 0.936981737613678
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "l",
+            "prob": 0.9412842777673417,
+            "start": 1.89,
+            "end": 1.91,
+            "heard": null,
+            "features": {
+              "llr_sub": -2.8677149479899313,
+              "llr_del": -1.8480237377822348,
+              "z_llr_sub": -1.6168622019766081,
+              "n_frames": 1.0,
+              "peak_post": 0.1141124814748764,
+              "p_lenient": 0.9825025574615822,
+              "p_strict": 0.8206896781921386
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "i",
+            "prob": 0.9891808441976898,
+            "start": 1.95,
+            "end": 1.97,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.13600176151098253,
+              "llr_del": 3.681116583533381,
+              "z_llr_sub": 0.2825174494897987,
+              "n_frames": 1.0,
+              "peak_post": 0.9278207421302795,
+              "p_lenient": 0.9968758702795113,
+              "p_strict": 0.9632313251495361
+            },
+            "length_expected": null,
+            "length_prob": null
+          }
+        ],
+        "syllables": [
+          {
+            "text": "",
+            "start": 1.71,
+            "end": 1.89,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 1,
+            "stress_prob": 0.7583459898518106
+          },
+          {
+            "text": "",
+            "start": 1.89,
+            "end": 1.97,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 0,
+            "stress_prob": null
+          }
+        ],
+        "sounds_prob": 0.955927977400901,
+        "stress_prob": 0.9874281320535211,
+        "tone_prob": null,
+        "present_prob": 0.9992833633445816,
+        "omitted": false,
+        "length_prob": null,
+        "contrast_prob": null
+      },
+      {
+        "text": "HAVE",
+        "prob": 0.9517854951394034,
+        "start": 2.27,
+        "end": 2.47,
+        "phones": [
+          {
+            "ipa": "h",
+            "prob": 0.9972039906626164,
+            "start": 2.27,
+            "end": 2.29,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.05610752472229308,
+              "llr_del": 3.285888709760954,
+              "z_llr_sub": 0.37835027202234334,
+              "n_frames": 1.0,
+              "peak_post": 0.9441372156143188,
+              "p_lenient": 0.9990583719456722,
+              "p_strict": 0.9917279481887816
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "æ",
+            "prob": 0.979863911253213,
+            "start": 2.33,
+            "end": 2.35,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.7176973361046421,
+              "llr_del": 3.2385992123542167,
+              "z_llr_sub": -0.19415040824797042,
+              "n_frames": 1.0,
+              "peak_post": 0.515371561050415,
+              "p_lenient": 0.9937602808203055,
+              "p_strict": 0.936981737613678
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "v",
+            "prob": 0.9641250612923749,
+            "start": 2.43,
+            "end": 2.47,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.19184540886922008,
+              "llr_del": 3.56044546626309,
+              "z_llr_sub": 0.13430050198332458,
+              "n_frames": 2.0,
+              "peak_post": 0.8693528175354004,
+              "p_lenient": 0.9967740031558113,
+              "p_strict": 0.7003745436668396
+            },
+            "length_expected": null,
+            "length_prob": null
+          }
+        ],
+        "syllables": [
+          {
+            "text": "",
+            "start": 2.27,
+            "end": 2.47,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 0,
+            "stress_prob": null
+          }
+        ],
+        "sounds_prob": 0.9722602243377211,
+        "stress_prob": null,
+        "tone_prob": null,
+        "present_prob": 0.9789411016867787,
+        "omitted": false,
+        "length_prob": null,
+        "contrast_prob": null
+      },
+      {
+        "text": "THEY",
+        "prob": 0.9345003026265934,
+        "start": 2.59,
+        "end": 2.75,
+        "phones": [
+          {
+            "ipa": "ð",
+            "prob": 0.8824156349583028,
+            "start": 2.59,
+            "end": 2.61,
+            "heard": null,
+            "features": {
+              "llr_sub": -3.4373793453745094,
+              "llr_del": -1.3661853275492462,
+              "z_llr_sub": -2.801593291837376,
+              "n_frames": 1.0,
+              "peak_post": 0.04445301368832588,
+              "p_lenient": 0.9658041461351219,
+              "p_strict": 0.6660019755363465
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "eɪ",
+            "prob": 0.967116190608798,
+            "start": 2.65,
+            "end": 2.75,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.5468493151316238,
+              "llr_del": 4.027955186590347,
+              "z_llr_sub": 0.2278189515150753,
+              "n_frames": 5.0,
+              "peak_post": 0.6744082570075989,
+              "p_lenient": 0.992822006805071,
+              "p_strict": 0.862135946750641
+            },
+            "length_expected": null,
+            "length_prob": null
+          }
+        ],
+        "syllables": [
+          {
+            "text": "",
+            "start": 2.59,
+            "end": 2.75,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 0,
+            "stress_prob": null
+          }
+        ],
+        "sounds_prob": 0.9356141944143316,
+        "stress_prob": null,
+        "tone_prob": null,
+        "present_prob": 0.9988094539454531,
+        "omitted": false,
+        "length_prob": null,
+        "contrast_prob": null
+      },
+      {
+        "text": "OWN",
+        "prob": 0.8006741621675283,
+        "start": 2.93,
+        "end": 3.09,
+        "phones": [
+          {
+            "ipa": "oʊ",
+            "prob": 0.9180439793402047,
+            "start": 2.93,
+            "end": 3.07,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.809870039051674,
+              "llr_del": 5.02863326024152,
+              "z_llr_sub": 0.28405705023133954,
+              "n_frames": 7.0,
+              "peak_post": 0.7070331573486328,
+              "p_lenient": 0.97177971899845,
+              "p_strict": 0.7846607565879822
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "n",
+            "prob": 0.7035432459892537,
+            "start": 3.07,
+            "end": 3.09,
+            "heard": null,
+            "features": {
+              "llr_sub": -6.046937444633379,
+              "llr_del": -5.38009032085472,
+              "z_llr_sub": -4.871420762254716,
+              "n_frames": 1.0,
+              "peak_post": 0.0013399866875261068,
+              "p_lenient": 0.9217709623114586,
+              "p_strict": 0.32339790463447576
+            },
+            "length_expected": null,
+            "length_prob": null
+          }
+        ],
+        "syllables": [
+          {
+            "text": "",
+            "start": 2.93,
+            "end": 3.09,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 0,
+            "stress_prob": null
+          }
+        ],
+        "sounds_prob": 0.8010563578321721,
+        "stress_prob": null,
+        "tone_prob": null,
+        "present_prob": 0.9995228854238445,
+        "omitted": false,
+        "length_prob": null,
+        "contrast_prob": null
+      },
+      {
+        "text": "PROPERTY",
+        "prob": 0.7994412008909081,
+        "start": 3.29,
+        "end": 4.29,
+        "phones": [
+          {
+            "ipa": "p",
+            "prob": 0.9692035528596785,
+            "start": 3.29,
+            "end": 3.31,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.27727473628114296,
+              "llr_del": 3.077414021249446,
+              "z_llr_sub": 0.007331536373049599,
+              "n_frames": 1.0,
+              "peak_post": 0.8419524431228638,
+              "p_lenient": 0.9869338815827771,
+              "p_strict": 0.929141104221344
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "ɹ",
+            "prob": 0.9239019980543398,
+            "start": 3.33,
+            "end": 3.35,
+            "heard": null,
+            "features": {
+              "llr_sub": -2.540824385112444,
+              "llr_del": -1.9675667970485406,
+              "z_llr_sub": -1.7983382510002754,
+              "n_frames": 1.0,
+              "peak_post": 0.07174152880907059,
+              "p_lenient": 0.9593018482257207,
+              "p_strict": 0.862135946750641
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "ɑ",
+            "prob": 0.8953264272720035,
+            "start": 3.37,
+            "end": 3.39,
+            "heard": null,
+            "features": {
+              "llr_sub": -4.448394260956448,
+              "llr_del": -2.279397916854691,
+              "z_llr_sub": -2.9926802132281662,
+              "n_frames": 1.0,
+              "peak_post": 0.02106558531522751,
+              "p_lenient": 0.9557945453261992,
+              "p_strict": 0.7718855142593384
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "p",
+            "prob": 0.9824817095184418,
+            "start": 3.99,
+            "end": 4.01,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.0532114560513719,
+              "llr_del": 4.988998594702366,
+              "z_llr_sub": 0.2295343315494041,
+              "n_frames": 1.0,
+              "peak_post": 0.9842885732650757,
+              "p_lenient": 0.9941730117655532,
+              "p_strict": 0.9485469460487366
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "ɜ˞",
+            "prob": 0.9664784942759982,
+            "start": 4.05,
+            "end": 4.09,
+            "heard": null,
+            "features": {
+              "llr_sub": -3.16654117902835,
+              "llr_del": 0.4733226493660254,
+              "z_llr_sub": -0.8834263826134441,
+              "n_frames": 2.0,
+              "peak_post": 0.20198370516300201,
+              "p_lenient": 0.9854998291763191,
+              "p_strict": 0.9244186282157899
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "t",
+            "prob": 0.9381261870189597,
+            "start": 4.15,
+            "end": 4.17,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.08357962286758891,
+              "llr_del": 4.420082341435325,
+              "z_llr_sub": 0.3835142056461197,
+              "n_frames": 1.0,
+              "peak_post": 0.939698338508606,
+              "p_lenient": 0.9660800855070208,
+              "p_strict": 0.8897637724876403
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "i",
+            "prob": 0.9810827536553851,
+            "start": 4.27,
+            "end": 4.29,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.19639927522639056,
+              "llr_del": 2.9989791362509166,
+              "z_llr_sub": 0.22758209441494848,
+              "n_frames": 1.0,
+              "peak_post": 0.8655296564102173,
+              "p_lenient": 0.9931925309739676,
+              "p_strict": 0.9485469460487366
+            },
+            "length_expected": null,
+            "length_prob": null
+          }
+        ],
+        "syllables": [
+          {
+            "text": "",
+            "start": 3.29,
+            "end": 3.39,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 1,
+            "stress_prob": 0.2403701108660945
+          },
+          {
+            "text": "",
+            "start": 3.99,
+            "end": 4.09,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 0,
+            "stress_prob": null
+          },
+          {
+            "text": "",
+            "start": 4.15,
+            "end": 4.29,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 0,
+            "stress_prob": null
+          }
+        ],
+        "sounds_prob": 0.8851761271343641,
+        "stress_prob": 0.9084046202074666,
+        "tone_prob": null,
+        "present_prob": 0.9942085638675685,
+        "omitted": false,
+        "length_prob": null,
+        "contrast_prob": null
+      },
+      {
+        "text": "AT",
+        "prob": 0.9416010351592109,
+        "start": 4.63,
+        "end": 4.73,
+        "phones": [
+          {
+            "ipa": "æ",
+            "prob": 0.8594701024676761,
+            "start": 4.63,
+            "end": 4.65,
+            "heard": null,
+            "features": {
+              "llr_sub": -2.0107603960099283,
+              "llr_del": 2.650565749213925,
+              "z_llr_sub": -1.7734777326499036,
+              "n_frames": 1.0,
+              "peak_post": 0.6729519963264465,
+              "p_lenient": 0.941183158017023,
+              "p_strict": 0.7003745436668396
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "t",
+            "prob": 0.9312737763701058,
+            "start": 4.71,
+            "end": 4.73,
+            "heard": null,
+            "features": {
+              "llr_sub": -5.797928065838697,
+              "llr_del": -0.7729617076888218,
+              "z_llr_sub": -5.2015074640176495,
+              "n_frames": 1.0,
+              "peak_post": 0.05787856504321098,
+              "p_lenient": 0.9670640522715955,
+              "p_strict": 0.862135946750641
+            },
+            "length_expected": null,
+            "length_prob": null
+          }
+        ],
+        "syllables": [
+          {
+            "text": "",
+            "start": 4.63,
+            "end": 4.73,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 0,
+            "stress_prob": null
+          }
+        ],
+        "sounds_prob": 0.9455563440356815,
+        "stress_prob": null,
+        "tone_prob": null,
+        "present_prob": 0.9958169506223298,
+        "omitted": false,
+        "length_prob": null,
+        "contrast_prob": null
+      },
+      {
+        "text": "RISK",
+        "prob": 0.9306252529907498,
+        "start": 4.83,
+        "end": 5.15,
+        "phones": [
+          {
+            "ipa": "ɹ",
+            "prob": 0.9704291419306746,
+            "start": 4.83,
+            "end": 4.85,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.4121232480210395,
+              "llr_del": 2.6613523693512633,
+              "z_llr_sub": -0.10302482870118711,
+              "n_frames": 1.0,
+              "peak_post": 0.8158528804779053,
+              "p_lenient": 0.9869088099352765,
+              "p_strict": 0.9345794320106506
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "ɪ",
+            "prob": 0.971404361514398,
+            "start": 4.91,
+            "end": 4.93,
+            "heard": null,
+            "features": {
+              "llr_sub": -1.624947485683343,
+              "llr_del": 0.26850011374489924,
+              "z_llr_sub": -1.1333437223574188,
+              "n_frames": 1.0,
+              "peak_post": 0.26546820998191833,
+              "p_lenient": 0.9887648260894178,
+              "p_strict": 0.929141104221344
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "s",
+            "prob": 0.9885053339427452,
+            "start": 5.03,
+            "end": 5.07,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.304183121771203,
+              "llr_del": 2.8246228616518465,
+              "z_llr_sub": 0.02894414285375467,
+              "n_frames": 2.0,
+              "peak_post": 0.7579458951950073,
+              "p_lenient": 0.993855808513152,
+              "p_strict": 0.9785959124565126
+            },
+            "length_expected": null,
+            "length_prob": null
+          },
+          {
+            "ipa": "k",
+            "prob": 0.9906694592743118,
+            "start": 5.13,
+            "end": 5.15,
+            "heard": null,
+            "features": {
+              "llr_sub": -0.10086057523700731,
+              "llr_del": 4.57117685060247,
+              "z_llr_sub": 0.19784496233153887,
+              "n_frames": 1.0,
+              "peak_post": 0.9524737596511841,
+              "p_lenient": 0.9963057606379024,
+              "p_strict": 0.9766355156898499
+            },
+            "length_expected": null,
+            "length_prob": null
+          }
+        ],
+        "syllables": [
+          {
+            "text": "",
+            "start": 4.83,
+            "end": 5.15,
+            "tone_expected": null,
+            "tone_heard": null,
+            "tone_prob": null,
+            "stress_expected": 1,
+            "stress_prob": null
+          }
+        ],
+        "sounds_prob": 0.9385690381131142,
+        "stress_prob": null,
+        "tone_prob": null,
+        "present_prob": 0.9915362804441809,
+        "omitted": false,
+        "length_prob": null,
+        "contrast_prob": null
+      }
+    ],
+    "fluency": 0.7048154287461079,
+    "completeness": 1.0,
+    "timing_ms": {
+      "g2p": 0.702,
+      "load": 0.885,
+      "audio_check": 1.326,
+      "fbank": 7.713,
+      "model": 51.115,
+      "adapter": 0.151,
+      "align": 4.806,
+      "features": 1.689,
+      "delivery": 8.442,
+      "calibrate": 3.698,
+      "sentence_head": 1.411,
+      "prosody": 2.87,
+      "assemble": 0.374,
+      "total": 85.525
+    },
+    "warnings": [],
+    "scores": {
+      "accuracy": 0.7189941202436232,
+      "fluency": 0.7048154287461079,
+      "prosodic": 0.6743691942441437,
+      "total": 0.6620126550273958
+    },
+    "audio": {
+      "schema_version": 1,
+      "duration_s": 5.644,
+      "clipped_share": 0.0,
+      "peak_dbfs": -4.5597,
+      "noise_db": -56.3481,
+      "speech_db": -23.5231,
+      "snr_db": 43.8482,
+      "speech_s": 4.2,
+      "speech_share": 0.7447,
+      "lead_sil_s": 0.58,
+      "trail_sil_s": 0.304,
+      "expected_s": 2.688,
+      "speech_ratio": 1.5625,
+      "issues": [],
+      "retry_recommended": false
+    }
+  }
+}

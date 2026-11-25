@@ -1,0 +1,326 @@
+{
+  "lang": "en",
+  "text": "WHO KNOWS WHAT TO EXPECT",
+  "words": [
+    {
+      "text": "WHO",
+      "syllables": [
+        0,
+        1
+      ],
+      "phones": [
+        0,
+        2
+      ],
+      "char_span": [
+        0,
+        3
+      ]
+    },
+    {
+      "text": "KNOWS",
+      "syllables": [
+        1,
+        2
+      ],
+      "phones": [
+        2,
+        5
+      ],
+      "char_span": [
+        4,
+        9
+      ]
+    },
+    {
+      "text": "WHAT",
+      "syllables": [
+        2,
+        3
+      ],
+      "phones": [
+        5,
+        8
+      ],
+      "char_span": [
+        10,
+        14
+      ]
+    },
+    {
+      "text": "TO",
+      "syllables": [
+        3,
+        4
+      ],
+      "phones": [
+        8,
+        10
+      ],
+      "char_span": [
+        15,
+        17
+      ]
+    },
+    {
+      "text": "EXPECT",
+      "syllables": [
+        4,
+        6
+      ],
+      "phones": [
+        10,
+        17
+      ],
+      "char_span": [
+        18,
+        24
+      ]
+    }
+  ],
+  "syllables": [
+    {
+      "word": 0,
+      "phones": [
+        0,
+        2
+      ],
+      "text": "",
+      "tone": null,
+      "tone_lexical": null,
+      "tone_alts": [],
+      "stress": 0
+    },
+    {
+      "word": 1,
+      "phones": [
+        2,
+        5
+      ],
+      "text": "",
+      "tone": null,
+      "tone_lexical": null,
+      "tone_alts": [],
+      "stress": 1
+    },
+    {
+      "word": 2,
+      "phones": [
+        5,
+        8
+      ],
+      "text": "",
+      "tone": null,
+      "tone_lexical": null,
+      "tone_alts": [],
+      "stress": 0
+    },
+    {
+      "word": 3,
+      "phones": [
+        8,
+        10
+      ],
+      "text": "",
+      "tone": null,
+      "tone_lexical": null,
+      "tone_alts": [],
+      "stress": 0
+    },
+    {
+      "word": 4,
+      "phones": [
+        10,
+        12
+      ],
+      "text": "",
+      "tone": null,
+      "tone_lexical": null,
+      "tone_alts": [],
+      "stress": 0
+    },
+    {
+      "word": 4,
+      "phones": [
+        12,
+        17
+      ],
+      "text": "",
+      "tone": null,
+      "tone_lexical": null,
+      "tone_alts": [],
+      "stress": 1
+    }
+  ],
+  "phones": [
+    {
+      "ipa": "h",
+      "word": 0,
+      "syllable": 0,
+      "is_nucleus": false,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "u",
+      "word": 0,
+      "syllable": 0,
+      "is_nucleus": true,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "n",
+      "word": 1,
+      "syllable": 1,
+      "is_nucleus": false,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "oʊ",
+      "word": 1,
+      "syllable": 1,
+      "is_nucleus": true,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "z",
+      "word": 1,
+      "syllable": 1,
+      "is_nucleus": false,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "w",
+      "word": 2,
+      "syllable": 2,
+      "is_nucleus": false,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "ə",
+      "word": 2,
+      "syllable": 2,
+      "is_nucleus": true,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "t",
+      "word": 2,
+      "syllable": 2,
+      "is_nucleus": false,
+      "alts": [
+        [
+          "ʔ",
+          -2.3025850929940455
+        ]
+      ],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "t",
+      "word": 3,
+      "syllable": 3,
+      "is_nucleus": false,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "u",
+      "word": 3,
+      "syllable": 3,
+      "is_nucleus": true,
+      "alts": [
+        [
+          "ə",
+          -0.6931471805599453
+        ]
+      ],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "ɪ",
+      "word": 4,
+      "syllable": 4,
+      "is_nucleus": true,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "k",
+      "word": 4,
+      "syllable": 4,
+      "is_nucleus": false,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "s",
+      "word": 4,
+      "syllable": 5,
+      "is_nucleus": false,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "p",
+      "word": 4,
+      "syllable": 5,
+      "is_nucleus": false,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "ɛ",
+      "word": 4,
+      "syllable": 5,
+      "is_nucleus": true,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "k",
+      "word": 4,
+      "syllable": 5,
+      "is_nucleus": false,
+      "alts": [],
+      "tense": null,
+      "length": null
+    },
+    {
+      "ipa": "t",
+      "word": 4,
+      "syllable": 5,
+      "is_nucleus": false,
+      "alts": [
+        [
+          "",
+          -2.3025850929940455
+        ]
+      ],
+      "tense": null,
+      "length": null
+    }
+  ],
+  "warnings": []
+}

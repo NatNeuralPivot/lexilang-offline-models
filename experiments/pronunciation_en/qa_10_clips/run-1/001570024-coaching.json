@@ -1,0 +1,87 @@
+{
+  "input": {
+    "id": "001570024",
+    "audio_sha256": "0253783338ba943f3998ac13e0a036d0cbe9424b09b388d45cd5d45377563936",
+    "input_manifest_sha256": "41d0596090363e28b0f857323b7e1e79bd9048ee5c750d1ee2cac6f27b1266f7"
+  },
+  "method": "upstream balanced, unchanged thresholds",
+  "items": [
+    {
+      "schema_version": 2,
+      "schema_minor": 6,
+      "kind": "stress",
+      "word": "RESEARCHERS",
+      "word_index": 1,
+      "syllable_index": 0,
+      "phone_index": null,
+      "position": null,
+      "expected": 0,
+      "heard": 1,
+      "expected_ipa": null,
+      "heard_ipa": null,
+      "diff_keys": [
+        "stress_position"
+      ],
+      "error_prob": null,
+      "prob": 0.0129,
+      "confidence": 0.942,
+      "start": 0.71,
+      "end": 1.51,
+      "gate": {
+        "heard_post": 0.8805,
+        "n_syllables": 3
+      },
+      "features": []
+    },
+    {
+      "schema_version": 2,
+      "schema_minor": 6,
+      "kind": "substitution",
+      "word": "RESEARCHERS",
+      "word_index": 1,
+      "syllable_index": 2,
+      "phone_index": 6,
+      "position": "final",
+      "expected": "z",
+      "heard": null,
+      "expected_ipa": "z",
+      "heard_ipa": null,
+      "diff_keys": [],
+      "error_prob": 0.5427,
+      "prob": 0.9908,
+      "confidence": null,
+      "start": 1.49,
+      "end": 1.51,
+      "gate": {
+        "error_prob": 0.5427,
+        "candidate": "s",
+        "heard_post": 0.0014,
+        "log_ratio": -5.754
+      },
+      "features": []
+    },
+    {
+      "schema_version": 2,
+      "schema_minor": 6,
+      "kind": "mispronounced_word",
+      "word": "RESEARCHERS",
+      "word_index": 1,
+      "syllable_index": null,
+      "phone_index": null,
+      "position": null,
+      "expected": "RESEARCHERS",
+      "heard": null,
+      "expected_ipa": null,
+      "heard_ipa": null,
+      "diff_keys": [],
+      "error_prob": 0.5427,
+      "prob": 0.3509,
+      "confidence": null,
+      "start": 0.71,
+      "end": 1.51,
+      "gate": null,
+      "n_sounds_flagged": 1,
+      "features": []
+    }
+  ]
+}

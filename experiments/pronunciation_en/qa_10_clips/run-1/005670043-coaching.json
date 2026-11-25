@@ -1,0 +1,60 @@
+{
+  "input": {
+    "id": "005670043",
+    "audio_sha256": "79bdb7bbb7eda0425e05643e911f719b7c7a68537226f81e416ff63c308ec23c",
+    "input_manifest_sha256": "41d0596090363e28b0f857323b7e1e79bd9048ee5c750d1ee2cac6f27b1266f7"
+  },
+  "method": "upstream balanced, unchanged thresholds",
+  "items": [
+    {
+      "schema_version": 2,
+      "schema_minor": 6,
+      "kind": "substitution",
+      "word": "KNOWS",
+      "word_index": 1,
+      "syllable_index": 0,
+      "phone_index": 2,
+      "position": "final",
+      "expected": "z",
+      "heard": null,
+      "expected_ipa": "z",
+      "heard_ipa": null,
+      "diff_keys": [],
+      "error_prob": 0.5502,
+      "prob": 0.8972,
+      "confidence": null,
+      "start": 1.05,
+      "end": 1.07,
+      "gate": {
+        "error_prob": 0.5502,
+        "candidate": "s",
+        "heard_post": 0.3913,
+        "log_ratio": 3.293
+      },
+      "features": []
+    },
+    {
+      "schema_version": 2,
+      "schema_minor": 6,
+      "kind": "mispronounced_word",
+      "word": "KNOWS",
+      "word_index": 1,
+      "syllable_index": null,
+      "phone_index": null,
+      "position": null,
+      "expected": "KNOWS",
+      "heard": null,
+      "expected_ipa": null,
+      "heard_ipa": null,
+      "diff_keys": [],
+      "error_prob": 0.5502,
+      "prob": 0.8378,
+      "confidence": null,
+      "start": 0.77,
+      "end": 1.07,
+      "gate": null,
+      "n_sounds_flagged": 1,
+      "features": []
+    }
+  ]
+}

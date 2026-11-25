@@ -1,0 +1,3136 @@
+{
+  "schema_version": 1,
+  "repository": "jimbozhang/speechocean762",
+  "revision": "613968e3b0b789fc33936fb5eba1973176ba7d11",
+  "labels_verified_before_inference": true,
+  "selection_fixed_before_model_outputs": true,
+  "source_files": [
+    {
+      "path": "test/text",
+      "url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/test/text",
+      "bytes": 99796,
+      "sha256": "a0cf51d5f21b9e404b405672e85363e341dc2b8d510de41132d326f5f543382c",
+      "git_blob_oid": "59322f5bb14adec112ddb9a0ac4aab24da45b09a",
+      "http_status": 200,
+      "downloaded_this_step": true,
+      "seconds": 1.075
+    },
+    {
+      "path": "test/wav.scp",
+      "url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/test/wav.scp",
+      "bytes": 102500,
+      "sha256": "ec911e9319759c73e71ab62dc9cf6a2a00a1d02b7b91a288b39e6d56451e66f3",
+      "git_blob_oid": "b1e9573fe980534c96d0df140e337d8e6172ed9a",
+      "http_status": 200,
+      "downloaded_this_step": true,
+      "seconds": 0.7033
+    },
+    {
+      "path": "test/utt2spk",
+      "url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/test/utt2spk",
+      "bytes": 37500,
+      "sha256": "061291f397f8c281ff1bf6bf388e875ab9c4cc0de66f37d8559e690af08964be",
+      "git_blob_oid": "d3e382ec80273c642c06f2fd4f9b3f8e5a95362c",
+      "http_status": 200,
+      "downloaded_this_step": true,
+      "seconds": 0.765
+    },
+    {
+      "path": "test/spk2age",
+      "url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/test/spk2age",
+      "bytes": 962,
+      "sha256": "bcc719f23f2352b76f3cec80f12a02f97d775ecfa7b77646be136159caf036d3",
+      "git_blob_oid": "123a4b01feeb83797145d649317b40c7ddebe24e",
+      "http_status": 200,
+      "downloaded_this_step": true,
+      "seconds": 0.8235
+    },
+    {
+      "path": "resource/scores.json",
+      "url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/resource/scores.json",
+      "bytes": 9755534,
+      "sha256": "31c847b8ee29d61d8fe338bcbb1d4c4721425f05481d2144ad57cd19ea1159f8",
+      "git_blob_oid": "140a5d351e9354c78ab4d70d790151e191b4728e",
+      "http_status": 200,
+      "downloaded_this_step": true,
+      "seconds": 5.5174
+    },
+    {
+      "path": "resource/scores-detail.json",
+      "url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/resource/scores-detail.json",
+      "bytes": 19692352,
+      "sha256": "8a90ff40558fe8032d9bfa919429dcae267c0ec3fbdedf1dca30c0515ea989e1",
+      "git_blob_oid": "47eb0c1dac88ba2ffef48f3082e39ee23155842b",
+      "http_status": 200,
+      "downloaded_this_step": true,
+      "seconds": 11.1667
+    }
+  ],
+  "clips": [
+    {
+      "id": "001200015",
+      "speaker": "0120",
+      "age": 19,
+      "split": "test",
+      "source_revision": "613968e3b0b789fc33936fb5eba1973176ba7d11",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0120/001200015.WAV",
+      "source_path": "WAVE/SPEAKER0120/001200015.WAV",
+      "file": "audio/001200015.WAV",
+      "http_status": 200,
+      "content_type": "audio/wav",
+      "head_bytes": 144428,
+      "bytes": 144428,
+      "sha256": "a5a580e119a75a9fca04f9c6c52d301bc904e313581a60d5e94588bbfb38ddda",
+      "decoded": {
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "sample_rate": 16000,
+        "channels": 1,
+        "frames": 72192,
+        "duration_seconds": 4.512,
+        "all_samples_finite": true,
+        "float32_samples_sha256": "ac18462dd3c62415a3868575a948432a2b14e21fa0ba371e61b8c626d73fa5a0"
+      },
+      "download_and_decode_seconds": 1.5458,
+      "transcript": "WE WERE FORTUNATE TO GET BACK INTO THE BALL GAME",
+      "human_aggregate": {
+        "accuracy": 9,
+        "completeness": 10,
+        "fluency": 9,
+        "prosodic": 8,
+        "text": "WE WERE FORTUNATE TO GET BACK INTO THE BALL GAME",
+        "total": 8,
+        "words": [
+          {
+            "accuracy": 10,
+            "phones": [
+              "W",
+              "IY0"
+            ],
+            "phones-accuracy": [
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "WE",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "W",
+              "ER0"
+            ],
+            "phones-accuracy": [
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "WERE",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "F",
+              "AO1",
+              "R",
+              "CH",
+              "AH0",
+              "N",
+              "AH0",
+              "T"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2,
+              2,
+              1.6,
+              2,
+              1.2,
+              2
+            ],
+            "stress": 10,
+            "text": "FORTUNATE",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "T",
+              "UW0"
+            ],
+            "phones-accuracy": [
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "TO",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "G",
+              "EH0",
+              "T"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "GET",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "B",
+              "AE0",
+              "K"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "BACK",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "IH1",
+              "N",
+              "T",
+              "UW0"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "INTO",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "DH",
+              "AH0"
+            ],
+            "phones-accuracy": [
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "THE",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "B",
+              "AO0",
+              "L"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "BALL",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "G",
+              "EY0",
+              "M"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "GAME",
+            "total": 10
+          }
+        ]
+      },
+      "human_five_raters": {
+        "accuracy": [
+          9.0,
+          8.0,
+          8.0,
+          9.0,
+          10.0
+        ],
+        "completeness": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fluency": [
+          9.0,
+          9.0,
+          9.0,
+          10.0,
+          9.0
+        ],
+        "prosodic": [
+          8.0,
+          8.0,
+          8.0,
+          9.0,
+          8.0
+        ],
+        "words": [
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "W IY0",
+              "W IY0",
+              "W IY0",
+              "W IY0",
+              "W IY0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "WE",
+            "ref-phones": "W IY0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "W ER0",
+              "W ER0",
+              "W ER0",
+              "W ER0",
+              "W ER0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "WERE",
+            "ref-phones": "W ER0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              5.0,
+              5.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "F AO1 R CH AH0 N AH0 T",
+              "F AO1 R CH (AH0) N (AH0) T",
+              "F AO1 R CH AH0 N (AH0) T",
+              "F AO1 R CH AH0 N AH0 T",
+              "F AO1 R CH AH0 N AH0 T"
+            ],
+            "total": [
+              10.0,
+              6.0,
+              6.0,
+              10.0,
+              10.0
+            ],
+            "text": "FORTUNATE",
+            "ref-phones": "F AO1 R CH AH0 N AH0 T"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "T UW0",
+              "T UW0",
+              "T UW0",
+              "T UW0",
+              "T UW0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "TO",
+            "ref-phones": "T UW0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "G EH0 T",
+              "G EH0 T",
+              "G EH0 T",
+              "G EH0 T",
+              "G EH0 T"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "GET",
+            "ref-phones": "G EH0 T"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "B AE0 K",
+              "B AE0 K",
+              "B AE0 K",
+              "B AE0 K",
+              "B AE0 K"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "BACK",
+            "ref-phones": "B AE0 K"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "IH1 N T UW0",
+              "IH1 N T UW0",
+              "IH1 N T UW0",
+              "IH1 N T UW0",
+              "IH1 N T UW0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "INTO",
+            "ref-phones": "IH1 N T UW0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "DH AH0",
+              "DH AH0",
+              "DH AH0",
+              "DH AH0",
+              "DH AH0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "THE",
+            "ref-phones": "DH AH0"
+          },
+          {
+            "accuracy": [
+              6.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "B AO0 L [R]",
+              "B AO0 L",
+              "B AO0 L",
+              "B AO0 L",
+              "B AO0 L"
+            ],
+            "total": [
+              6.8,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "BALL",
+            "ref-phones": "B AO0 L"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "G EY0 M",
+              "G EY0 M",
+              "G EY0 M",
+              "G EY0 M",
+              "G EY0 M"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "GAME",
+            "ref-phones": "G EY0 M"
+          }
+        ],
+        "total": [
+          8.9,
+          8.1,
+          8.1,
+          9.1,
+          9.7
+        ],
+        "text": "WE WERE FORTUNATE TO GET BACK INTO THE BALL GAME"
+      }
+    },
+    {
+      "id": "001570024",
+      "speaker": "0157",
+      "age": 21,
+      "split": "test",
+      "source_revision": "613968e3b0b789fc33936fb5eba1973176ba7d11",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0157/001570024.WAV",
+      "source_path": "WAVE/SPEAKER0157/001570024.WAV",
+      "file": "audio/001570024.WAV",
+      "http_status": 200,
+      "content_type": "audio/wav",
+      "head_bytes": 122284,
+      "bytes": 122284,
+      "sha256": "0253783338ba943f3998ac13e0a036d0cbe9424b09b388d45cd5d45377563936",
+      "decoded": {
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "sample_rate": 16000,
+        "channels": 1,
+        "frames": 61120,
+        "duration_seconds": 3.82,
+        "all_samples_finite": true,
+        "float32_samples_sha256": "e14ce4ccfe4aec6a09e625a0170ceed7cfca861016d486e567eaf0983283fd6f"
+      },
+      "download_and_decode_seconds": 1.7188,
+      "transcript": "THE RESEARCHERS FOUND THAT TO BE THE CASE",
+      "human_aggregate": {
+        "accuracy": 9,
+        "completeness": 10,
+        "fluency": 10,
+        "prosodic": 8,
+        "text": "THE RESEARCHERS FOUND THAT TO BE THE CASE",
+        "total": 8,
+        "words": [
+          {
+            "accuracy": 10,
+            "phones": [
+              "DH",
+              "AH0"
+            ],
+            "phones-accuracy": [
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "THE",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "R",
+              "IH1",
+              "S",
+              "ER0",
+              "CH",
+              "AH0",
+              "Z"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              1.8
+            ],
+            "stress": 10,
+            "text": "RESEARCHERS",
+            "total": 9
+          },
+          {
+            "accuracy": 8,
+            "phones": [
+              "F",
+              "AW0",
+              "N",
+              "D"
+            ],
+            "phones-accuracy": [
+              2,
+              1,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "FOUND",
+            "total": 8
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "DH",
+              "AE0",
+              "T"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "THAT",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "T",
+              "UW0"
+            ],
+            "phones-accuracy": [
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "TO",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "B",
+              "IY0"
+            ],
+            "phones-accuracy": [
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "BE",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "DH",
+              "AH0"
+            ],
+            "phones-accuracy": [
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "THE",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "K",
+              "EY0",
+              "S"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "CASE",
+            "total": 10
+          }
+        ]
+      },
+      "human_five_raters": {
+        "accuracy": [
+          9.0,
+          9.0,
+          8.0,
+          10.0,
+          7.0
+        ],
+        "completeness": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fluency": [
+          8.0,
+          10.0,
+          10.0,
+          10.0,
+          8.0
+        ],
+        "prosodic": [
+          8.0,
+          9.0,
+          8.0,
+          10.0,
+          6.0
+        ],
+        "words": [
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "DH AH0",
+              "DH AH0",
+              "DH AH0",
+              "DH AH0",
+              "DH AH0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "THE",
+            "ref-phones": "DH AH0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              8.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              5.0,
+              10.0,
+              5.0
+            ],
+            "phones": [
+              "R IH1 S ER0 CH AH0 Z",
+              "R IH1 S ER0 CH AH0 {Z}",
+              "R IH1 S ER0 CH AH0 Z",
+              "R IH1 S ER0 CH AH0 Z",
+              "R IH1 S ER0 CH AH0 Z"
+            ],
+            "total": [
+              10.0,
+              8.4,
+              9.0,
+              10.0,
+              9.0
+            ],
+            "text": "RESEARCHERS",
+            "ref-phones": "R IH1 S ER0 CH AH0 Z"
+          },
+          {
+            "accuracy": [
+              10.0,
+              8.0,
+              5.0,
+              10.0,
+              5.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "F AW0 N D",
+              "F {AW0} N D",
+              "F (AW0) N D",
+              "F AW0 N D",
+              "F (AW0) N D"
+            ],
+            "total": [
+              10.0,
+              8.4,
+              6.0,
+              10.0,
+              6.0
+            ],
+            "text": "FOUND",
+            "ref-phones": "F AW0 N D"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "DH AE0 T",
+              "DH AE0 T",
+              "DH AE0 T",
+              "DH AE0 T",
+              "DH AE0 T"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "THAT",
+            "ref-phones": "DH AE0 T"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "T UW0",
+              "T UW0",
+              "T UW0",
+              "T UW0",
+              "T UW0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "TO",
+            "ref-phones": "T UW0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "B IY0",
+              "B IY0",
+              "B IY0",
+              "B IY0",
+              "B IY0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "BE",
+            "ref-phones": "B IY0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "DH AH0",
+              "DH AH0",
+              "DH AH0",
+              "DH AH0",
+              "DH AH0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "THE",
+            "ref-phones": "DH AH0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "K EY0 S",
+              "K EY0 S",
+              "K EY0 S",
+              "K EY0 S",
+              "K EY0 S"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "CASE",
+            "ref-phones": "K EY0 S"
+          }
+        ],
+        "total": [
+          8.8,
+          9.1,
+          8.2,
+          10.0,
+          7.0
+        ],
+        "text": "THE RESEARCHERS FOUND THAT TO BE THE CASE"
+      }
+    },
+    {
+      "id": "003060002",
+      "speaker": "0306",
+      "age": 21,
+      "split": "test",
+      "source_revision": "613968e3b0b789fc33936fb5eba1973176ba7d11",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0306/003060002.WAV",
+      "source_path": "WAVE/SPEAKER0306/003060002.WAV",
+      "file": "audio/003060002.WAV",
+      "http_status": 200,
+      "content_type": "audio/wav",
+      "head_bytes": 127404,
+      "bytes": 127404,
+      "sha256": "d862b9084cdf6b171589a310efc74808f7d42a8d1e8329c4ac2e4c48c47352a3",
+      "decoded": {
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "sample_rate": 16000,
+        "channels": 1,
+        "frames": 63680,
+        "duration_seconds": 3.98,
+        "all_samples_finite": true,
+        "float32_samples_sha256": "bfcaebbb5aea7891ed398e09637794c7d79110a11863f97ae5941f504837fae9"
+      },
+      "download_and_decode_seconds": 1.3399,
+      "transcript": "JUST SET HOOK AND PUT THE PRESSURE",
+      "human_aggregate": {
+        "accuracy": 4,
+        "completeness": 10,
+        "fluency": 8,
+        "prosodic": 6,
+        "text": "JUST SET HOOK AND PUT THE PRESSURE",
+        "total": 4,
+        "words": [
+          {
+            "accuracy": 10,
+            "phones": [
+              "JH",
+              "AH0",
+              "S",
+              "T"
+            ],
+            "phones-accuracy": [
+              1.4,
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "JUST",
+            "total": 9
+          },
+          {
+            "accuracy": 3,
+            "mispronunciations": [
+              {
+                "canonical-phone": "EH",
+                "index": 1,
+                "pronounced-phone": "IH"
+              }
+            ],
+            "phones": [
+              "S",
+              "EH0",
+              "T"
+            ],
+            "phones-accuracy": [
+              2,
+              0.4,
+              2
+            ],
+            "stress": 10,
+            "text": "SET",
+            "total": 4
+          },
+          {
+            "accuracy": 3,
+            "mispronunciations": [
+              {
+                "canonical-phone": "UH",
+                "index": 1,
+                "pronounced-phone": "AA"
+              }
+            ],
+            "phones": [
+              "HH",
+              "UH0",
+              "K"
+            ],
+            "phones-accuracy": [
+              2,
+              0.4,
+              2
+            ],
+            "stress": 10,
+            "text": "HOOK",
+            "total": 4
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "AE0",
+              "N",
+              "D"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "AND",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "P",
+              "UH0",
+              "T"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "PUT",
+            "total": 10
+          },
+          {
+            "accuracy": 3,
+            "mispronunciations": [
+              {
+                "canonical-phone": "AH",
+                "index": 1,
+                "pronounced-phone": "IH"
+              }
+            ],
+            "phones": [
+              "DH",
+              "AH0"
+            ],
+            "phones-accuracy": [
+              1.6,
+              0
+            ],
+            "stress": 10,
+            "text": "THE",
+            "total": 4
+          },
+          {
+            "accuracy": 5,
+            "mispronunciations": [
+              {
+                "canonical-phone": "EH",
+                "index": 2,
+                "pronounced-phone": "IH"
+              }
+            ],
+            "phones": [
+              "P",
+              "R",
+              "EH1",
+              "SH",
+              "ER0"
+            ],
+            "phones-accuracy": [
+              2,
+              1.2,
+              0,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "PRESSURE",
+            "total": 5
+          }
+        ]
+      },
+      "human_five_raters": {
+        "accuracy": [
+          4.0,
+          4.0,
+          4.0,
+          4.0,
+          4.0
+        ],
+        "completeness": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fluency": [
+          6.0,
+          8.0,
+          8.0,
+          6.0,
+          8.0
+        ],
+        "prosodic": [
+          6.0,
+          7.0,
+          6.0,
+          6.0,
+          5.0
+        ],
+        "words": [
+          {
+            "accuracy": [
+              8.0,
+              10.0,
+              10.0,
+              10.0,
+              5.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              5.0,
+              10.0
+            ],
+            "phones": [
+              "{JH} AH0 S T",
+              "JH AH0 S T",
+              "JH AH0 S T",
+              "JH AH0 S T",
+              "(JH) AH0 S T"
+            ],
+            "total": [
+              8.4,
+              10.0,
+              10.0,
+              9.0,
+              6.0
+            ],
+            "text": "JUST",
+            "ref-phones": "JH AH0 S T"
+          },
+          {
+            "accuracy": [
+              3.0,
+              4.0,
+              3.0,
+              10.0,
+              3.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "S (EH0) T",
+              "S (EH0) T",
+              "S (EH0) T",
+              "S EH0 T",
+              "S (EH0) T"
+            ],
+            "total": [
+              4.4,
+              5.2,
+              4.4,
+              10.0,
+              4.4
+            ],
+            "text": "SET",
+            "ref-phones": "S EH0 T"
+          },
+          {
+            "accuracy": [
+              3.0,
+              3.0,
+              3.0,
+              10.0,
+              3.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "HH (UH0) K",
+              "HH (UH0) K",
+              "HH (UH0) K",
+              "HH UH0 K",
+              "HH (UH0) K"
+            ],
+            "total": [
+              4.4,
+              4.4,
+              4.4,
+              10.0,
+              4.4
+            ],
+            "text": "HOOK",
+            "ref-phones": "HH UH0 K"
+          },
+          {
+            "accuracy": [
+              10.0,
+              6.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "AE0 N D",
+              "AE0 N D [AH0]",
+              "AE0 N D",
+              "AE0 N D",
+              "AE0 N D"
+            ],
+            "total": [
+              10.0,
+              6.8,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "AND",
+            "ref-phones": "AE0 N D"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "P UH0 T",
+              "P UH0 T",
+              "P UH0 T",
+              "P UH0 T",
+              "P UH0 T"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "PUT",
+            "ref-phones": "P UH0 T"
+          },
+          {
+            "accuracy": [
+              3.0,
+              3.0,
+              3.0,
+              3.0,
+              3.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "(DH) (AH0)",
+              "DH (AH0)",
+              "DH (AH0)",
+              "DH (AH0)",
+              "DH (AH0)"
+            ],
+            "total": [
+              4.4,
+              4.4,
+              4.4,
+              4.4,
+              4.4
+            ],
+            "text": "THE",
+            "ref-phones": "DH AH0"
+          },
+          {
+            "accuracy": [
+              5.0,
+              3.0,
+              3.0,
+              5.0,
+              5.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              5.0
+            ],
+            "phones": [
+              "P R (EH1) SH ER0",
+              "P (R) (EH1) SH ER0",
+              "P (R) (EH1) SH ER0",
+              "P R (EH1) SH ER0",
+              "P R (EH1) SH ER0"
+            ],
+            "total": [
+              6.0,
+              4.4,
+              4.4,
+              6.0,
+              5.0
+            ],
+            "text": "PRESSURE",
+            "ref-phones": "P R EH1 SH ER0"
+          }
+        ],
+        "total": [
+          4.4,
+          4.7,
+          4.6,
+          4.4,
+          4.5
+        ],
+        "text": "JUST SET HOOK AND PUT THE PRESSURE"
+      }
+    },
+    {
+      "id": "004570010",
+      "speaker": "0457",
+      "age": 21,
+      "split": "test",
+      "source_revision": "613968e3b0b789fc33936fb5eba1973176ba7d11",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0457/004570010.WAV",
+      "source_path": "WAVE/SPEAKER0457/004570010.WAV",
+      "file": "audio/004570010.WAV",
+      "http_status": 200,
+      "content_type": "audio/wav",
+      "head_bytes": 180652,
+      "bytes": 180652,
+      "sha256": "ac8ed9577744e63842631b913e5516d449c93418273c64f3b2dc0ed943fe5c4d",
+      "decoded": {
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "sample_rate": 16000,
+        "channels": 1,
+        "frames": 90304,
+        "duration_seconds": 5.644,
+        "all_samples_finite": true,
+        "float32_samples_sha256": "ca1f30e745789d3dc0da601f9dcd591cd55c5bbd59f81e373da7da02cf56754e"
+      },
+      "download_and_decode_seconds": 1.0774,
+      "transcript": "AFTER ALL THEY ONLY HAVE THEY OWN PROPERTY AT RISK",
+      "human_aggregate": {
+        "accuracy": 3,
+        "completeness": 10,
+        "fluency": 7,
+        "prosodic": 5,
+        "text": "AFTER ALL THEY ONLY HAVE THEY OWN PROPERTY AT RISK",
+        "total": 3,
+        "words": [
+          {
+            "accuracy": 10,
+            "phones": [
+              "AA1",
+              "F",
+              "T",
+              "AH0"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "AFTER",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "AO0",
+              "L"
+            ],
+            "phones-accuracy": [
+              2,
+              1.6
+            ],
+            "stress": 10,
+            "text": "ALL",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "DH",
+              "EY0"
+            ],
+            "phones-accuracy": [
+              1.6,
+              2
+            ],
+            "stress": 10,
+            "text": "THEY",
+            "total": 10
+          },
+          {
+            "accuracy": 5,
+            "phones": [
+              "OW1",
+              "N",
+              "L",
+              "IY0"
+            ],
+            "phones-accuracy": [
+              1.6,
+              1.6,
+              0.8,
+              2
+            ],
+            "stress": 10,
+            "text": "ONLY",
+            "total": 6
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "HH",
+              "AE0",
+              "V"
+            ],
+            "phones-accuracy": [
+              2,
+              1.8,
+              2
+            ],
+            "stress": 10,
+            "text": "HAVE",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "DH",
+              "EY0"
+            ],
+            "phones-accuracy": [
+              1.6,
+              2
+            ],
+            "stress": 10,
+            "text": "THEY",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "OW0",
+              "N"
+            ],
+            "phones-accuracy": [
+              1.6,
+              1.2
+            ],
+            "stress": 10,
+            "text": "OWN",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "P",
+              "R",
+              "AH1",
+              "P",
+              "AH0",
+              "T",
+              "IY0"
+            ],
+            "phones-accuracy": [
+              2,
+              1.6,
+              1.6,
+              2,
+              2,
+              2,
+              2
+            ],
+            "stress": 5,
+            "text": "PROPERTY",
+            "total": 9
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "AE0",
+              "T"
+            ],
+            "phones-accuracy": [
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "AT",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "R",
+              "IH0",
+              "S",
+              "K"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "RISK",
+            "total": 10
+          }
+        ]
+      },
+      "human_five_raters": {
+        "accuracy": [
+          3.0,
+          3.0,
+          3.0,
+          6.0,
+          8.0
+        ],
+        "completeness": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fluency": [
+          5.0,
+          7.0,
+          7.0,
+          5.0,
+          7.0
+        ],
+        "prosodic": [
+          5.0,
+          7.0,
+          6.0,
+          5.0,
+          4.0
+        ],
+        "words": [
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "AA1 F T AH0",
+              "AA1 F T AH0",
+              "AA1 F T AH0",
+              "AA1 F T AH0",
+              "AA1 F T AH0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "AFTER",
+            "ref-phones": "AA1 F T AH0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              3.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "AO0 L",
+              "AO0 L",
+              "AO0 (L)",
+              "AO0 L",
+              "AO0 L"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              4.4,
+              10.0,
+              10.0
+            ],
+            "text": "ALL",
+            "ref-phones": "AO0 L"
+          },
+          {
+            "accuracy": [
+              3.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "(DH) EY0",
+              "DH EY0",
+              "DH EY0",
+              "DH EY0",
+              "DH EY0"
+            ],
+            "total": [
+              4.4,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "THEY",
+            "ref-phones": "DH EY0"
+          },
+          {
+            "accuracy": [
+              5.0,
+              5.0,
+              3.0,
+              10.0,
+              5.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "OW1 N (L) IY0",
+              "OW1 N (L) IY0",
+              "(OW1) (N) L IY0",
+              "OW1 N L IY0",
+              "OW1 N (L) IY0"
+            ],
+            "total": [
+              6.0,
+              6.0,
+              4.4,
+              10.0,
+              6.0
+            ],
+            "text": "ONLY",
+            "ref-phones": "OW1 N L IY0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              8.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "HH AE0 V",
+              "HH {AE0} V",
+              "HH AE0 V",
+              "HH AE0 V",
+              "HH AE0 V"
+            ],
+            "total": [
+              10.0,
+              8.4,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "HAVE",
+            "ref-phones": "HH AE0 V"
+          },
+          {
+            "accuracy": [
+              3.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "(DH) EY0",
+              "DH EY0",
+              "DH EY0",
+              "DH EY0",
+              "DH EY0"
+            ],
+            "total": [
+              4.4,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "THEY",
+            "ref-phones": "DH EY0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              3.0,
+              3.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "OW0 N",
+              "(OW0) (N)",
+              "OW0 (N)",
+              "OW0 N",
+              "OW0 N"
+            ],
+            "total": [
+              10.0,
+              4.4,
+              4.4,
+              10.0,
+              10.0
+            ],
+            "text": "OWN",
+            "ref-phones": "OW0 N"
+          },
+          {
+            "accuracy": [
+              10.0,
+              5.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              5.0
+            ],
+            "phones": [
+              "P R AH1 P AH0 T IY0",
+              "P (R) (AH1) P AH0 T IY0",
+              "P R AH1 P AH0 T IY0",
+              "P R AH1 P AH0 T IY0",
+              "P R AH1 P AH0 T IY0"
+            ],
+            "total": [
+              9.0,
+              5.0,
+              9.0,
+              9.0,
+              9.0
+            ],
+            "text": "PROPERTY",
+            "ref-phones": "P R AH1 P AH0 T IY0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "AE0 T",
+              "AE0 T",
+              "AE0 T",
+              "AE0 T",
+              "AE0 T"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "AT",
+            "ref-phones": "AE0 T"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "R IH0 S K",
+              "R IH0 S K",
+              "R IH0 S K",
+              "R IH0 S K",
+              "R IH0 S K"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "RISK",
+            "ref-phones": "R IH0 S K"
+          }
+        ],
+        "total": [
+          3.4,
+          3.8,
+          3.7,
+          5.8,
+          7.5
+        ],
+        "text": "AFTER ALL THEY ONLY HAVE THEY OWN PROPERTY AT RISK"
+      }
+    },
+    {
+      "id": "004610037",
+      "speaker": "0461",
+      "age": 23,
+      "split": "test",
+      "source_revision": "613968e3b0b789fc33936fb5eba1973176ba7d11",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0461/004610037.WAV",
+      "source_path": "WAVE/SPEAKER0461/004610037.WAV",
+      "file": "audio/004610037.WAV",
+      "http_status": 200,
+      "content_type": "audio/wav",
+      "head_bytes": 168652,
+      "bytes": 168652,
+      "sha256": "8d3c5ce6c72ae9b524dbc41ea12e278b91d2287c1d912f7f129e2e08acab0c40",
+      "decoded": {
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "sample_rate": 16000,
+        "channels": 1,
+        "frames": 84304,
+        "duration_seconds": 5.269,
+        "all_samples_finite": true,
+        "float32_samples_sha256": "c9cfa9ff7c267d752a4e422e90a605138b7fec7cfec918dfc831702c93163264"
+      },
+      "download_and_decode_seconds": 1.0693,
+      "transcript": "BUT THAT'S ANOTHER STORY ALTOGETHER",
+      "human_aggregate": {
+        "accuracy": 7,
+        "completeness": 10,
+        "fluency": 7,
+        "prosodic": 6,
+        "text": "BUT THAT'S ANOTHER STORY ALTOGETHER",
+        "total": 6,
+        "words": [
+          {
+            "accuracy": 10,
+            "phones": [
+              "B",
+              "AH0",
+              "T"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "BUT",
+            "total": 10
+          },
+          {
+            "accuracy": 3,
+            "mispronunciations": [
+              {
+                "canonical-phone": "DH",
+                "index": 0,
+                "pronounced-phone": "S"
+              }
+            ],
+            "phones": [
+              "DH",
+              "AE0",
+              "T",
+              "S"
+            ],
+            "phones-accuracy": [
+              0.4,
+              2,
+              1.2,
+              1.2
+            ],
+            "stress": 10,
+            "text": "THAT'S",
+            "total": 4
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "AH0",
+              "N",
+              "AH1",
+              "DH",
+              "AH0"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2,
+              1.6,
+              2
+            ],
+            "stress": 10,
+            "text": "ANOTHER",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "S",
+              "T",
+              "AO1",
+              "R",
+              "IY0"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "STORY",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "AO2",
+              "L",
+              "T",
+              "AH0",
+              "G",
+              "EH0",
+              "DH",
+              "AH0"
+            ],
+            "phones-accuracy": [
+              2,
+              1.6,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "ALTOGETHER",
+            "total": 10
+          }
+        ]
+      },
+      "human_five_raters": {
+        "accuracy": [
+          7.0,
+          5.0,
+          7.0,
+          7.0,
+          8.0
+        ],
+        "completeness": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fluency": [
+          6.0,
+          8.0,
+          8.0,
+          6.0,
+          7.0
+        ],
+        "prosodic": [
+          6.0,
+          7.0,
+          7.0,
+          6.0,
+          5.0
+        ],
+        "words": [
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              5.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "B AH0 T",
+              "B AH0 T",
+              "B AH0 T",
+              "B AH0 T",
+              "B AH0 T"
+            ],
+            "total": [
+              9.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "BUT",
+            "ref-phones": "B AH0 T"
+          },
+          {
+            "accuracy": [
+              8.0,
+              3.0,
+              3.0,
+              8.0,
+              3.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "{DH} AE0 T S",
+              "(DH) AE0 (T) (S)",
+              "(DH) AE0 (T) (S)",
+              "{DH} AE0 T S",
+              "(DH) AE0 T S"
+            ],
+            "total": [
+              8.4,
+              4.4,
+              4.4,
+              8.4,
+              4.4
+            ],
+            "text": "THAT'S",
+            "ref-phones": "DH AE0 T S"
+          },
+          {
+            "accuracy": [
+              10.0,
+              5.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "AH0 N AH1 DH AH0",
+              "AH0 N AH1 (DH) AH0",
+              "AH0 N AH1 DH AH0",
+              "AH0 N AH1 DH AH0",
+              "AH0 N AH1 DH AH0"
+            ],
+            "total": [
+              10.0,
+              6.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "ANOTHER",
+            "ref-phones": "AH0 N AH1 DH AH0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "S T AO1 R IY0",
+              "S T AO1 R IY0",
+              "S T AO1 R IY0",
+              "S T AO1 R IY0",
+              "S T AO1 R IY0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "STORY",
+            "ref-phones": "S T AO1 R IY0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              5.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "AO2 L T AH0 G EH0 DH AH0",
+              "AO2 (L) T AH0 G EH0 DH AH0",
+              "AO2 L T AH0 G EH0 DH AH0",
+              "AO2 L T AH0 G EH0 DH AH0",
+              "AO2 L T AH0 G EH0 DH AH0"
+            ],
+            "total": [
+              10.0,
+              6.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "ALTOGETHER",
+            "ref-phones": "AO2 L T AH0 G EH0 DH AH0"
+          }
+        ],
+        "total": [
+          6.8,
+          5.5,
+          7.1,
+          6.8,
+          7.6
+        ],
+        "text": "BUT THAT'S ANOTHER STORY ALTOGETHER"
+      }
+    },
+    {
+      "id": "005630017",
+      "speaker": "0563",
+      "age": 22,
+      "split": "test",
+      "source_revision": "613968e3b0b789fc33936fb5eba1973176ba7d11",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0563/005630017.WAV",
+      "source_path": "WAVE/SPEAKER0563/005630017.WAV",
+      "file": "audio/005630017.WAV",
+      "http_status": 200,
+      "content_type": "audio/wav",
+      "head_bytes": 120524,
+      "bytes": 120524,
+      "sha256": "c70dd71e1bc20414ac69ebf734e016e0500023b358c3f427b49f04ef9e5231a5",
+      "decoded": {
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "sample_rate": 16000,
+        "channels": 1,
+        "frames": 60240,
+        "duration_seconds": 3.765,
+        "all_samples_finite": true,
+        "float32_samples_sha256": "00662877491944671f3e77bf62e2e083116dd81f1203ab73c0525f53d3e14b6d"
+      },
+      "download_and_decode_seconds": 1.4011,
+      "transcript": "HE WAS THOUGHT OF THAT HIGHLY",
+      "human_aggregate": {
+        "accuracy": 7,
+        "completeness": 10,
+        "fluency": 7,
+        "prosodic": 7,
+        "text": "HE WAS THOUGHT OF THAT HIGHLY",
+        "total": 7,
+        "words": [
+          {
+            "accuracy": 10,
+            "phones": [
+              "HH",
+              "IY0"
+            ],
+            "phones-accuracy": [
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "HE",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "W",
+              "AH0",
+              "Z"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              1.8
+            ],
+            "stress": 10,
+            "text": "WAS",
+            "total": 9
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "TH",
+              "AO0",
+              "T"
+            ],
+            "phones-accuracy": [
+              1.6,
+              1.8,
+              2
+            ],
+            "stress": 10,
+            "text": "THOUGHT",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "AH0",
+              "V"
+            ],
+            "phones-accuracy": [
+              1.6,
+              2
+            ],
+            "stress": 10,
+            "text": "OF",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "DH",
+              "AE0",
+              "T"
+            ],
+            "phones-accuracy": [
+              1.6,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "THAT",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "HH",
+              "AY1",
+              "L",
+              "IY0"
+            ],
+            "phones-accuracy": [
+              2,
+              1.6,
+              1.6,
+              1.2
+            ],
+            "stress": 10,
+            "text": "HIGHLY",
+            "total": 10
+          }
+        ]
+      },
+      "human_five_raters": {
+        "accuracy": [
+          7.0,
+          8.0,
+          5.0,
+          6.0,
+          8.0
+        ],
+        "completeness": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fluency": [
+          7.0,
+          9.0,
+          8.0,
+          6.0,
+          5.0
+        ],
+        "prosodic": [
+          7.0,
+          9.0,
+          7.0,
+          6.0,
+          4.0
+        ],
+        "words": [
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "HH IY0",
+              "HH IY0",
+              "HH IY0",
+              "HH IY0",
+              "HH IY0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "HE",
+            "ref-phones": "HH IY0"
+          },
+          {
+            "accuracy": [
+              10.0,
+              8.0,
+              3.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              5.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "W AH0 Z",
+              "W AH0 {Z}",
+              "W AH0 [R] Z",
+              "W AH0 Z",
+              "W AH0 Z"
+            ],
+            "total": [
+              9.0,
+              8.4,
+              4.4,
+              10.0,
+              10.0
+            ],
+            "text": "WAS",
+            "ref-phones": "W AH0 Z"
+          },
+          {
+            "accuracy": [
+              8.0,
+              10.0,
+              8.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "{TH} AO0 T",
+              "TH AO0 T",
+              "{TH} {AO0} T",
+              "TH AO0 T",
+              "TH AO0 T"
+            ],
+            "total": [
+              8.4,
+              10.0,
+              8.4,
+              10.0,
+              10.0
+            ],
+            "text": "THOUGHT",
+            "ref-phones": "TH AO0 T"
+          },
+          {
+            "accuracy": [
+              10.0,
+              6.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              5.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "AH0 V",
+              "(AH0) V",
+              "AH0 V",
+              "AH0 V",
+              "AH0 V"
+            ],
+            "total": [
+              9.0,
+              6.8,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "OF",
+            "ref-phones": "AH0 V"
+          },
+          {
+            "accuracy": [
+              10.0,
+              5.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "DH AE0 T",
+              "(DH) AE0 T",
+              "DH AE0 T",
+              "DH AE0 T",
+              "DH AE0 T"
+            ],
+            "total": [
+              10.0,
+              6.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "THAT",
+            "ref-phones": "DH AE0 T"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              5.0,
+              3.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "HH AY1 L IY0",
+              "HH AY1 L IY0",
+              "HH AY1 L (IY0)",
+              "HH (AY1) (L) (IY0)",
+              "HH AY1 L IY0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              6.0,
+              4.4,
+              10.0
+            ],
+            "text": "HIGHLY",
+            "ref-phones": "HH AY1 L IY0"
+          }
+        ],
+        "total": [
+          7.0,
+          8.2,
+          5.5,
+          6.0,
+          7.3
+        ],
+        "text": "HE WAS THOUGHT OF THAT HIGHLY"
+      }
+    },
+    {
+      "id": "005670043",
+      "speaker": "0567",
+      "age": 21,
+      "split": "test",
+      "source_revision": "613968e3b0b789fc33936fb5eba1973176ba7d11",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0567/005670043.WAV",
+      "source_path": "WAVE/SPEAKER0567/005670043.WAV",
+      "file": "audio/005670043.WAV",
+      "http_status": 200,
+      "content_type": "audio/wav",
+      "head_bytes": 105964,
+      "bytes": 105964,
+      "sha256": "79bdb7bbb7eda0425e05643e911f719b7c7a68537226f81e416ff63c308ec23c",
+      "decoded": {
+        "format": "WAV",
+        "subtype": "PCM_16",
+        "sample_rate": 16000,
+        "channels": 1,
+        "frames": 52960,
+        "duration_seconds": 3.31,
+        "all_samples_finite": true,
+        "float32_samples_sha256": "1f30ace71d13657ff88d37434887b71fd0e6ec17e038c557e06b9cbefed7d270"
+      },
+      "download_and_decode_seconds": 0.7717,
+      "transcript": "WHO KNOWS WHAT TO EXPECT",
+      "human_aggregate": {
+        "accuracy": 7,
+        "completeness": 10,
+        "fluency": 7,
+        "prosodic": 6,
+        "text": "WHO KNOWS WHAT TO EXPECT",
+        "total": 6,
+        "words": [
+          {
+            "accuracy": 10,
+            "phones": [
+              "HH",
+              "UW0"
+            ],
+            "phones-accuracy": [
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "WHO",
+            "total": 10
+          },
+          {
+            "accuracy": 8,
+            "phones": [
+              "N",
+              "OW0",
+              "Z"
+            ],
+            "phones-accuracy": [
+              2,
+              1.4,
+              1.4
+            ],
+            "stress": 10,
+            "text": "KNOWS",
+            "total": 8
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "W",
+              "AH0",
+              "T"
+            ],
+            "phones-accuracy": [
+              2,
+              1.8,
+              2
+            ],
+            "stress": 10,
+            "text": "WHAT",
+            "total": 10
+          },
+          {
+            "accuracy": 10,
+            "phones": [
+              "T",
+              "UW0"
+            ],
+            "phones-accuracy": [
+              1.8,
+              2
+            ],
+            "stress": 10,
+            "text": "TO",
+            "total": 10
+          },
+          {
+            "accuracy": 5,
+            "mispronunciations": [
+              {
+                "canonical-phone": "EH",
+                "index": 4,
+                "pronounced-phone": "EY"
+              }
+            ],
+            "phones": [
+              "IH0",
+              "K",
+              "S",
+              "P",
+              "EH1",
+              "K",
+              "T"
+            ],
+            "phones-accuracy": [
+              2,
+              2,
+              2,
+              0.6,
+              0.4,
+              2,
+              2
+            ],
+            "stress": 10,
+            "text": "EXPECT",
+            "total": 6
+          }
+        ]
+      },
+      "human_five_raters": {
+        "accuracy": [
+          6.0,
+          8.0,
+          8.0,
+          4.0,
+          7.0
+        ],
+        "completeness": [
+          1.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "fluency": [
+          6.0,
+          8.0,
+          8.0,
+          7.0,
+          7.0
+        ],
+        "prosodic": [
+          6.0,
+          8.0,
+          7.0,
+          5.0,
+          6.0
+        ],
+        "words": [
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "HH UW0",
+              "HH UW0",
+              "HH UW0",
+              "HH UW0",
+              "HH UW0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "WHO",
+            "ref-phones": "HH UW0"
+          },
+          {
+            "accuracy": [
+              8.0,
+              8.0,
+              7.0,
+              3.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "N OW0 {Z}",
+              "N OW0 {Z}",
+              "N {OW0} {Z}",
+              "N (OW0) Z",
+              "N OW0 Z"
+            ],
+            "total": [
+              8.4,
+              8.4,
+              7.6,
+              4.4,
+              10.0
+            ],
+            "text": "KNOWS",
+            "ref-phones": "N OW0 Z"
+          },
+          {
+            "accuracy": [
+              10.0,
+              7.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "W AH0 T",
+              "W {AH0} T",
+              "W AH0 T",
+              "W AH0 T",
+              "W AH0 T"
+            ],
+            "total": [
+              10.0,
+              7.6,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "text": "WHAT",
+            "ref-phones": "W AH0 T"
+          },
+          {
+            "accuracy": [
+              10.0,
+              10.0,
+              8.0,
+              10.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "T UW0",
+              "T UW0",
+              "{T} UW0",
+              "T UW0",
+              "T UW0"
+            ],
+            "total": [
+              10.0,
+              10.0,
+              8.4,
+              10.0,
+              10.0
+            ],
+            "text": "TO",
+            "ref-phones": "T UW0"
+          },
+          {
+            "accuracy": [
+              5.0,
+              5.0,
+              5.0,
+              5.0,
+              10.0
+            ],
+            "stress": [
+              10.0,
+              10.0,
+              10.0,
+              10.0,
+              10.0
+            ],
+            "phones": [
+              "IH0 K S (P) (EH1) K T",
+              "IH0 K S {P} (EH1) K T",
+              "IH0 K S (P) (EH1) K T",
+              "IH0 K S (P) (EH1) K T",
+              "IH0 K S P EH1 K T"
+            ],
+            "total": [
+              6.0,
+              6.0,
+              6.0,
+              6.0,
+              10.0
+            ],
+            "text": "EXPECT",
+            "ref-phones": "IH0 K S P EH1 K T"
+          }
+        ],
+        "total": [
+          6.0,
+          8.0,
+          7.9,
+          4.4,
+          6.9
+        ],
+        "text": "WHO KNOWS WHAT TO EXPECT"
+      }
+    }
+  ]
+}

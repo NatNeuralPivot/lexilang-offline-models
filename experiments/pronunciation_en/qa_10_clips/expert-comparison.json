@@ -1,0 +1,6109 @@
+{
+  "method": {
+    "word_matching": "ordered exact casefold tokens; no ASR transcript matching",
+    "phone_mapping": "same ordered index only when counts match and normalized ARPA matches target or an explicitly allowed alternate; other individual slots BLOCKED",
+    "human_phone_scores": "bare=2, curly=1 (accent), parenthesis=0 (incorrect/missing), bracket=insertion; five raters preserved; mean verified against official aggregate",
+    "case_policy": "majority >=3 raters score 0; unanimous accepted requires five scores 2; other disagreements retained without forcing binary truth",
+    "model_flags": "unchanged upstream balanced coaching, not a phone.prob <0.5 rule",
+    "stress": "human five word-stress ratings compared to model word-stress flag only; human syllable error location not inferred",
+    "event_dedup": "one per word/phone slot, one stress-pattern event per word, suppress duplicate mispronounced_word item when sound/stress event exists; retain distinct delivery events"
+  },
+  "summary": {
+    "unit": "case counts only; no accuracy/precision/recall/F1 claim",
+    "human_word_records": 51,
+    "human_phone_records": 171,
+    "phone_case_counts": {
+      "unanimous_accepted_unflagged": 120,
+      "disputed_or_accent_unflagged": 26,
+      "BLOCKED_reference_variant": 8,
+      "disputed_or_accent_flagged": 6,
+      "potential_false_warning_unanimous_accepted": 3,
+      "human_majority_incorrect_flagged": 4,
+      "potential_missed_majority_incorrect": 4
+    },
+    "deduplicated_model_events": 16,
+    "model_event_units": {
+      "phone": 14,
+      "word_stress": 1,
+      "pause_mid_phrase": 1
+    },
+    "human_inserted_phone_annotations_not_projected_to_target_slots": [
+      {
+        "clip": "001200015",
+        "word_index": 8,
+        "rater": 0,
+        "inserted": "R"
+      },
+      {
+        "clip": "003060002",
+        "word_index": 3,
+        "rater": 1,
+        "inserted": "AH0"
+      },
+      {
+        "clip": "005630017",
+        "word_index": 1,
+        "rater": 2,
+        "inserted": "R"
+      }
+    ],
+    "word_stress_nonnull": 11,
+    "human_majority_wrong_stress_cases": [
+      {
+        "clip": "004570010",
+        "word_index": 7,
+        "word": "PROPERTY",
+        "human_accuracy_aggregate": 10,
+        "human_accuracy_votes": [
+          10.0,
+          5.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "human_stress_aggregate": 5,
+        "human_stress_votes": [
+          5.0,
+          5.0,
+          5.0,
+          5.0,
+          5.0
+        ],
+        "human_mispronunciations": [],
+        "model_word_prob": 0.7994412008909081,
+        "model_word_stress_prob": 0.9084046202074666,
+        "model_primary_stress": [
+          {
+            "syllable_index": 0,
+            "expected": 1,
+            "prob": 0.2403701108660945
+          }
+        ],
+        "model_coaching_kinds": [
+          "mispronounced_word",
+          "substitution"
+        ],
+        "human_unanimous_word_accuracy_10": false,
+        "human_unanimous_stress_10": false,
+        "human_majority_wrong_stress": true,
+        "model_stress_flag": false
+      }
+    ],
+    "model_stress_flag_cases": [
+      {
+        "clip": "001570024",
+        "word_index": 1,
+        "word": "RESEARCHERS",
+        "human_accuracy_aggregate": 10,
+        "human_accuracy_votes": [
+          10.0,
+          8.0,
+          10.0,
+          10.0,
+          10.0
+        ],
+        "human_stress_aggregate": 10,
+        "human_stress_votes": [
+          10.0,
+          10.0,
+          5.0,
+          10.0,
+          5.0
+        ],
+        "human_mispronunciations": [],
+        "model_word_prob": 0.3508744413573129,
+        "model_word_stress_prob": 0.35906989017019936,
+        "model_primary_stress": [
+          {
+            "syllable_index": 0,
+            "expected": 1,
+            "prob": 0.012910028211872853
+          }
+        ],
+        "model_coaching_kinds": [
+          "mispronounced_word",
+          "stress",
+          "substitution"
+        ],
+        "human_unanimous_word_accuracy_10": false,
+        "human_unanimous_stress_10": false,
+        "human_majority_wrong_stress": false,
+        "model_stress_flag": true
+      }
+    ]
+  },
+  "words": [
+    {
+      "clip": "001200015",
+      "word_index": 0,
+      "word": "WE",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.992627813985763,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001200015",
+      "word_index": 1,
+      "word": "WERE",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9940399671952713,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001200015",
+      "word_index": 2,
+      "word": "FORTUNATE",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        5.0,
+        5.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9698305213252237,
+      "model_word_stress_prob": 0.9844357793339878,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": 0.7116773019017093
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001200015",
+      "word_index": 3,
+      "word": "TO",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9980692282832259,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001200015",
+      "word_index": 4,
+      "word": "GET",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9944061242267948,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001200015",
+      "word_index": 5,
+      "word": "BACK",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.993786319955873,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001200015",
+      "word_index": 6,
+      "word": "INTO",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9906432813362575,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001200015",
+      "word_index": 7,
+      "word": "THE",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9946620908163237,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001200015",
+      "word_index": 8,
+      "word": "BALL",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        6.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.8426815825334868,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001200015",
+      "word_index": 9,
+      "word": "GAME",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.8350046542541989,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001570024",
+      "word_index": 0,
+      "word": "THE",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.995905537398523,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001570024",
+      "word_index": 1,
+      "word": "RESEARCHERS",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        8.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        5.0,
+        10.0,
+        5.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.3508744413573129,
+      "model_word_stress_prob": 0.35906989017019936,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": 0.012910028211872853
+        }
+      ],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "stress",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": false,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": true
+    },
+    {
+      "clip": "001570024",
+      "word_index": 2,
+      "word": "FOUND",
+      "human_accuracy_aggregate": 8,
+      "human_accuracy_votes": [
+        10.0,
+        8.0,
+        5.0,
+        10.0,
+        5.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.40444152381221404,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001570024",
+      "word_index": 3,
+      "word": "THAT",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9794409590524974,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001570024",
+      "word_index": 4,
+      "word": "TO",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9957995537273048,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001570024",
+      "word_index": 5,
+      "word": "BE",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9979873105984224,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001570024",
+      "word_index": 6,
+      "word": "THE",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9920133635428682,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "001570024",
+      "word_index": 7,
+      "word": "CASE",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9765618598572928,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "003060002",
+      "word_index": 0,
+      "word": "JUST",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        8.0,
+        10.0,
+        10.0,
+        10.0,
+        5.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        5.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.6847358480127368,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": false,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "003060002",
+      "word_index": 1,
+      "word": "SET",
+      "human_accuracy_aggregate": 3,
+      "human_accuracy_votes": [
+        3.0,
+        4.0,
+        3.0,
+        10.0,
+        3.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [
+        {
+          "canonical-phone": "EH",
+          "index": 1,
+          "pronounced-phone": "IH"
+        }
+      ],
+      "model_word_prob": 0.8586450052953256,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "003060002",
+      "word_index": 2,
+      "word": "HOOK",
+      "human_accuracy_aggregate": 3,
+      "human_accuracy_votes": [
+        3.0,
+        3.0,
+        3.0,
+        10.0,
+        3.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [
+        {
+          "canonical-phone": "UH",
+          "index": 1,
+          "pronounced-phone": "AA"
+        }
+      ],
+      "model_word_prob": 0.8674420817395702,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "003060002",
+      "word_index": 3,
+      "word": "AND",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        6.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9010389950508652,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "003060002",
+      "word_index": 4,
+      "word": "PUT",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9290439158543695,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "003060002",
+      "word_index": 5,
+      "word": "THE",
+      "human_accuracy_aggregate": 3,
+      "human_accuracy_votes": [
+        3.0,
+        3.0,
+        3.0,
+        3.0,
+        3.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [
+        {
+          "canonical-phone": "AH",
+          "index": 1,
+          "pronounced-phone": "IH"
+        }
+      ],
+      "model_word_prob": 0.808802353515815,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "003060002",
+      "word_index": 6,
+      "word": "PRESSURE",
+      "human_accuracy_aggregate": 5,
+      "human_accuracy_votes": [
+        5.0,
+        3.0,
+        3.0,
+        5.0,
+        5.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        5.0
+      ],
+      "human_mispronunciations": [
+        {
+          "canonical-phone": "EH",
+          "index": 2,
+          "pronounced-phone": "IH"
+        }
+      ],
+      "model_word_prob": 0.6114234497908032,
+      "model_word_stress_prob": 0.9458270133868315,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": 0.3720103655592803
+        }
+      ],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": false,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004570010",
+      "word_index": 0,
+      "word": "AFTER",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9901839446757891,
+      "model_word_stress_prob": 0.9964309097165045,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": 0.9275550350219596
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004570010",
+      "word_index": 1,
+      "word": "ALL",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        3.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9792703593801901,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004570010",
+      "word_index": 2,
+      "word": "THEY",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        3.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9584022671694974,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004570010",
+      "word_index": 3,
+      "word": "ONLY",
+      "human_accuracy_aggregate": 5,
+      "human_accuracy_votes": [
+        5.0,
+        5.0,
+        3.0,
+        10.0,
+        5.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9432337364703378,
+      "model_word_stress_prob": 0.9874281320535211,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": 0.7583459898518106
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004570010",
+      "word_index": 4,
+      "word": "HAVE",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        8.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9517854951394034,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004570010",
+      "word_index": 5,
+      "word": "THEY",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        3.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9345003026265934,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004570010",
+      "word_index": 6,
+      "word": "OWN",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        3.0,
+        3.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.8006741621675283,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004570010",
+      "word_index": 7,
+      "word": "PROPERTY",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        5.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 5,
+      "human_stress_votes": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        5.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.7994412008909081,
+      "model_word_stress_prob": 0.9084046202074666,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": 0.2403701108660945
+        }
+      ],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": false,
+      "human_majority_wrong_stress": true,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004570010",
+      "word_index": 8,
+      "word": "AT",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9416010351592109,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004570010",
+      "word_index": 9,
+      "word": "RISK",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9306252529907498,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004610037",
+      "word_index": 0,
+      "word": "BUT",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        5.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.8366448963030587,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": false,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004610037",
+      "word_index": 1,
+      "word": "THAT'S",
+      "human_accuracy_aggregate": 3,
+      "human_accuracy_votes": [
+        8.0,
+        3.0,
+        3.0,
+        8.0,
+        3.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [
+        {
+          "canonical-phone": "DH",
+          "index": 0,
+          "pronounced-phone": "S"
+        }
+      ],
+      "model_word_prob": 0.1568681073237766,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004610037",
+      "word_index": 2,
+      "word": "ANOTHER",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        5.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.8346698683717788,
+      "model_word_stress_prob": 0.9982941152884122,
+      "model_primary_stress": [
+        {
+          "syllable_index": 1,
+          "expected": 1,
+          "prob": 0.9667624817931103
+        }
+      ],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004610037",
+      "word_index": 3,
+      "word": "STORY",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9853224473524446,
+      "model_word_stress_prob": 0.9965668300318962,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": 0.9304047663977123
+        }
+      ],
+      "model_coaching_kinds": [
+        "pause_mid_phrase"
+      ],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "004610037",
+      "word_index": 4,
+      "word": "ALTOGETHER",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        5.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.46458078910613904,
+      "model_word_stress_prob": 0.9709047485177961,
+      "model_primary_stress": [
+        {
+          "syllable_index": 2,
+          "expected": 1,
+          "prob": 0.5484950662280735
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "005630017",
+      "word_index": 0,
+      "word": "HE",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9968231287868324,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "005630017",
+      "word_index": 1,
+      "word": "WAS",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        8.0,
+        3.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        5.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9396995466441613,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": false,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "005630017",
+      "word_index": 2,
+      "word": "THOUGHT",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        8.0,
+        10.0,
+        8.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.8379031759782599,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "005630017",
+      "word_index": 3,
+      "word": "OF",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        6.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        5.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9059916093977215,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": false,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "005630017",
+      "word_index": 4,
+      "word": "THAT",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        5.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.8786644588150111,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "005630017",
+      "word_index": 5,
+      "word": "HIGHLY",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        5.0,
+        3.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.8381416549763299,
+      "model_word_stress_prob": 0.9966971008826836,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": 0.93314017357013
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "005670043",
+      "word_index": 0,
+      "word": "WHO",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9949717890823077,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": true,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "005670043",
+      "word_index": 1,
+      "word": "KNOWS",
+      "human_accuracy_aggregate": 8,
+      "human_accuracy_votes": [
+        8.0,
+        8.0,
+        7.0,
+        3.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.8378495526972559,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [
+        {
+          "syllable_index": 0,
+          "expected": 1,
+          "prob": null
+        }
+      ],
+      "model_coaching_kinds": [
+        "mispronounced_word",
+        "substitution"
+      ],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "005670043",
+      "word_index": 2,
+      "word": "WHAT",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        7.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9554040445774463,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "005670043",
+      "word_index": 3,
+      "word": "TO",
+      "human_accuracy_aggregate": 10,
+      "human_accuracy_votes": [
+        10.0,
+        10.0,
+        8.0,
+        10.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [],
+      "model_word_prob": 0.9726247185341453,
+      "model_word_stress_prob": null,
+      "model_primary_stress": [],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    },
+    {
+      "clip": "005670043",
+      "word_index": 4,
+      "word": "EXPECT",
+      "human_accuracy_aggregate": 5,
+      "human_accuracy_votes": [
+        5.0,
+        5.0,
+        5.0,
+        5.0,
+        10.0
+      ],
+      "human_stress_aggregate": 10,
+      "human_stress_votes": [
+        10.0,
+        10.0,
+        10.0,
+        10.0,
+        10.0
+      ],
+      "human_mispronunciations": [
+        {
+          "canonical-phone": "EH",
+          "index": 4,
+          "pronounced-phone": "EY"
+        }
+      ],
+      "model_word_prob": 0.963378479165518,
+      "model_word_stress_prob": 0.994640131861315,
+      "model_primary_stress": [
+        {
+          "syllable_index": 1,
+          "expected": 1,
+          "prob": 0.8906013696391802
+        }
+      ],
+      "model_coaching_kinds": [],
+      "human_unanimous_word_accuracy_10": false,
+      "human_unanimous_stress_10": true,
+      "human_majority_wrong_stress": false,
+      "model_stress_flag": false
+    }
+  ],
+  "phones": [
+    {
+      "clip": "001200015",
+      "word_index": 0,
+      "word": "WE",
+      "phone_index": 0,
+      "human_arpa": "W",
+      "human_normalized_ipa": "w",
+      "model_target_ipa": "w",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9977995864516046,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 0,
+      "word": "WE",
+      "phone_index": 1,
+      "human_arpa": "IY0",
+      "human_normalized_ipa": "i",
+      "model_target_ipa": "i",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9974966812400614,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 1,
+      "word": "WERE",
+      "phone_index": 0,
+      "human_arpa": "W",
+      "human_normalized_ipa": "w",
+      "model_target_ipa": "w",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9979979675736549,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 1,
+      "word": "WERE",
+      "phone_index": 1,
+      "human_arpa": "ER0",
+      "human_normalized_ipa": "ɜ˞",
+      "model_target_ipa": "ɜ˞",
+      "model_accepted_alternatives": [
+        "ə˞"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9925336102843839,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 2,
+      "word": "FORTUNATE",
+      "phone_index": 0,
+      "human_arpa": "F",
+      "human_normalized_ipa": "f",
+      "model_target_ipa": "f",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.998727369359137,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 2,
+      "word": "FORTUNATE",
+      "phone_index": 1,
+      "human_arpa": "AO1",
+      "human_normalized_ipa": "ɔ",
+      "model_target_ipa": "ɔ",
+      "model_accepted_alternatives": [
+        "ɑ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9949275405660254,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 2,
+      "word": "FORTUNATE",
+      "phone_index": 2,
+      "human_arpa": "R",
+      "human_normalized_ipa": "ɹ",
+      "model_target_ipa": "ɹ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9963739547432263,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 2,
+      "word": "FORTUNATE",
+      "phone_index": 3,
+      "human_arpa": "CH",
+      "human_normalized_ipa": "tʃ",
+      "model_target_ipa": "tʃ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9985421587807356,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 2,
+      "word": "FORTUNATE",
+      "phone_index": 4,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [
+        "u"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.9895436445012992,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 2,
+      "word": "FORTUNATE",
+      "phone_index": 5,
+      "human_arpa": "N",
+      "human_normalized_ipa": "n",
+      "model_target_ipa": "n",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9960895783612688,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 2,
+      "word": "FORTUNATE",
+      "phone_index": 6,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.2,
+      "model_phone_prob": 0.9633201183814173,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 2,
+      "word": "FORTUNATE",
+      "phone_index": 7,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ʔ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9964291392107474,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 3,
+      "word": "TO",
+      "phone_index": 0,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9980566260102779,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 3,
+      "word": "TO",
+      "phone_index": 1,
+      "human_arpa": "UW0",
+      "human_normalized_ipa": "u",
+      "model_target_ipa": "u",
+      "model_accepted_alternatives": [
+        "ə"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9960332628009294,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 4,
+      "word": "GET",
+      "phone_index": 0,
+      "human_arpa": "G",
+      "human_normalized_ipa": "g",
+      "model_target_ipa": "g",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9993167293932284,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 4,
+      "word": "GET",
+      "phone_index": 1,
+      "human_arpa": "EH0",
+      "human_normalized_ipa": "ɛ",
+      "model_target_ipa": "ɛ",
+      "model_accepted_alternatives": [
+        "ɪ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9872382784262758,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 4,
+      "word": "GET",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ʔ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9977897116057236,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 5,
+      "word": "BACK",
+      "phone_index": 0,
+      "human_arpa": "B",
+      "human_normalized_ipa": "b",
+      "model_target_ipa": "b",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9993283040552043,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 5,
+      "word": "BACK",
+      "phone_index": 1,
+      "human_arpa": "AE0",
+      "human_normalized_ipa": "æ",
+      "model_target_ipa": "æ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9941531941778897,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 5,
+      "word": "BACK",
+      "phone_index": 2,
+      "human_arpa": "K",
+      "human_normalized_ipa": "k",
+      "model_target_ipa": "k",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9988154832209051,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 6,
+      "word": "INTO",
+      "phone_index": 0,
+      "human_arpa": "IH1",
+      "human_normalized_ipa": "ɪ",
+      "model_target_ipa": "ɪ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9987658516746789,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 6,
+      "word": "INTO",
+      "phone_index": 1,
+      "human_arpa": "N",
+      "human_normalized_ipa": "n",
+      "model_target_ipa": "n",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9982877979291045,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 6,
+      "word": "INTO",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ɾ",
+        "d"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9972590665199663,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 6,
+      "word": "INTO",
+      "phone_index": 3,
+      "human_arpa": "UW0",
+      "human_normalized_ipa": "u",
+      "model_target_ipa": "u",
+      "model_accepted_alternatives": [
+        "ə"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9975813464012627,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 7,
+      "word": "THE",
+      "phone_index": 0,
+      "human_arpa": "DH",
+      "human_normalized_ipa": "ð",
+      "model_target_ipa": "ð",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9974791463368365,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 7,
+      "word": "THE",
+      "phone_index": 1,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [
+        "i"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.979877650280276,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 8,
+      "word": "BALL",
+      "phone_index": 0,
+      "human_arpa": "B",
+      "human_normalized_ipa": "b",
+      "model_target_ipa": "b",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9959681032572698,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 8,
+      "word": "BALL",
+      "phone_index": 1,
+      "human_arpa": "AO0",
+      "human_normalized_ipa": "ɔ",
+      "model_target_ipa": "ɔ",
+      "model_accepted_alternatives": [
+        "ɑ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9804388045848705,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 8,
+      "word": "BALL",
+      "phone_index": 2,
+      "human_arpa": "L",
+      "human_normalized_ipa": "l̴",
+      "model_target_ipa": "l̴",
+      "model_accepted_alternatives": [
+        "l"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9076045997851466,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 9,
+      "word": "GAME",
+      "phone_index": 0,
+      "human_arpa": "G",
+      "human_normalized_ipa": "g",
+      "model_target_ipa": "g",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9949175987889597,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 9,
+      "word": "GAME",
+      "phone_index": 1,
+      "human_arpa": "EY0",
+      "human_normalized_ipa": "eɪ",
+      "model_target_ipa": "eɪ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.921539770775747,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001200015",
+      "word_index": 9,
+      "word": "GAME",
+      "phone_index": 2,
+      "human_arpa": "M",
+      "human_normalized_ipa": "m",
+      "model_target_ipa": "m",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9620591454330111,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 0,
+      "word": "THE",
+      "phone_index": 0,
+      "human_arpa": "DH",
+      "human_normalized_ipa": "ð",
+      "model_target_ipa": "ð",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9968752328429056,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 0,
+      "word": "THE",
+      "phone_index": 1,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [
+        "i"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9902993055516441,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 1,
+      "word": "RESEARCHERS",
+      "phone_index": 0,
+      "human_arpa": "R",
+      "human_normalized_ipa": "ɹ",
+      "model_target_ipa": "ɹ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9976471227150858,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 1,
+      "word": "RESEARCHERS",
+      "phone_index": 1,
+      "human_arpa": "IH1",
+      "human_normalized_ipa": "ɪ",
+      "model_target_ipa": "i",
+      "model_accepted_alternatives": [],
+      "mapping": "BLOCKED_reference_variant",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9986872062749869,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "BLOCKED_reference_variant"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 1,
+      "word": "RESEARCHERS",
+      "phone_index": 2,
+      "human_arpa": "S",
+      "human_normalized_ipa": "s",
+      "model_target_ipa": "s",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9988534506853991,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 1,
+      "word": "RESEARCHERS",
+      "phone_index": 3,
+      "human_arpa": "ER0",
+      "human_normalized_ipa": "ɜ˞",
+      "model_target_ipa": "ɜ˞",
+      "model_accepted_alternatives": [
+        "ə˞"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9930631366102063,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 1,
+      "word": "RESEARCHERS",
+      "phone_index": 4,
+      "human_arpa": "CH",
+      "human_normalized_ipa": "tʃ",
+      "model_target_ipa": "tʃ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9980762296121123,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 1,
+      "word": "RESEARCHERS",
+      "phone_index": 5,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ɜ˞",
+      "model_accepted_alternatives": [
+        "ə˞"
+      ],
+      "mapping": "BLOCKED_reference_variant",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9968925052761968,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "BLOCKED_reference_variant"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 1,
+      "word": "RESEARCHERS",
+      "phone_index": 6,
+      "human_arpa": "Z",
+      "human_normalized_ipa": "z",
+      "model_target_ipa": "z",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.8,
+      "model_phone_prob": 0.9908475676892451,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "disputed_or_accent_flagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 2,
+      "word": "FOUND",
+      "phone_index": 0,
+      "human_arpa": "F",
+      "human_normalized_ipa": "f",
+      "model_target_ipa": "f",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9970732258382836,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 2,
+      "word": "FOUND",
+      "phone_index": 1,
+      "human_arpa": "AW0",
+      "human_normalized_ipa": "aʊ",
+      "model_target_ipa": "aʊ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        1,
+        0,
+        2,
+        0
+      ],
+      "human_mean_0_2": 1,
+      "model_phone_prob": 0.9345257290367875,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 2,
+      "word": "FOUND",
+      "phone_index": 2,
+      "human_arpa": "N",
+      "human_normalized_ipa": "n",
+      "model_target_ipa": "n",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9842009945215593,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 2,
+      "word": "FOUND",
+      "phone_index": 3,
+      "human_arpa": "D",
+      "human_normalized_ipa": "d",
+      "model_target_ipa": "d",
+      "model_accepted_alternatives": [
+        ""
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9782448059581935,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 3,
+      "word": "THAT",
+      "phone_index": 0,
+      "human_arpa": "DH",
+      "human_normalized_ipa": "ð",
+      "model_target_ipa": "ð",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9942100387888507,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 3,
+      "word": "THAT",
+      "phone_index": 1,
+      "human_arpa": "AE0",
+      "human_normalized_ipa": "æ",
+      "model_target_ipa": "æ",
+      "model_accepted_alternatives": [
+        "ə"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9970457958140009,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 3,
+      "word": "THAT",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ʔ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9964718377232588,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 4,
+      "word": "TO",
+      "phone_index": 0,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9969716663504715,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 4,
+      "word": "TO",
+      "phone_index": 1,
+      "human_arpa": "UW0",
+      "human_normalized_ipa": "u",
+      "model_target_ipa": "u",
+      "model_accepted_alternatives": [
+        "ə"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9973425249855876,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 5,
+      "word": "BE",
+      "phone_index": 0,
+      "human_arpa": "B",
+      "human_normalized_ipa": "b",
+      "model_target_ipa": "b",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9992661027183697,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 5,
+      "word": "BE",
+      "phone_index": 1,
+      "human_arpa": "IY0",
+      "human_normalized_ipa": "i",
+      "model_target_ipa": "i",
+      "model_accepted_alternatives": [
+        "ɪ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9993821697624221,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 6,
+      "word": "THE",
+      "phone_index": 0,
+      "human_arpa": "DH",
+      "human_normalized_ipa": "ð",
+      "model_target_ipa": "ð",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9976914251588819,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 6,
+      "word": "THE",
+      "phone_index": 1,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [
+        "i"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9916227295855137,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 7,
+      "word": "CASE",
+      "phone_index": 0,
+      "human_arpa": "K",
+      "human_normalized_ipa": "k",
+      "model_target_ipa": "k",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9992424119813473,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 7,
+      "word": "CASE",
+      "phone_index": 1,
+      "human_arpa": "EY0",
+      "human_normalized_ipa": "eɪ",
+      "model_target_ipa": "eɪ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9985273271599286,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "001570024",
+      "word_index": 7,
+      "word": "CASE",
+      "phone_index": 2,
+      "human_arpa": "S",
+      "human_normalized_ipa": "s",
+      "model_target_ipa": "s",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9988460643904298,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 0,
+      "word": "JUST",
+      "phone_index": 0,
+      "human_arpa": "JH",
+      "human_normalized_ipa": "dʒ",
+      "model_target_ipa": "dʒ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        1,
+        2,
+        2,
+        2,
+        0
+      ],
+      "human_mean_0_2": 1.4,
+      "model_phone_prob": 0.9549228986590558,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 0,
+      "word": "JUST",
+      "phone_index": 1,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.8538547752067281,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 0,
+      "word": "JUST",
+      "phone_index": 2,
+      "human_arpa": "S",
+      "human_normalized_ipa": "s",
+      "model_target_ipa": "s",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9272584260390778,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 0,
+      "word": "JUST",
+      "phone_index": 3,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "",
+        "ʔ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.5431262909841416,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "potential_false_warning_unanimous_accepted"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 1,
+      "word": "SET",
+      "phone_index": 0,
+      "human_arpa": "S",
+      "human_normalized_ipa": "s",
+      "model_target_ipa": "s",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9682595049890871,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 1,
+      "word": "SET",
+      "phone_index": 1,
+      "human_arpa": "EH0",
+      "human_normalized_ipa": "ɛ",
+      "model_target_ipa": "ɛ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "human_mean_0_2": 0.4,
+      "model_phone_prob": 0.4424795909574702,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "human_majority_incorrect_flagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 1,
+      "word": "SET",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ʔ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.8345938973667676,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 2,
+      "word": "HOOK",
+      "phone_index": 0,
+      "human_arpa": "HH",
+      "human_normalized_ipa": "h",
+      "model_target_ipa": "h",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9684341904336736,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 2,
+      "word": "HOOK",
+      "phone_index": 1,
+      "human_arpa": "UH0",
+      "human_normalized_ipa": "ʊ",
+      "model_target_ipa": "ʊ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      "human_mean_0_2": 0.4,
+      "model_phone_prob": 0.8438776785964692,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "human_majority_incorrect_flagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 2,
+      "word": "HOOK",
+      "phone_index": 2,
+      "human_arpa": "K",
+      "human_normalized_ipa": "k",
+      "model_target_ipa": "k",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9794995396645972,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 3,
+      "word": "AND",
+      "phone_index": 0,
+      "human_arpa": "AE0",
+      "human_normalized_ipa": "æ",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [
+        "æ",
+        ""
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.8630152509290864,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 3,
+      "word": "AND",
+      "phone_index": 1,
+      "human_arpa": "N",
+      "human_normalized_ipa": "n",
+      "model_target_ipa": "n",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9660283072406786,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 3,
+      "word": "AND",
+      "phone_index": 2,
+      "human_arpa": "D",
+      "human_normalized_ipa": "d",
+      "model_target_ipa": "d",
+      "model_accepted_alternatives": [
+        ""
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9431887259211001,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 4,
+      "word": "PUT",
+      "phone_index": 0,
+      "human_arpa": "P",
+      "human_normalized_ipa": "p",
+      "model_target_ipa": "p",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9795076397806196,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 4,
+      "word": "PUT",
+      "phone_index": 1,
+      "human_arpa": "UH0",
+      "human_normalized_ipa": "ʊ",
+      "model_target_ipa": "ʊ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9456889190997104,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 4,
+      "word": "PUT",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ʔ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9682165871631626,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 5,
+      "word": "THE",
+      "phone_index": 0,
+      "human_arpa": "DH",
+      "human_normalized_ipa": "ð",
+      "model_target_ipa": "ð",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.8298917900599513,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 5,
+      "word": "THE",
+      "phone_index": 1,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [
+        "i"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "human_mean_0_2": 0,
+      "model_phone_prob": 0.7229964509106882,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "potential_missed_majority_incorrect"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 6,
+      "word": "PRESSURE",
+      "phone_index": 0,
+      "human_arpa": "P",
+      "human_normalized_ipa": "p",
+      "model_target_ipa": "p",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9111890112635972,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 6,
+      "word": "PRESSURE",
+      "phone_index": 1,
+      "human_arpa": "R",
+      "human_normalized_ipa": "ɹ",
+      "model_target_ipa": "ɹ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.2,
+      "model_phone_prob": 0.7507958458699266,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 6,
+      "word": "PRESSURE",
+      "phone_index": 2,
+      "human_arpa": "EH1",
+      "human_normalized_ipa": "ɛ",
+      "model_target_ipa": "ɛ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "human_mean_0_2": 0,
+      "model_phone_prob": 0.6053594621484837,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "human_majority_incorrect_flagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 6,
+      "word": "PRESSURE",
+      "phone_index": 3,
+      "human_arpa": "SH",
+      "human_normalized_ipa": "ʃ",
+      "model_target_ipa": "ʃ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.7337225301156328,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "003060002",
+      "word_index": 6,
+      "word": "PRESSURE",
+      "phone_index": 4,
+      "human_arpa": "ER0",
+      "human_normalized_ipa": "ɜ˞",
+      "model_target_ipa": "ɜ˞",
+      "model_accepted_alternatives": [
+        "ə˞"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.8146029186072558,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 0,
+      "word": "AFTER",
+      "phone_index": 0,
+      "human_arpa": "AA1",
+      "human_normalized_ipa": "ɑ",
+      "model_target_ipa": "æ",
+      "model_accepted_alternatives": [],
+      "mapping": "BLOCKED_reference_variant",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9922443787268731,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "BLOCKED_reference_variant"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 0,
+      "word": "AFTER",
+      "phone_index": 1,
+      "human_arpa": "F",
+      "human_normalized_ipa": "f",
+      "model_target_ipa": "f",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.998672828816163,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 0,
+      "word": "AFTER",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9955550814947838,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 0,
+      "word": "AFTER",
+      "phone_index": 3,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ɜ˞",
+      "model_accepted_alternatives": [
+        "ə˞"
+      ],
+      "mapping": "BLOCKED_reference_variant",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.991558490341741,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "BLOCKED_reference_variant"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 1,
+      "word": "ALL",
+      "phone_index": 0,
+      "human_arpa": "AO0",
+      "human_normalized_ipa": "ɔ",
+      "model_target_ipa": "ɔ",
+      "model_accepted_alternatives": [
+        "ɑ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.991873190155294,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 1,
+      "word": "ALL",
+      "phone_index": 1,
+      "human_arpa": "L",
+      "human_normalized_ipa": "l̴",
+      "model_target_ipa": "l̴",
+      "model_accepted_alternatives": [
+        "l"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        0,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.9897670923378704,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 2,
+      "word": "THEY",
+      "phone_index": 0,
+      "human_arpa": "DH",
+      "human_normalized_ipa": "ð",
+      "model_target_ipa": "ð",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.9673817123892798,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 2,
+      "word": "THEY",
+      "phone_index": 1,
+      "human_arpa": "EY0",
+      "human_normalized_ipa": "eɪ",
+      "model_target_ipa": "eɪ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9896154902768318,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 3,
+      "word": "ONLY",
+      "phone_index": 0,
+      "human_arpa": "OW1",
+      "human_normalized_ipa": "oʊ",
+      "model_target_ipa": "oʊ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        0,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.983339341585602,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 3,
+      "word": "ONLY",
+      "phone_index": 1,
+      "human_arpa": "N",
+      "human_normalized_ipa": "n",
+      "model_target_ipa": "n",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        0,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.9675660480131651,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 3,
+      "word": "ONLY",
+      "phone_index": 2,
+      "human_arpa": "L",
+      "human_normalized_ipa": "l",
+      "model_target_ipa": "l",
+      "model_accepted_alternatives": [
+        "l̴"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        0,
+        0,
+        2,
+        2,
+        0
+      ],
+      "human_mean_0_2": 0.8,
+      "model_phone_prob": 0.9412842777673417,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "potential_missed_majority_incorrect"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 3,
+      "word": "ONLY",
+      "phone_index": 3,
+      "human_arpa": "IY0",
+      "human_normalized_ipa": "i",
+      "model_target_ipa": "i",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9891808441976898,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 4,
+      "word": "HAVE",
+      "phone_index": 0,
+      "human_arpa": "HH",
+      "human_normalized_ipa": "h",
+      "model_target_ipa": "h",
+      "model_accepted_alternatives": [
+        ""
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9972039906626164,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 4,
+      "word": "HAVE",
+      "phone_index": 1,
+      "human_arpa": "AE0",
+      "human_normalized_ipa": "æ",
+      "model_target_ipa": "æ",
+      "model_accepted_alternatives": [
+        "ə"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.8,
+      "model_phone_prob": 0.979863911253213,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 4,
+      "word": "HAVE",
+      "phone_index": 2,
+      "human_arpa": "V",
+      "human_normalized_ipa": "v",
+      "model_target_ipa": "v",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9641250612923749,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 5,
+      "word": "THEY",
+      "phone_index": 0,
+      "human_arpa": "DH",
+      "human_normalized_ipa": "ð",
+      "model_target_ipa": "ð",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        0,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.8824156349583028,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 5,
+      "word": "THEY",
+      "phone_index": 1,
+      "human_arpa": "EY0",
+      "human_normalized_ipa": "eɪ",
+      "model_target_ipa": "eɪ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.967116190608798,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 6,
+      "word": "OWN",
+      "phone_index": 0,
+      "human_arpa": "OW0",
+      "human_normalized_ipa": "oʊ",
+      "model_target_ipa": "oʊ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.9180439793402047,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 6,
+      "word": "OWN",
+      "phone_index": 1,
+      "human_arpa": "N",
+      "human_normalized_ipa": "n",
+      "model_target_ipa": "n",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.2,
+      "model_phone_prob": 0.7035432459892537,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "disputed_or_accent_flagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 7,
+      "word": "PROPERTY",
+      "phone_index": 0,
+      "human_arpa": "P",
+      "human_normalized_ipa": "p",
+      "model_target_ipa": "p",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9692035528596785,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 7,
+      "word": "PROPERTY",
+      "phone_index": 1,
+      "human_arpa": "R",
+      "human_normalized_ipa": "ɹ",
+      "model_target_ipa": "ɹ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.9239019980543398,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 7,
+      "word": "PROPERTY",
+      "phone_index": 2,
+      "human_arpa": "AH1",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ɑ",
+      "model_accepted_alternatives": [],
+      "mapping": "BLOCKED_reference_variant",
+      "human_scores_5": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.8953264272720035,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "BLOCKED_reference_variant"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 7,
+      "word": "PROPERTY",
+      "phone_index": 3,
+      "human_arpa": "P",
+      "human_normalized_ipa": "p",
+      "model_target_ipa": "p",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9824817095184418,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 7,
+      "word": "PROPERTY",
+      "phone_index": 4,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ɜ˞",
+      "model_accepted_alternatives": [
+        "ə˞"
+      ],
+      "mapping": "BLOCKED_reference_variant",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9664784942759982,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "BLOCKED_reference_variant"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 7,
+      "word": "PROPERTY",
+      "phone_index": 5,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ɾ",
+        "d"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9381261870189597,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 7,
+      "word": "PROPERTY",
+      "phone_index": 6,
+      "human_arpa": "IY0",
+      "human_normalized_ipa": "i",
+      "model_target_ipa": "i",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9810827536553851,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 8,
+      "word": "AT",
+      "phone_index": 0,
+      "human_arpa": "AE0",
+      "human_normalized_ipa": "æ",
+      "model_target_ipa": "æ",
+      "model_accepted_alternatives": [
+        "ə"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.8594701024676761,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "potential_false_warning_unanimous_accepted"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 8,
+      "word": "AT",
+      "phone_index": 1,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ʔ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9312737763701058,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 9,
+      "word": "RISK",
+      "phone_index": 0,
+      "human_arpa": "R",
+      "human_normalized_ipa": "ɹ",
+      "model_target_ipa": "ɹ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9704291419306746,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 9,
+      "word": "RISK",
+      "phone_index": 1,
+      "human_arpa": "IH0",
+      "human_normalized_ipa": "ɪ",
+      "model_target_ipa": "ɪ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.971404361514398,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 9,
+      "word": "RISK",
+      "phone_index": 2,
+      "human_arpa": "S",
+      "human_normalized_ipa": "s",
+      "model_target_ipa": "s",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9885053339427452,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004570010",
+      "word_index": 9,
+      "word": "RISK",
+      "phone_index": 3,
+      "human_arpa": "K",
+      "human_normalized_ipa": "k",
+      "model_target_ipa": "k",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9906694592743118,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 0,
+      "word": "BUT",
+      "phone_index": 0,
+      "human_arpa": "B",
+      "human_normalized_ipa": "b",
+      "model_target_ipa": "b",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9770497586044776,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 0,
+      "word": "BUT",
+      "phone_index": 1,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.8373716932927648,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 0,
+      "word": "BUT",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ʔ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9154883229934742,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 1,
+      "word": "THAT'S",
+      "phone_index": 0,
+      "human_arpa": "DH",
+      "human_normalized_ipa": "ð",
+      "model_target_ipa": "ð",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        1,
+        0,
+        0,
+        1,
+        0
+      ],
+      "human_mean_0_2": 0.4,
+      "model_phone_prob": 0.660084901129233,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "human_majority_incorrect_flagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 1,
+      "word": "THAT'S",
+      "phone_index": 1,
+      "human_arpa": "AE0",
+      "human_normalized_ipa": "æ",
+      "model_target_ipa": "æ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.208564697945073,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "potential_false_warning_unanimous_accepted"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 1,
+      "word": "THAT'S",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.2,
+      "model_phone_prob": 0.41411865101268525,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "disputed_or_accent_flagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 1,
+      "word": "THAT'S",
+      "phone_index": 3,
+      "human_arpa": "S",
+      "human_normalized_ipa": "s",
+      "model_target_ipa": "s",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        0,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.2,
+      "model_phone_prob": 0.8684323374944525,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 2,
+      "word": "ANOTHER",
+      "phone_index": 0,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9515761373201257,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 2,
+      "word": "ANOTHER",
+      "phone_index": 1,
+      "human_arpa": "N",
+      "human_normalized_ipa": "n",
+      "model_target_ipa": "n",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9879988632604146,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 2,
+      "word": "ANOTHER",
+      "phone_index": 2,
+      "human_arpa": "AH1",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [
+        "ʌ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9472520782025837,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 2,
+      "word": "ANOTHER",
+      "phone_index": 3,
+      "human_arpa": "DH",
+      "human_normalized_ipa": "ð",
+      "model_target_ipa": "ð",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.8636819020177016,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "disputed_or_accent_flagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 2,
+      "word": "ANOTHER",
+      "phone_index": 4,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ɜ˞",
+      "model_accepted_alternatives": [
+        "ə˞"
+      ],
+      "mapping": "BLOCKED_reference_variant",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9642514068447048,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "BLOCKED_reference_variant"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 3,
+      "word": "STORY",
+      "phone_index": 0,
+      "human_arpa": "S",
+      "human_normalized_ipa": "s",
+      "model_target_ipa": "s",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9984960974601368,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 3,
+      "word": "STORY",
+      "phone_index": 1,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9911189545695878,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 3,
+      "word": "STORY",
+      "phone_index": 2,
+      "human_arpa": "AO1",
+      "human_normalized_ipa": "ɔ",
+      "model_target_ipa": "ɔ",
+      "model_accepted_alternatives": [
+        "ɑ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9927488268004486,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 3,
+      "word": "STORY",
+      "phone_index": 3,
+      "human_arpa": "R",
+      "human_normalized_ipa": "ɹ",
+      "model_target_ipa": "ɹ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9852041850763811,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 3,
+      "word": "STORY",
+      "phone_index": 4,
+      "human_arpa": "IY0",
+      "human_normalized_ipa": "i",
+      "model_target_ipa": "i",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9941365881558427,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 4,
+      "word": "ALTOGETHER",
+      "phone_index": 0,
+      "human_arpa": "AO2",
+      "human_normalized_ipa": "ɔ",
+      "model_target_ipa": "ɔ",
+      "model_accepted_alternatives": [
+        "ɑ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.984925357196136,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 4,
+      "word": "ALTOGETHER",
+      "phone_index": 1,
+      "human_arpa": "L",
+      "human_normalized_ipa": "l̴",
+      "model_target_ipa": "l̴",
+      "model_accepted_alternatives": [
+        "l"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.7998704338007826,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 4,
+      "word": "ALTOGETHER",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.8821318783517671,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 4,
+      "word": "ALTOGETHER",
+      "phone_index": 3,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9231743958392583,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 4,
+      "word": "ALTOGETHER",
+      "phone_index": 4,
+      "human_arpa": "G",
+      "human_normalized_ipa": "g",
+      "model_target_ipa": "g",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9322842723810391,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 4,
+      "word": "ALTOGETHER",
+      "phone_index": 5,
+      "human_arpa": "EH0",
+      "human_normalized_ipa": "ɛ",
+      "model_target_ipa": "ɛ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.893901953760452,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 4,
+      "word": "ALTOGETHER",
+      "phone_index": 6,
+      "human_arpa": "DH",
+      "human_normalized_ipa": "ð",
+      "model_target_ipa": "ð",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.7655474327946087,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "004610037",
+      "word_index": 4,
+      "word": "ALTOGETHER",
+      "phone_index": 7,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ɜ˞",
+      "model_accepted_alternatives": [
+        "ə˞"
+      ],
+      "mapping": "BLOCKED_reference_variant",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.840953068212666,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "BLOCKED_reference_variant"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 0,
+      "word": "HE",
+      "phone_index": 0,
+      "human_arpa": "HH",
+      "human_normalized_ipa": "h",
+      "model_target_ipa": "h",
+      "model_accepted_alternatives": [
+        ""
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9981928432715528,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 0,
+      "word": "HE",
+      "phone_index": 1,
+      "human_arpa": "IY0",
+      "human_normalized_ipa": "i",
+      "model_target_ipa": "i",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9970145079083833,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 1,
+      "word": "WAS",
+      "phone_index": 0,
+      "human_arpa": "W",
+      "human_normalized_ipa": "w",
+      "model_target_ipa": "w",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9959756961683689,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 1,
+      "word": "WAS",
+      "phone_index": 1,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ɑ",
+      "model_accepted_alternatives": [
+        "ə"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9632443469202803,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 1,
+      "word": "WAS",
+      "phone_index": 2,
+      "human_arpa": "Z",
+      "human_normalized_ipa": "z",
+      "model_target_ipa": "z",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.8,
+      "model_phone_prob": 0.9455824051772189,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 2,
+      "word": "THOUGHT",
+      "phone_index": 0,
+      "human_arpa": "TH",
+      "human_normalized_ipa": "θ",
+      "model_target_ipa": "θ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        1,
+        2,
+        1,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.7383414683587866,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 2,
+      "word": "THOUGHT",
+      "phone_index": 1,
+      "human_arpa": "AO0",
+      "human_normalized_ipa": "ɔ",
+      "model_target_ipa": "ɔ",
+      "model_accepted_alternatives": [
+        "ɑ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.8,
+      "model_phone_prob": 0.8868380866387594,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 2,
+      "word": "THOUGHT",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ɾ",
+        "d"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.8053104313746192,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 3,
+      "word": "OF",
+      "phone_index": 0,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.9053564478562088,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 3,
+      "word": "OF",
+      "phone_index": 1,
+      "human_arpa": "V",
+      "human_normalized_ipa": "v",
+      "model_target_ipa": "v",
+      "model_accepted_alternatives": [
+        ""
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9390764786848329,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 4,
+      "word": "THAT",
+      "phone_index": 0,
+      "human_arpa": "DH",
+      "human_normalized_ipa": "ð",
+      "model_target_ipa": "ð",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        0,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.8450081558309918,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "disputed_or_accent_flagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 4,
+      "word": "THAT",
+      "phone_index": 1,
+      "human_arpa": "AE0",
+      "human_normalized_ipa": "æ",
+      "model_target_ipa": "æ",
+      "model_accepted_alternatives": [
+        "ə"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.8130695217405199,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 4,
+      "word": "THAT",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ʔ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9350391135229299,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 5,
+      "word": "HIGHLY",
+      "phone_index": 0,
+      "human_arpa": "HH",
+      "human_normalized_ipa": "h",
+      "model_target_ipa": "h",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.99733494004453,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 5,
+      "word": "HIGHLY",
+      "phone_index": 1,
+      "human_arpa": "AY1",
+      "human_normalized_ipa": "aɪ",
+      "model_target_ipa": "aɪ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        0,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.97731093346529,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 5,
+      "word": "HIGHLY",
+      "phone_index": 2,
+      "human_arpa": "L",
+      "human_normalized_ipa": "l",
+      "model_target_ipa": "l",
+      "model_accepted_alternatives": [
+        "l̴"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        0,
+        2
+      ],
+      "human_mean_0_2": 1.6,
+      "model_phone_prob": 0.9587352647435438,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "005630017",
+      "word_index": 5,
+      "word": "HIGHLY",
+      "phone_index": 3,
+      "human_arpa": "IY0",
+      "human_normalized_ipa": "i",
+      "model_target_ipa": "i",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        0,
+        0,
+        2
+      ],
+      "human_mean_0_2": 1.2,
+      "model_phone_prob": 0.9028428994780039,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 0,
+      "word": "WHO",
+      "phone_index": 0,
+      "human_arpa": "HH",
+      "human_normalized_ipa": "h",
+      "model_target_ipa": "h",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9979247663796814,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 0,
+      "word": "WHO",
+      "phone_index": 1,
+      "human_arpa": "UW0",
+      "human_normalized_ipa": "u",
+      "model_target_ipa": "u",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9934754303756927,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 1,
+      "word": "KNOWS",
+      "phone_index": 0,
+      "human_arpa": "N",
+      "human_normalized_ipa": "n",
+      "model_target_ipa": "n",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9908017071941583,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 1,
+      "word": "KNOWS",
+      "phone_index": 1,
+      "human_arpa": "OW0",
+      "human_normalized_ipa": "oʊ",
+      "model_target_ipa": "oʊ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        1,
+        0,
+        2
+      ],
+      "human_mean_0_2": 1.4,
+      "model_phone_prob": 0.9056793663813035,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 1,
+      "word": "KNOWS",
+      "phone_index": 2,
+      "human_arpa": "Z",
+      "human_normalized_ipa": "z",
+      "model_target_ipa": "z",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        1,
+        1,
+        1,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.4,
+      "model_phone_prob": 0.8972481081685214,
+      "model_coaching_flag": true,
+      "model_coaching_kinds": [
+        "substitution"
+      ],
+      "case": "disputed_or_accent_flagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 2,
+      "word": "WHAT",
+      "phone_index": 0,
+      "human_arpa": "W",
+      "human_normalized_ipa": "w",
+      "model_target_ipa": "w",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.996925269979976,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 2,
+      "word": "WHAT",
+      "phone_index": 1,
+      "human_arpa": "AH0",
+      "human_normalized_ipa": "ə",
+      "model_target_ipa": "ə",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.8,
+      "model_phone_prob": 0.964662894382972,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 2,
+      "word": "WHAT",
+      "phone_index": 2,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        "ʔ"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9778143626580129,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 3,
+      "word": "TO",
+      "phone_index": 0,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        1,
+        2,
+        2
+      ],
+      "human_mean_0_2": 1.8,
+      "model_phone_prob": 0.9715355445193624,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "disputed_or_accent_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 3,
+      "word": "TO",
+      "phone_index": 1,
+      "human_arpa": "UW0",
+      "human_normalized_ipa": "u",
+      "model_target_ipa": "u",
+      "model_accepted_alternatives": [
+        "ə"
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9887765925546523,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 4,
+      "word": "EXPECT",
+      "phone_index": 0,
+      "human_arpa": "IH0",
+      "human_normalized_ipa": "ɪ",
+      "model_target_ipa": "ɪ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9826525018668352,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 4,
+      "word": "EXPECT",
+      "phone_index": 1,
+      "human_arpa": "K",
+      "human_normalized_ipa": "k",
+      "model_target_ipa": "k",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9973895236228273,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 4,
+      "word": "EXPECT",
+      "phone_index": 2,
+      "human_arpa": "S",
+      "human_normalized_ipa": "s",
+      "model_target_ipa": "s",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9980554122036653,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 4,
+      "word": "EXPECT",
+      "phone_index": 3,
+      "human_arpa": "P",
+      "human_normalized_ipa": "p",
+      "model_target_ipa": "p",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        0,
+        1,
+        0,
+        0,
+        2
+      ],
+      "human_mean_0_2": 0.6,
+      "model_phone_prob": 0.9776925349603298,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "potential_missed_majority_incorrect"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 4,
+      "word": "EXPECT",
+      "phone_index": 4,
+      "human_arpa": "EH1",
+      "human_normalized_ipa": "ɛ",
+      "model_target_ipa": "ɛ",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        0,
+        0,
+        0,
+        0,
+        2
+      ],
+      "human_mean_0_2": 0.4,
+      "model_phone_prob": 0.9768777276463781,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "potential_missed_majority_incorrect"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 4,
+      "word": "EXPECT",
+      "phone_index": 5,
+      "human_arpa": "K",
+      "human_normalized_ipa": "k",
+      "model_target_ipa": "k",
+      "model_accepted_alternatives": [],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9983619925017615,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    },
+    {
+      "clip": "005670043",
+      "word_index": 4,
+      "word": "EXPECT",
+      "phone_index": 6,
+      "human_arpa": "T",
+      "human_normalized_ipa": "t",
+      "model_target_ipa": "t",
+      "model_accepted_alternatives": [
+        ""
+      ],
+      "mapping": "one_to_one_exact_or_declared_alt",
+      "human_scores_5": [
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "human_mean_0_2": 2,
+      "model_phone_prob": 0.9961811100356559,
+      "model_coaching_flag": false,
+      "model_coaching_kinds": [],
+      "case": "unanimous_accepted_unflagged"
+    }
+  ],
+  "model_events": [
+    {
+      "clip": "001570024",
+      "unit": "phone",
+      "word_index": 1,
+      "phone_index": 6,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "001570024",
+      "unit": "word_stress",
+      "word_index": 1,
+      "kinds": [
+        "stress"
+      ]
+    },
+    {
+      "clip": "003060002",
+      "unit": "phone",
+      "word_index": 0,
+      "phone_index": 3,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "003060002",
+      "unit": "phone",
+      "word_index": 1,
+      "phone_index": 1,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "003060002",
+      "unit": "phone",
+      "word_index": 2,
+      "phone_index": 1,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "003060002",
+      "unit": "phone",
+      "word_index": 6,
+      "phone_index": 2,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "004570010",
+      "unit": "phone",
+      "word_index": 6,
+      "phone_index": 1,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "004570010",
+      "unit": "phone",
+      "word_index": 7,
+      "phone_index": 2,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "004570010",
+      "unit": "phone",
+      "word_index": 8,
+      "phone_index": 0,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "004610037",
+      "unit": "phone",
+      "word_index": 1,
+      "phone_index": 0,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "004610037",
+      "unit": "phone",
+      "word_index": 1,
+      "phone_index": 1,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "004610037",
+      "unit": "phone",
+      "word_index": 1,
+      "phone_index": 2,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "004610037",
+      "unit": "phone",
+      "word_index": 2,
+      "phone_index": 3,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "004610037",
+      "unit": "pause_mid_phrase",
+      "word_index": 3,
+      "start": 2.79,
+      "end": 3.75
+    },
+    {
+      "clip": "005630017",
+      "unit": "phone",
+      "word_index": 4,
+      "phone_index": 0,
+      "kinds": [
+        "substitution"
+      ]
+    },
+    {
+      "clip": "005670043",
+      "unit": "phone",
+      "word_index": 1,
+      "phone_index": 2,
+      "kinds": [
+        "substitution"
+      ]
+    }
+  ]
+}

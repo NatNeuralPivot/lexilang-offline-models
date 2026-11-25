@@ -1,0 +1,60 @@
+{
+  "input": {
+    "id": "005630017",
+    "audio_sha256": "c70dd71e1bc20414ac69ebf734e016e0500023b358c3f427b49f04ef9e5231a5",
+    "input_manifest_sha256": "41d0596090363e28b0f857323b7e1e79bd9048ee5c750d1ee2cac6f27b1266f7"
+  },
+  "method": "upstream balanced, unchanged thresholds",
+  "items": [
+    {
+      "schema_version": 2,
+      "schema_minor": 6,
+      "kind": "substitution",
+      "word": "THAT",
+      "word_index": 4,
+      "syllable_index": 0,
+      "phone_index": 0,
+      "position": "initial",
+      "expected": "ð",
+      "heard": null,
+      "expected_ipa": "ð",
+      "heard_ipa": null,
+      "diff_keys": [],
+      "error_prob": 0.5987,
+      "prob": 0.845,
+      "confidence": null,
+      "start": 2.29,
+      "end": 2.31,
+      "gate": {
+        "error_prob": 0.5987,
+        "candidate": "s",
+        "heard_post": 0.309,
+        "log_ratio": 4.29
+      },
+      "features": []
+    },
+    {
+      "schema_version": 2,
+      "schema_minor": 6,
+      "kind": "mispronounced_word",
+      "word": "THAT",
+      "word_index": 4,
+      "syllable_index": null,
+      "phone_index": null,
+      "position": null,
+      "expected": "THAT",
+      "heard": null,
+      "expected_ipa": null,
+      "heard_ipa": null,
+      "diff_keys": [],
+      "error_prob": 0.5987,
+      "prob": 0.8787,
+      "confidence": null,
+      "start": 2.29,
+      "end": 2.51,
+      "gate": null,
+      "n_sounds_flagged": 1,
+      "features": []
+    }
+  ]
+}
