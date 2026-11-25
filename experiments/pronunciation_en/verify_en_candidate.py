@@ -10,7 +10,7 @@ from pathlib import Path
 
 from build_en_candidate import EXPECTED_SCORING_FILES, EXTRA_LEXICONS, REVISION, digest_file
 
-FILE = re.compile(r"^[a-z0-9][a-z0-9._-]{0,120}$")
+FILE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,120}$")
 
 
 def verify(candidate: Path) -> dict:
