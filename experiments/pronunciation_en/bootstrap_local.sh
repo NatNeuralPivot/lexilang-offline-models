@@ -20,7 +20,11 @@ fi
 echo "Running synthetic local unit tests"
 python3 -m unittest discover -s "$here" -p "test_*.py" -v
 echo "Preparing immutable dictionary + calibration candidate"
-python3 "$here/build_en_candidate.py" --pronunciada "$upstream" --out "$candidate"
+if [[ -e "$candidate" ]]; then
+  echo "Reusing existing immutable candidate (integrity will be verified)"
+else
+  python3 "$here/build_en_candidate.py" --pronunciada "$upstream" --out "$candidate"
+fi
 python3 "$here/verify_en_candidate.py" --candidate "$candidate"
 echo
 echo "Candidate at: $candidate"
