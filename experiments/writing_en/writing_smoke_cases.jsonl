@@ -1,0 +1,20 @@
+{"id":"A1-001","level":"A1","type":"error","text":"She go to school every day.","hint":"verb agreement"}
+{"id":"A1-002","level":"A1","type":"error","text":"I has two books.","hint":"subject–verb agreement"}
+{"id":"A1-003","level":"A1","type":"error","text":"He is a honest man.","hint":"article"}
+{"id":"A2-001","level":"A2","type":"error","text":"There is many reasons to disagree.","hint":"there are"}
+{"id":"A2-002","level":"A2","type":"error","text":"I have went to the library yesterday.","hint":"past tense"}
+{"id":"B1-001","level":"B1","type":"error","text":"I look forward to meet you.","hint":"gerund after look forward to"}
+{"id":"B1-002","level":"B1","type":"error","text":"Despite of the rain, we continued.","hint":"despite without of"}
+{"id":"B2-001","level":"B2","type":"error","text":"The results was inconclusive.","hint":"number agreement"}
+{"id":"B2-002","level":"B2","type":"error","text":"If I would have known, I would have acted differently.","hint":"past counterfactual"}
+{"id":"C1-001","level":"C1","type":"error","text":"The policy was implemented last year, despite it had faced considerable opposition.","hint":"despite vs although"}
+{"id":"C1-002","level":"C1","type":"error","text":"The evidence suggest that the intervention had a limited impact.","hint":"subject–verb agreement"}
+{"id":"C2-001","level":"C2","type":"error","text":"Neither the methodology nor the findings warrants such a sweeping conclusion.","hint":"agreement with plural findings"}
+{"id":"A1-KEEP","level":"A1","type":"keep","text":"She goes to school every day.","hint":"already grammatical"}
+{"id":"B2-KEEP","level":"B2","type":"keep","text":"I would rather not discuss it.","hint":"preserve valid idiomatic expression"}
+{"id":"C1-KEEP","level":"C1","type":"keep","text":"Nevertheless, the findings warrant further investigation.","hint":"formal prose"}
+{"id":"C2-KEEP","level":"C2","type":"keep","text":"Had the evidence been more robust, the committee might have reached a different conclusion.","hint":"valid inversion"}
+{"id":"UK-KEEP","level":"C1","type":"keep","text":"The organisation will analyse the colour distribution.","hint":"preserve British English"}
+{"id":"NAME-KEEP","level":"B2","type":"keep","text":"Dr. O’Connor works at St. John’s College.","hint":"preserve names, Unicode apostrophes"}
+{"id":"STYLE-KEEP","level":"C2","type":"keep","text":"While the evidence remains equivocal, it would be premature to infer causality.","hint":"do not over-correct style"}
+{"id":"FRAGMENT-KEEP","level":"B2","type":"keep","text":"Not necessarily.","hint":"grammatical conversational fragment"}
