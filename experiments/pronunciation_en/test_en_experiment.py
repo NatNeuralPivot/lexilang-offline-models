@@ -15,6 +15,8 @@ sys.path.insert(0, str(HERE))
 from build_en_candidate import (build, check_dictionary, EXPECTED_SCORING_FILES,
                                 REVISION, EXTRA_LEXICONS)
 from recalibrate_expert_scores import calibrate, read_rows
+from verify_en_candidate import verify
+from lesson_lexicon_audit import coverage, collect_prompts
 
 
 class CandidateBuilderTests(unittest.TestCase):
@@ -39,7 +41,7 @@ class CandidateBuilderTests(unittest.TestCase):
                 target.write_bytes(b"fixture-not-a-model\n")
             files.append({
                 "path": name, "licence": "Apache-2.0",
-                "source": "test-only", "share_alike_question": name == "prosody/stress_v3.onnx"
+                "source": "test-only", "share_alike_question": name in {"prosody/stress_v3.json", "prosody/stress_v3.onnx"}
             })
         (self.root / "LICENSES_SHIPPED.json").write_text(json.dumps({"en": files}), "utf-8")
         for name in EXTRA_LEXICONS:
@@ -57,6 +59,7 @@ class CandidateBuilderTests(unittest.TestCase):
         self.assertFalse(inventory["gates"]["redistribution_approved"])
         self.assertIn("prosody/stress_v3.onnx", inventory["license_issues_to_resolve"])
         self.assertEqual(inventory["lexicon_stats"]["entries"], 2)
+        self.assertEqual(verify(self.output)["files"], 24)
         self.assertEqual(inventory["lexicon_stats"]["variants_above_primary"], 1)
         for row in inventory["assets"]:
             self.assertTrue((self.output / "assets" / row["asset_name"]).is_file())
@@ -131,6 +134,14 @@ class ExpertCalibrationTests(unittest.TestCase):
         self.assertIn(report["status"], ["research_review_required", "rejected_holdout_regression"])
         self.assertGreater(report["training"]["samples"], report["held_out"]["samples"])
 
+    def test_asr_confidence_is_not_accepted_as_acoustic_calibration(self):
+        rows = self.samples()
+        for row in rows:
+            row["source_engine"] = "Apple_Speech_ASR_confidence"
+        with self.assertRaisesRegex(ValueError, "not an acoustic"):
+            calibrate(rows, min_train=50, min_test=25,
+                      min_train_speakers=8, min_test_speakers=4)
+
     def test_speaker_leakage_blocks_fitting(self):
         rows = self.samples()
         rows[100]["speaker_id"] = rows[0]["speaker_id"]
@@ -174,6 +185,19 @@ class ExpertCalibrationTests(unittest.TestCase):
             self._tempdir = tempfile.TemporaryDirectory()
             self.addCleanup(self._tempdir.cleanup)
         return self._tempdir.name
+
+class CourseCoverageTests(unittest.TestCase):
+    def test_c1_c2_oov_report_is_only_dictionary_coverage(self):
+        data = {"items": [
+            {"cefr": "C1", "prompt_en": "The deliberate extrapolation is controversial."},
+            {"cefr": "C2", "prompt_en": "Methodological uncertainty is inevitable."}
+        ]}
+        prompts = collect_prompts(data)
+        result = coverage({"the", "deliberate", "is", "inevitable"},
+                          prompts)
+        self.assertEqual(result["status"], "lexicon_coverage_not_pronunciation_accuracy")
+        self.assertIn("extrapolation", result["levels"]["C1"]["top_OOV"])
+        self.assertIn("methodological", result["levels"]["C2"]["top_OOV"])
 
 
 if __name__ == "__main__":
