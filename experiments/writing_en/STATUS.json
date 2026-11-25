@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-11-25",
+  "status": "source_and_tests_committed_local_install_pending",
+  "model_candidate": "deepquillapp/gector-grammar",
+  "model_type": "GECToR RoBERTa ONNX English grammar edits",
+  "license_declared": "Apache-2.0",
+  "license_independently_approved": false,
+  "claimed_upstream_files": [
+    "model.onnx",
+    "tokenizer.json",
+    "labels.json",
+    "verb-form-vocab.txt"
+  ],
+  "upstream_size_unverified_local_bytes": 264000000,
+  "upstream_size_note": "Approximate size from Hugging Face files listing; exact bytes measured only by local staging script.",
+  "executed_in_current_session": {
+    "downloaded_model": false,
+    "verified_model_sha256": false,
+    "ran_python_tests": false,
+    "ran_swift_tests": false,
+    "ran_onnx_inference": false,
+    "ran_iphone_tests": false
+  },
+  "repository_status": {
+    "public_model_branch": "experiment/offline-writing-gec",
+    "private_app_branch": "experiment/offline-writing-gec",
+    "production_main_modified": false,
+    "model_releases_created": false,
+    "packs_registry_modified": false
+  },
+  "quality_gates": {
+    "false_positive_rate_measured": false,
+    "expert_c1_c2_feedback_measured": false,
+    "device_memory_measured": false,
+    "distribution_legally_approved": false
+  },
+  "next_action": "Codex on Mac runs Python+Swift tests, then actual four-file model staging and model inference; commit QA evidence only to experiment branch."
+}
