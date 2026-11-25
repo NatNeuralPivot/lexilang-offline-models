@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "created_at": "2026-11-25",
+  "status": "experimental_not_release_ready",
+  "source": {
+    "repo": "moglearn/pronunciada",
+    "commit": "4619a298e5e2de927120122585683d18eda1f7c4",
+    "english_scoring_files_in_upstream_inventory": 22,
+    "english_lexicon_files": 2
+  },
+  "repository_branch": "experiment/pronunciation-en-lexicon-calibration",
+  "verified_now": {
+    "github_files_committed": true,
+    "source_inventory_inspected": true,
+    "main_modified": false
+  },
+  "not_verified_now": {
+    "local_unit_tests_executed": false,
+    "real_24_file_candidate_built": false,
+    "real_sha256_measured": false,
+    "ios_runtime_implemented": false,
+    "iphone_inference_tested": false,
+    "expert_calibration_benchmarked": false
+  },
+  "license_holds": [
+    "prosody/stress_v3.json",
+    "prosody/stress_v3.onnx"
+  ],
+  "model_weights_published": false,
+  "public_release_created": false,
+  "next_local_commands": [
+    "python3 -m unittest discover -s experiments/pronunciation_en -p 'test_*.py' -v",
+    "bash experiments/pronunciation_en/bootstrap_local.sh"
+  ],
+  "note": "Scripts and tests are committed but have not been run against actual upstream assets in this session. No human-rated score or model accuracy is claimed."
+}
