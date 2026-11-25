@@ -35,7 +35,7 @@ EXPECTED_SCORING_FILES = {
     "prosody/stress_v3.json", "prosody/stress_v3.zemb.npz",
     "prosody/stress_v3.onnx"
 }
-VALID = re.compile(r"^[a-z0-9][a-z0-9._-]{0,120}$")
+VALID = re.compile(r"^[A-Za-z0-9][A-Za-z0-9._-]{0,120}$")
 MAX_FILE_BYTES = 100_000_000  # No full ZIPA ONNX weights in this candidate!
 
 
