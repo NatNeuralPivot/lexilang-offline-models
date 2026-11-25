@@ -143,6 +143,10 @@ def calibrate(rows: list[dict], *,
     engines = {r["source_engine"] for r in rows}
     if len(units) != 1 or len(engines) != 1:
         raise ValueError("Mixed units or acoustic models; must calibrate separately")
+    engine = next(iter(engines)).lower()
+    if any(term in engine for term in ("asr", "apple_speech", "speechrecognition",
+                                       "transcript", "edit_distance", "word_error_rate")):
+        raise ValueError("ASR/transcript confidence is not an acoustic pronunciation score")
     # Defensive validation also applies to callers not using read_rows().
     if any(not math.isfinite(r["score"]) or not 0 <= r["score"] <= 1 or
            r["label"] not in {0, 1} or r["split"] not in {"train", "test"} for r in rows):
