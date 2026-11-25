@@ -1,0 +1,396 @@
+{
+  "id": "C1-KEEP",
+  "original": "Nevertheless, the findings warrant further investigation.",
+  "revised_text": "Nevertheless, the findings warrant further investigation.",
+  "original_sha256": "b88c272194ec6de617f100eac71a07364a0519bb13005e3b2ccaa3ef492fcf6e",
+  "sentence_error_probability": 0.004072821233421564,
+  "tags": [
+    {
+      "word_index": -1,
+      "word": "$START",
+      "first_subtoken": 1,
+      "tag": "$KEEP",
+      "label_probability": 0.9999620914459229,
+      "error_probability": 5.473549390444532e-05,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9999620914459229
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 8.784852980170399e-06
+        },
+        {
+          "tag": "$APPEND_2",
+          "probability": 8.392011295654811e-06
+        },
+        {
+          "tag": "$APPEND_1",
+          "probability": 3.396171223357669e-06
+        },
+        {
+          "tag": "$APPEND_3",
+          "probability": 2.4833630050125066e-06
+        }
+      ]
+    },
+    {
+      "word_index": 0,
+      "word": "Nevertheless,",
+      "first_subtoken": 2,
+      "tag": "$KEEP",
+      "label_probability": 0.9993150234222412,
+      "error_probability": 0.00046905718045309186,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9993150234222412
+        },
+        {
+          "tag": "$TRANSFORM_CASE_LOWER",
+          "probability": 0.0002415904455119744
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.00017562623543199152
+        },
+        {
+          "tag": "$REPLACE_However",
+          "probability": 9.526258509140462e-05
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 7.064786041155457e-05
+        }
+      ]
+    },
+    {
+      "word_index": 1,
+      "word": "the",
+      "first_subtoken": 4,
+      "tag": "$KEEP",
+      "label_probability": 0.9997871518135071,
+      "error_probability": 0.00022720190463587642,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9997871518135071
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 9.50963149080053e-05
+        },
+        {
+          "tag": "$APPEND_overall",
+          "probability": 1.2951012649864424e-05
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 9.461907211516518e-06
+        },
+        {
+          "tag": "$APPEND_other",
+          "probability": 7.786322385072708e-06
+        }
+      ]
+    },
+    {
+      "word_index": 2,
+      "word": "findings",
+      "first_subtoken": 5,
+      "tag": "$KEEP",
+      "label_probability": 0.9991827607154846,
+      "error_probability": 0.0007175447535701096,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9991827607154846
+        },
+        {
+          "tag": "$APPEND_may",
+          "probability": 0.00015831869677640498
+        },
+        {
+          "tag": "$TRANSFORM_CASE_CAPITAL",
+          "probability": 0.0001336985151283443
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 7.985346019268036e-05
+        },
+        {
+          "tag": "$APPEND_still",
+          "probability": 6.19262209511362e-05
+        }
+      ]
+    },
+    {
+      "word_index": 3,
+      "word": "warrant",
+      "first_subtoken": 6,
+      "tag": "$KEEP",
+      "label_probability": 0.9952974915504456,
+      "error_probability": 0.004072821233421564,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9952974915504456
+        },
+        {
+          "tag": "$APPEND_a",
+          "probability": 0.0020380227360874414
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VB_VBN",
+          "probability": 0.001253490918315947
+        },
+        {
+          "tag": "$APPEND_the",
+          "probability": 0.0006505782366730273
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VB_VBZ",
+          "probability": 0.00022017648734617978
+        }
+      ]
+    },
+    {
+      "word_index": 4,
+      "word": "further",
+      "first_subtoken": 7,
+      "tag": "$KEEP",
+      "label_probability": 0.9999232292175293,
+      "error_probability": 0.00018392341735307127,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9999232292175293
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 2.723665784287732e-05
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 2.3218408387037925e-05
+        },
+        {
+          "tag": "$APPEND_the",
+          "probability": 2.324562501598848e-06
+        },
+        {
+          "tag": "$TRANSFORM_CASE_CAPITAL",
+          "probability": 1.8988619103765814e-06
+        }
+      ]
+    },
+    {
+      "word_index": 5,
+      "word": "investigation.",
+      "first_subtoken": 8,
+      "tag": "$KEEP",
+      "label_probability": 0.9993808269500732,
+      "error_probability": 0.00048800036893226206,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9993808269500732
+        },
+        {
+          "tag": "$APPEND_.",
+          "probability": 0.0004056665929965675
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 4.714819442597218e-05
+        },
+        {
+          "tag": "$REPLACE_investigation",
+          "probability": 2.2552028895006515e-05
+        },
+        {
+          "tag": "$APPEND_…",
+          "probability": 1.8306172933080234e-05
+        }
+      ]
+    }
+  ],
+  "proposals": [],
+  "rejected": [],
+  "input_ids": [
+    0,
+    50265,
+    12888,
+    6,
+    5,
+    4139,
+    5321,
+    617,
+    803,
+    4,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "attention_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "label_probs_shape": [
+    1,
+    80,
+    5000
+  ],
+  "error_probs_shape": [
+    1,
+    80
+  ],
+  "raw_label_probs_sha256": "44244fbb4e8cc0202ff98693574b8923c60261c8d9067cfeea5d6cb6d4d0fee6",
+  "raw_error_probs_sha256": "1d8efe6a55ed34fd7c6b9c14c89cd00dbcfecb9e2a2d6e95072268c20dab057b"
+}

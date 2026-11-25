@@ -1,0 +1,11 @@
+{
+  "load_seconds": 0.30549112521111965,
+  "first_model_ms": 12.924666050821543,
+  "first_preview_ms": 17.834790982306004,
+  "remaining_model_ms_min": 12.043124996125698,
+  "remaining_model_ms_max": 40.03791697323322,
+  "remaining_preview_ms_min": 14.266041107475758,
+  "remaining_preview_ms_max": 43.20845892652869,
+  "peak_rss_bytes": 1000177664,
+  "peak_rss_mib": 953.84375
+}

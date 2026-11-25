@@ -1,0 +1,408 @@
+{
+  "id": "B1-002",
+  "original": "Despite of the rain, we continued.",
+  "revised_text": "Despite the rain, we continued.",
+  "original_sha256": "d016b18c46874c76ff21e8f671a5e02aa1245ff9f829239a404d0678b281715d",
+  "sentence_error_probability": 0.8230958580970764,
+  "tags": [
+    {
+      "word_index": -1,
+      "word": "$START",
+      "first_subtoken": 1,
+      "tag": "$KEEP",
+      "label_probability": 0.9999756813049316,
+      "error_probability": 1.191129285871284e-05,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9999756813049316
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 6.775629572075559e-06
+        },
+        {
+          "tag": "$APPEND_For",
+          "probability": 3.627853857324226e-06
+        },
+        {
+          "tag": "$APPEND_In",
+          "probability": 2.4113560357363895e-06
+        },
+        {
+          "tag": "$APPEND_2",
+          "probability": 2.1154992282390594e-06
+        }
+      ]
+    },
+    {
+      "word_index": 0,
+      "word": "Despite",
+      "first_subtoken": 2,
+      "tag": "$KEEP",
+      "label_probability": 0.9969396591186523,
+      "error_probability": 0.0020009148865938187,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9969396591186523
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0012996598379686475
+        },
+        {
+          "tag": "$APPEND_all",
+          "probability": 0.0005527659086510539
+        },
+        {
+          "tag": "$REPLACE_Despite",
+          "probability": 0.00035750618553720415
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.00028285017469897866
+        }
+      ]
+    },
+    {
+      "word_index": 1,
+      "word": "of",
+      "first_subtoken": 3,
+      "tag": "$DELETE",
+      "label_probability": 0.8700467348098755,
+      "error_probability": 0.8230958580970764,
+      "top5": [
+        {
+          "tag": "$DELETE",
+          "probability": 0.8700467348098755
+        },
+        {
+          "tag": "$KEEP",
+          "probability": 0.12279331684112549
+        },
+        {
+          "tag": "$REPLACE_all",
+          "probability": 0.0045881569385528564
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0005514029762707651
+        },
+        {
+          "tag": "$REPLACE_the",
+          "probability": 0.00047419493785128
+        }
+      ]
+    },
+    {
+      "word_index": 2,
+      "word": "the",
+      "first_subtoken": 4,
+      "tag": "$KEEP",
+      "label_probability": 0.9996216297149658,
+      "error_probability": 0.00032999381073750556,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9996216297149658
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0001505421387264505
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.00011986583558609709
+        },
+        {
+          "tag": "$APPEND_whole",
+          "probability": 1.161641557700932e-05
+        },
+        {
+          "tag": "$APPEND_local",
+          "probability": 1.134035483119078e-05
+        }
+      ]
+    },
+    {
+      "word_index": 3,
+      "word": "rain,",
+      "first_subtoken": 5,
+      "tag": "$KEEP",
+      "label_probability": 0.9994268417358398,
+      "error_probability": 0.0008703346829861403,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9994268417358398
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0002629402151796967
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VB_VBG",
+          "probability": 6.990750262048095e-05
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VB_VBZ",
+          "probability": 3.458613355178386e-05
+        },
+        {
+          "tag": "$APPEND_to",
+          "probability": 1.3598353689303622e-05
+        }
+      ]
+    },
+    {
+      "word_index": 4,
+      "word": "we",
+      "first_subtoken": 7,
+      "tag": "$KEEP",
+      "label_probability": 0.9997820258140564,
+      "error_probability": 0.00014904994168318808,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9997820258140564
+        },
+        {
+          "tag": "$APPEND_had",
+          "probability": 7.367206126218662e-05
+        },
+        {
+          "tag": "$APPEND_were",
+          "probability": 1.988367148442194e-05
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 1.966139279829804e-05
+        },
+        {
+          "tag": "$APPEND_still",
+          "probability": 1.3780847439193167e-05
+        }
+      ]
+    },
+    {
+      "word_index": 5,
+      "word": "continued.",
+      "first_subtoken": 8,
+      "tag": "$KEEP",
+      "label_probability": 0.9921779036521912,
+      "error_probability": 0.000325592263834551,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9921779036521912
+        },
+        {
+          "tag": "$APPEND_on",
+          "probability": 0.007510425988584757
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 6.30746508250013e-05
+        },
+        {
+          "tag": "$APPEND_with",
+          "probability": 4.4154268834972754e-05
+        },
+        {
+          "tag": "$REPLACE_continued",
+          "probability": 3.511842078296468e-05
+        }
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "start_codepoint": 8,
+      "end_codepoint": 11,
+      "locationUTF16": 8,
+      "lengthUTF16": 3,
+      "original": "of ",
+      "replacement": "",
+      "tag": "$DELETE",
+      "confidence": 0.8700467348098755,
+      "word_index": 1
+    }
+  ],
+  "rejected": [],
+  "input_ids": [
+    0,
+    50265,
+    2285,
+    9,
+    5,
+    1895,
+    6,
+    52,
+    1143,
+    4,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "attention_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "label_probs_shape": [
+    1,
+    80,
+    5000
+  ],
+  "error_probs_shape": [
+    1,
+    80
+  ],
+  "raw_label_probs_sha256": "2132827d828beda3ffaa33290bcca747d683f8618d6448f8c5c02f64625d4690",
+  "raw_error_probs_sha256": "7cf850a3ae7d8d6b87a8b425aeb7a659d844aecf3df9b67734d9911d65ce4538"
+}

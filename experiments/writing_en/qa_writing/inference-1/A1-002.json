@@ -1,0 +1,336 @@
+{
+  "id": "A1-002",
+  "original": "I has two books.",
+  "revised_text": "I has two books.",
+  "original_sha256": "de313c501e8c1cecddf8395507d4f300379eef4364b273d7e7d83cbe96aac5c2",
+  "sentence_error_probability": 0.307407021522522,
+  "tags": [
+    {
+      "word_index": -1,
+      "word": "$START",
+      "first_subtoken": 1,
+      "tag": "$KEEP",
+      "label_probability": 0.9999088048934937,
+      "error_probability": 0.0003971389087382704,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9999088048934937
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 3.914280023309402e-05
+        },
+        {
+          "tag": "$APPEND_the",
+          "probability": 4.505374818108976e-06
+        },
+        {
+          "tag": "$APPEND_I",
+          "probability": 3.5209943689551437e-06
+        },
+        {
+          "tag": "$APPEND_For",
+          "probability": 2.909205022660899e-06
+        }
+      ]
+    },
+    {
+      "word_index": 0,
+      "word": "I",
+      "first_subtoken": 2,
+      "tag": "$KEEP",
+      "label_probability": 0.9965479969978333,
+      "error_probability": 0.004867536947131157,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9965479969978333
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0012165112420916557
+        },
+        {
+          "tag": "$REPLACE_It",
+          "probability": 0.0003819717385340482
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.00036415582871995866
+        },
+        {
+          "tag": "$APPEND_now",
+          "probability": 0.00020197048434056342
+        }
+      ]
+    },
+    {
+      "word_index": 1,
+      "word": "has",
+      "first_subtoken": 3,
+      "tag": "$KEEP",
+      "label_probability": 0.6773685812950134,
+      "error_probability": 0.307407021522522,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.6773685812950134
+        },
+        {
+          "tag": "$REPLACE_have",
+          "probability": 0.27369821071624756
+        },
+        {
+          "tag": "$REPLACE_had",
+          "probability": 0.018255742266774178
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.004647993016988039
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VBZ_VB",
+          "probability": 0.003663452574983239
+        }
+      ]
+    },
+    {
+      "word_index": 2,
+      "word": "two",
+      "first_subtoken": 4,
+      "tag": "$KEEP",
+      "label_probability": 0.9983097314834595,
+      "error_probability": 0.0023567865137010813,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9983097314834595
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.00028942583594471216
+        },
+        {
+          "tag": "$APPEND_more",
+          "probability": 0.00025576402549631894
+        },
+        {
+          "tag": "$APPEND_the",
+          "probability": 0.00022024971258360893
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0001574564230395481
+        }
+      ]
+    },
+    {
+      "word_index": 3,
+      "word": "books.",
+      "first_subtoken": 5,
+      "tag": "$KEEP",
+      "label_probability": 0.998432457447052,
+      "error_probability": 0.0019420802127569914,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.998432457447052
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0002561916771810502
+        },
+        {
+          "tag": "$APPEND_here",
+          "probability": 0.00014602360897697508
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0001273907837457955
+        },
+        {
+          "tag": "$APPEND_too",
+          "probability": 0.00010384360939497128
+        }
+      ]
+    }
+  ],
+  "proposals": [],
+  "rejected": [],
+  "input_ids": [
+    0,
+    50265,
+    38,
+    34,
+    80,
+    2799,
+    4,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "attention_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "label_probs_shape": [
+    1,
+    80,
+    5000
+  ],
+  "error_probs_shape": [
+    1,
+    80
+  ],
+  "raw_label_probs_sha256": "6431f7a854f5e82f3c3d17eaf0f1f8e795ae3a304bc8eb56b9046102af53ee57",
+  "raw_error_probs_sha256": "cdce5768c0cb671a8bc970b8f1cc5f94ece5e254310a2429551b091d0f00b869"
+}

@@ -1,0 +1,164 @@
+"""One offline DeepQuill ONNX pass per smoke case; previews never replace inputs."""
+import argparse
+import hashlib
+import importlib.metadata
+import json
+import math
+import os
+from pathlib import Path
+import re
+import resource
+import sys
+import time
+import traceback
+
+ap=argparse.ArgumentParser(description=__doc__)
+ap.add_argument('--candidate',type=Path,required=True)
+ap.add_argument('--cases',type=Path,required=True)
+ap.add_argument('--out',type=Path,required=True)
+args=ap.parse_args()
+candidate,cases_path,out=args.candidate.resolve(),args.cases.resolve(),args.out.resolve()
+if out.exists():ap.error('refusing to overwrite evidence')
+sys.path.insert(0,str(cases_path.parent))
+from verify_gec_candidate import verify
+verify(candidate)
+inventory=json.loads((candidate/'candidate_inventory.json').read_text())
+assert inventory['revision']=='2232e0ef109dd12e11e2c74b565b7318e36379e4'
+cases_bytes=cases_path.read_bytes()
+cases=[json.loads(line) for line in cases_bytes.decode().splitlines() if line.strip()]
+assert len(cases)==len({c['id'] for c in cases})==20
+out.mkdir(parents=True)
+
+def offline(event, params):
+    if event in {'socket.connect','socket.getaddrinfo','urllib.Request'}:
+        raise RuntimeError('network disabled during writing inference')
+sys.addaudithook(offline)
+os.environ['TOKENIZERS_PARALLELISM']='false'
+os.environ['OMP_NUM_THREADS']='4'
+os.environ['OPENBLAS_NUM_THREADS']='1'
+started=time.perf_counter()
+import numpy as np
+import onnxruntime as ort
+from tokenizers import Tokenizer
+report={'status':'running','model_revision':inventory['revision'],'cases_sha256':hashlib.sha256(cases_bytes).hexdigest(),
+        'network_disabled':True,'passes_per_case':1,'threads':4,'sentence_error_threshold':0.6,'edit_probability_threshold':0.6,
+        'word_segmentation':'original non-whitespace spans; same as whitespace split for these 20 cases',
+        'case_transforms':'dropped per model card','versions':{p:importlib.metadata.version(p) for p in ['numpy','onnxruntime','tokenizers','huggingface_hub']},
+        'cases':[],'nonfinite':[]}
+
+def write(name,value):
+    (out/name).write_text(json.dumps(value,indent=2,ensure_ascii=False,allow_nan=False)+'\n')
+
+def utf16(text,i):return len(text[:i].encode('utf-16-le'))//2
+
+try:
+    t=time.perf_counter()
+    meta=json.loads((candidate/'assets/labels.json').read_text())
+    labels=meta['labels'];assert labels[-1]=='<PAD>'
+    head_labels=labels[:-1]
+    tokenizer=Tokenizer.from_file(str(candidate/'assets/tokenizer.json'))
+    # Reference GECToR uses max-length padding. Reject overflow, never silently truncate.
+    tokenizer.enable_padding(length=meta['max_length'],pad_id=1,pad_token='<pad>')
+    verbs={}
+    for line in (candidate/'assets/verb-form-vocab.txt').read_text().splitlines():
+        pair,tags=line.split(':');src,dst=pair.split('_');before,after=tags.strip().split('_')
+        verbs.setdefault((src,before,after),dst)
+    report['tokenizer_vocab_load_seconds']=time.perf_counter()-t
+    so=ort.SessionOptions();so.intra_op_num_threads=4;so.inter_op_num_threads=1;so.enable_mem_pattern=False
+    t=time.perf_counter()
+    session=ort.InferenceSession(str(candidate/'assets/model.onnx'),sess_options=so,providers=['CPUExecutionProvider'])
+    report['onnx_load_seconds']=time.perf_counter()-t
+    report['peak_rss_after_load_bytes']=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    describe=lambda x:{'name':x.name,'shape':x.shape,'type':x.type}
+    report['inputs']=[describe(x) for x in session.get_inputs()];report['outputs']=[describe(x) for x in session.get_outputs()]
+    report['providers']=session.get_providers()
+    assert set(x.name for x in session.get_inputs())=={'input_ids','attention_mask'}
+    assert set(x.name for x in session.get_outputs())=={'label_probs','error_probs'}
+    predictions=[]
+    for case in cases:
+        start=time.perf_counter();text=case['text'];original_hash=hashlib.sha256(text.encode()).hexdigest()
+        matches=list(re.finditer(r'\S+',text));words=[m.group() for m in matches]
+        encoded=tokenizer.encode(['$START',*words],is_pretokenized=True)
+        assert len(encoded.ids)<=meta['max_length'], 'input exceeds declared max length'
+        first={}
+        for index,word_id in enumerate(encoded.word_ids):
+            if word_id is not None:first.setdefault(word_id,index)
+        assert set(first)==set(range(len(words)+1))
+        ids=np.asarray([encoded.ids],dtype=np.int64);mask=np.asarray([encoded.attention_mask],dtype=np.int64)
+        t=time.perf_counter()
+        probs,errors=session.run(['label_probs','error_probs'],{'input_ids':ids,'attention_mask':mask})
+        model_s=time.perf_counter()-t
+        assert probs.shape==(1,len(encoded.ids),len(head_labels)) and errors.shape==(1,len(encoded.ids))
+        assert np.isfinite(probs).all() and np.isfinite(errors).all()
+        assert np.allclose(probs.sum(axis=-1),1,atol=0.002)
+        assert probs.min()>=0 and errors.min()>=0 and probs.max()<=1.001 and errors.max()<=1.001
+        sentence_error=float(max(errors[0,i] for i in first.values()))
+        tags=[];proposals=[];rejected=[]
+        for wi,pos in sorted(first.items()):
+            order=np.argsort(probs[0,pos])[-5:][::-1];li=int(order[0]);label=head_labels[li];confidence=float(probs[0,pos,li])
+            word='$START' if wi==0 else words[wi-1]
+            entry={'word_index':wi-1,'word':word,'first_subtoken':pos,'tag':label,'label_probability':confidence,'error_probability':float(errors[0,pos]),
+                   'top5':[{'tag':head_labels[int(k)],'probability':float(probs[0,pos,k])} for k in order]}
+            tags.append(entry)
+            if label in {'$KEEP','<OOV>','<PAD>'}:continue
+            reason=None
+            if sentence_error<0.6:reason='sentence_error_below_threshold'
+            elif confidence<0.6:reason='edit_probability_below_threshold'
+            elif label.startswith('$TRANSFORM_CASE_'):reason='case_transform_disabled_by_upstream'
+            if reason:rejected.append({**entry,'reason':reason});continue
+            if wi==0:
+                if label.startswith('$APPEND_'):s=e=0;replacement=label[len('$APPEND_'):]+(' ' if text else '')
+                else:rejected.append({**entry,'reason':'unsupported_anchor_tag'});continue
+            else:
+                mi=wi-1;s,e=matches[mi].span()
+                if label=='$DELETE':
+                    if mi+1<len(matches):e=matches[mi+1].start()
+                    elif mi>0:s=matches[mi-1].end()
+                    replacement=''
+                elif label.startswith('$REPLACE_'):replacement=label[len('$REPLACE_'):]
+                elif label.startswith('$APPEND_'):s=e;replacement=' '+label[len('$APPEND_'):]
+                elif label.startswith('$TRANSFORM_VERB_'):
+                    before,after=label[len('$TRANSFORM_VERB_'):].split('_')
+                    replacement=verbs.get((word,before,after))
+                elif label=='$TRANSFORM_AGREEMENT_PLURAL':replacement=word+'s'
+                elif label=='$TRANSFORM_AGREEMENT_SINGULAR':replacement=word[:-1]
+                elif label=='$TRANSFORM_SPLIT_HYPHEN':replacement=' '.join(word.split('-'))
+                else:replacement=None
+                if replacement is None:rejected.append({**entry,'reason':'unsupported_tag_or_absent_verb_form'});continue
+            if replacement==text[s:e]:rejected.append({**entry,'reason':'no_op'});continue
+            proposal={'start_codepoint':s,'end_codepoint':e,'locationUTF16':utf16(text,s),'lengthUTF16':utf16(text,e)-utf16(text,s),
+                      'original':text[s:e],'replacement':replacement,'tag':label,'confidence':confidence,'word_index':wi-1}
+            proposals.append(proposal)
+        accepted=[]
+        for p in sorted(proposals,key=lambda x:(x['start_codepoint'],x['end_codepoint'])):
+            if accepted and p['start_codepoint']<accepted[-1]['end_codepoint']:
+                rejected.append({**p,'reason':'overlap'});continue
+            assert text[p['start_codepoint']:p['end_codepoint']]==p['original']
+            encoded_source=text.encode('utf-16-le');a=p['locationUTF16']*2;b=a+p['lengthUTF16']*2
+            assert encoded_source[a:b].decode('utf-16-le')==p['original']
+            accepted.append(p)
+        revised=text
+        for p in sorted(accepted,key=lambda x:x['start_codepoint'],reverse=True):
+            revised=revised[:p['start_codepoint']]+p['replacement']+revised[p['end_codepoint']:]
+        assert case['text']==text and hashlib.sha256(text.encode()).hexdigest()==original_hash
+        row={'id':case['id'],'original':text,'revised_text':revised}
+        predictions.append(row)
+        trace={**row,'original_sha256':original_hash,'sentence_error_probability':sentence_error,'tags':tags,'proposals':accepted,'rejected':rejected,
+               'input_ids':encoded.ids,'attention_mask':encoded.attention_mask,'label_probs_shape':list(probs.shape),'error_probs_shape':list(errors.shape),
+               'raw_label_probs_sha256':hashlib.sha256(probs.tobytes()).hexdigest(),'raw_error_probs_sha256':hashlib.sha256(errors.tobytes()).hexdigest()}
+        write(case['id']+'.json',trace)
+        report['cases'].append({'id':case['id'],'model_seconds':model_s,'wall_seconds':time.perf_counter()-start,'changed':revised!=text,'accepted_proposals':len(accepted),
+                                'rejected_nonkeep':len(rejected),'input_tokens_nonpad':sum(encoded.attention_mask),'padded_tokens':len(encoded.ids),
+                                'peak_rss_so_far_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss})
+        print(json.dumps(row,ensure_ascii=False),flush=True)
+    assert cases_path.read_bytes()==cases_bytes
+    (out/'predictions.jsonl').write_text(''.join(json.dumps(p,ensure_ascii=False)+'\n' for p in predictions))
+    report['source_file_and_all_original_strings_preserved']=True
+    report['status']='PASS_EXECUTION_NOT_QUALITY_APPROVAL'
+except Exception as e:
+    report['status']='FAIL';report['error']={'type':type(e).__name__,'message':str(e),'traceback':traceback.format_exc()}
+    raise
+finally:
+    report['run_seconds']=time.perf_counter()-started
+    report['max_rss_bytes']=resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+    write('run.json',report)

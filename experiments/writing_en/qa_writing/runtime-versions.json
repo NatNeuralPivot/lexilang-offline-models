@@ -1,0 +1,18 @@
+[
+  {
+    "package": "numpy",
+    "version": "2.5.5"
+  },
+  {
+    "package": "onnxruntime",
+    "version": "1.32.0"
+  },
+  {
+    "package": "tokenizers",
+    "version": "0.23.3"
+  },
+  {
+    "package": "huggingface_hub",
+    "version": "2.4.0"
+  }
+]

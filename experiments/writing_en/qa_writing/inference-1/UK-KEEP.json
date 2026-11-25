@@ -1,0 +1,426 @@
+{
+  "id": "UK-KEEP",
+  "original": "The organisation will analyse the colour distribution.",
+  "revised_text": "The organisation will analyse the colour distribution.",
+  "original_sha256": "0c3c8a65b4439a59bc4c7e13e94e48414ab09e0671532fe81f1b698bb534bec8",
+  "sentence_error_probability": 0.17238959670066833,
+  "tags": [
+    {
+      "word_index": -1,
+      "word": "$START",
+      "first_subtoken": 1,
+      "tag": "$KEEP",
+      "label_probability": 0.9946656227111816,
+      "error_probability": 0.00875717680901289,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9946656227111816
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.002791352802887559
+        },
+        {
+          "tag": "$APPEND_A",
+          "probability": 0.00020131500787101686
+        },
+        {
+          "tag": "$APPEND_4",
+          "probability": 0.00017189064237754792
+        },
+        {
+          "tag": "$APPEND_The",
+          "probability": 0.00015162440831772983
+        }
+      ]
+    },
+    {
+      "word_index": 0,
+      "word": "The",
+      "first_subtoken": 2,
+      "tag": "$KEEP",
+      "label_probability": 0.933508574962616,
+      "error_probability": 0.07396342605352402,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.933508574962616
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.036305561661720276
+        },
+        {
+          "tag": "$TRANSFORM_CASE_LOWER",
+          "probability": 0.006983825471252203
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.004062994383275509
+        },
+        {
+          "tag": "$REPLACE_An",
+          "probability": 0.0035740614403039217
+        }
+      ]
+    },
+    {
+      "word_index": 1,
+      "word": "organisation",
+      "first_subtoken": 3,
+      "tag": "$KEEP",
+      "label_probability": 0.8861439228057861,
+      "error_probability": 0.1328703761100769,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.8861439228057861
+        },
+        {
+          "tag": "$REPLACE_organization",
+          "probability": 0.028237683698534966
+        },
+        {
+          "tag": "$TRANSFORM_CASE_CAPITAL",
+          "probability": 0.025722399353981018
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.02037196233868599
+        },
+        {
+          "tag": "$REPLACE_organisation",
+          "probability": 0.014358790591359138
+        }
+      ]
+    },
+    {
+      "word_index": 2,
+      "word": "will",
+      "first_subtoken": 4,
+      "tag": "$KEEP",
+      "label_probability": 0.7364153861999512,
+      "error_probability": 0.13669617474079132,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.7364153861999512
+        },
+        {
+          "tag": "$APPEND_then",
+          "probability": 0.14524151384830475
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.04058859124779701
+        },
+        {
+          "tag": "$REPLACE_is",
+          "probability": 0.02514662966132164
+        },
+        {
+          "tag": "$REPLACE_can",
+          "probability": 0.00631730305030942
+        }
+      ]
+    },
+    {
+      "word_index": 3,
+      "word": "analyse",
+      "first_subtoken": 5,
+      "tag": "$KEEP",
+      "label_probability": 0.8825393319129944,
+      "error_probability": 0.17238959670066833,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.8825393319129944
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.03426048159599304
+        },
+        {
+          "tag": "$REPLACE_analyze",
+          "probability": 0.01888216659426689
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VB_VBG",
+          "probability": 0.011658665724098682
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VB_VBZ",
+          "probability": 0.0053644077852368355
+        }
+      ]
+    },
+    {
+      "word_index": 4,
+      "word": "the",
+      "first_subtoken": 6,
+      "tag": "$KEEP",
+      "label_probability": 0.9764682054519653,
+      "error_probability": 0.019716372713446617,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9764682054519653
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.008407428860664368
+        },
+        {
+          "tag": "$APPEND_overall",
+          "probability": 0.005202719010412693
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0014939348911866546
+        },
+        {
+          "tag": "$APPEND_current",
+          "probability": 0.0007084306562319398
+        }
+      ]
+    },
+    {
+      "word_index": 5,
+      "word": "colour",
+      "first_subtoken": 7,
+      "tag": "$KEEP",
+      "label_probability": 0.9434713125228882,
+      "error_probability": 0.06134685501456261,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9434713125228882
+        },
+        {
+          "tag": "$REPLACE_color",
+          "probability": 0.014978529885411263
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.013154973275959492
+        },
+        {
+          "tag": "$APPEND_and",
+          "probability": 0.00419648177921772
+        },
+        {
+          "tag": "$TRANSFORM_CASE_CAPITAL",
+          "probability": 0.0026220197323709726
+        }
+      ]
+    },
+    {
+      "word_index": 6,
+      "word": "distribution.",
+      "first_subtoken": 8,
+      "tag": "$KEEP",
+      "label_probability": 0.9319820404052734,
+      "error_probability": 0.10944121330976486,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9319820404052734
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.017329702153801918
+        },
+        {
+          "tag": "$APPEND_of",
+          "probability": 0.014522513374686241
+        },
+        {
+          "tag": "$TRANSFORM_AGREEMENT_PLURAL",
+          "probability": 0.003909814637154341
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0026625138707458973
+        }
+      ]
+    }
+  ],
+  "proposals": [],
+  "rejected": [],
+  "input_ids": [
+    0,
+    50265,
+    20,
+    6010,
+    40,
+    28399,
+    5,
+    7705,
+    3854,
+    4,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "attention_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "label_probs_shape": [
+    1,
+    80,
+    5000
+  ],
+  "error_probs_shape": [
+    1,
+    80
+  ],
+  "raw_label_probs_sha256": "61c6e8967a4f28e5662f1a500eeaf79e6a401efcf5e84324012b7d9ba57cbf8c",
+  "raw_error_probs_sha256": "2c189bf0ef4d66b024939cfd167985aaaaf56be2161b91f87c0ed4779d5f7896"
+}

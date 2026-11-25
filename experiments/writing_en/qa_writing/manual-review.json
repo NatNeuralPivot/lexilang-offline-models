@@ -1,0 +1,165 @@
+{
+  "review_type": "assistant qualitative review against smoke hints; not independent expert labels or benchmark metrics",
+  "cases": [
+    {
+      "id": "A1-001",
+      "expectation": "error",
+      "hint": "verb agreement",
+      "original": "She go to school every day.",
+      "actual_model_preview": "She goes to school every day.",
+      "assessment": "corrected_cleanly"
+    },
+    {
+      "id": "A1-002",
+      "expectation": "error",
+      "hint": "subject–verb agreement",
+      "original": "I has two books.",
+      "actual_model_preview": "I has two books.",
+      "assessment": "missed_fixture_error"
+    },
+    {
+      "id": "A1-003",
+      "expectation": "error",
+      "hint": "article",
+      "original": "He is a honest man.",
+      "actual_model_preview": "He is an honest man.",
+      "assessment": "corrected_cleanly"
+    },
+    {
+      "id": "A2-001",
+      "expectation": "error",
+      "hint": "there are",
+      "original": "There is many reasons to disagree.",
+      "actual_model_preview": "There is many reasons to disagree.",
+      "assessment": "missed_fixture_error"
+    },
+    {
+      "id": "A2-002",
+      "expectation": "error",
+      "hint": "past tense",
+      "original": "I have went to the library yesterday.",
+      "actual_model_preview": "I have gone to the library yesterday.",
+      "assessment": "partial_error_remaining"
+    },
+    {
+      "id": "B1-001",
+      "expectation": "error",
+      "hint": "gerund after look forward to",
+      "original": "I look forward to meet you.",
+      "actual_model_preview": "I look forward to meeting you.",
+      "assessment": "corrected_cleanly"
+    },
+    {
+      "id": "B1-002",
+      "expectation": "error",
+      "hint": "despite without of",
+      "original": "Despite of the rain, we continued.",
+      "actual_model_preview": "Despite the rain, we continued.",
+      "assessment": "corrected_cleanly"
+    },
+    {
+      "id": "B2-001",
+      "expectation": "error",
+      "hint": "number agreement",
+      "original": "The results was inconclusive.",
+      "actual_model_preview": "The results was inconclusive.",
+      "assessment": "missed_fixture_error"
+    },
+    {
+      "id": "B2-002",
+      "expectation": "error",
+      "hint": "past counterfactual",
+      "original": "If I would have known, I would have acted differently.",
+      "actual_model_preview": "If I would have known, I would have acted differently.",
+      "assessment": "missed_fixture_error"
+    },
+    {
+      "id": "C1-001",
+      "expectation": "error",
+      "hint": "despite vs although",
+      "original": "The policy was implemented last year, despite it had faced considerable opposition.",
+      "actual_model_preview": "The policy was implemented last year, despite it had facing considerable opposition.",
+      "assessment": "harmful_wrong_correction"
+    },
+    {
+      "id": "C1-002",
+      "expectation": "error",
+      "hint": "subject–verb agreement",
+      "original": "The evidence suggest that the intervention had a limited impact.",
+      "actual_model_preview": "The evidence suggests that the intervention had a limited impact.",
+      "assessment": "corrected_cleanly"
+    },
+    {
+      "id": "C2-001",
+      "expectation": "error",
+      "hint": "agreement with plural findings",
+      "original": "Neither the methodology nor the findings warrants such a sweeping conclusion.",
+      "actual_model_preview": "Neither the methodology nor the findings warrants such a sweeping conclusion.",
+      "assessment": "missed_fixture_error"
+    },
+    {
+      "id": "A1-KEEP",
+      "expectation": "keep",
+      "hint": "already grammatical",
+      "original": "She goes to school every day.",
+      "actual_model_preview": "She goes to school every day.",
+      "assessment": "valid_preserved"
+    },
+    {
+      "id": "B2-KEEP",
+      "expectation": "keep",
+      "hint": "preserve valid idiomatic expression",
+      "original": "I would rather not discuss it.",
+      "actual_model_preview": "I would rather not discuss it.",
+      "assessment": "valid_preserved"
+    },
+    {
+      "id": "C1-KEEP",
+      "expectation": "keep",
+      "hint": "formal prose",
+      "original": "Nevertheless, the findings warrant further investigation.",
+      "actual_model_preview": "Nevertheless, the findings warrant further investigation.",
+      "assessment": "valid_preserved"
+    },
+    {
+      "id": "C2-KEEP",
+      "expectation": "keep",
+      "hint": "valid inversion",
+      "original": "Had the evidence been more robust, the committee might have reached a different conclusion.",
+      "actual_model_preview": "Had the evidence been more robust, the committee might have reached a different conclusion.",
+      "assessment": "valid_preserved"
+    },
+    {
+      "id": "UK-KEEP",
+      "expectation": "keep",
+      "hint": "preserve British English",
+      "original": "The organisation will analyse the colour distribution.",
+      "actual_model_preview": "The organisation will analyse the colour distribution.",
+      "assessment": "valid_preserved"
+    },
+    {
+      "id": "NAME-KEEP",
+      "expectation": "keep",
+      "hint": "preserve names, Unicode apostrophes",
+      "original": "Dr. O’Connor works at St. John’s College.",
+      "actual_model_preview": "Dr. O’Connor works at St. John’s College.",
+      "assessment": "valid_preserved"
+    },
+    {
+      "id": "STYLE-KEEP",
+      "expectation": "keep",
+      "hint": "do not over-correct style",
+      "original": "While the evidence remains equivocal, it would be premature to infer causality.",
+      "actual_model_preview": "While the evidence remains equivocal, it would be premature to infer causality.",
+      "assessment": "valid_preserved"
+    },
+    {
+      "id": "FRAGMENT-KEEP",
+      "expectation": "keep",
+      "hint": "grammatical conversational fragment",
+      "original": "Not necessarily.",
+      "actual_model_preview": "Not necessarily.",
+      "assessment": "valid_preserved"
+    }
+  ]
+}

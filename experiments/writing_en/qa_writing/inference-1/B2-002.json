@@ -1,0 +1,516 @@
+{
+  "id": "B2-002",
+  "original": "If I would have known, I would have acted differently.",
+  "revised_text": "If I would have known, I would have acted differently.",
+  "original_sha256": "7de3d8d671fb3fbc9b696dc23036f07a05f0435cd5c324fce3a6888563290994",
+  "sentence_error_probability": 0.062154944986104965,
+  "tags": [
+    {
+      "word_index": -1,
+      "word": "$START",
+      "first_subtoken": 1,
+      "tag": "$KEEP",
+      "label_probability": 0.9997815489768982,
+      "error_probability": 0.00023252249229699373,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9997815489768982
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.00010014284634962678
+        },
+        {
+          "tag": "$APPEND_I",
+          "probability": 1.8550428649177775e-05
+        },
+        {
+          "tag": "$APPEND_If",
+          "probability": 1.3908118489780463e-05
+        },
+        {
+          "tag": "$APPEND_For",
+          "probability": 1.2305751624808181e-05
+        }
+      ]
+    },
+    {
+      "word_index": 0,
+      "word": "If",
+      "first_subtoken": 2,
+      "tag": "$KEEP",
+      "label_probability": 0.9990803003311157,
+      "error_probability": 0.0018136228900402784,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9990803003311157
+        },
+        {
+          "tag": "$TRANSFORM_CASE_LOWER",
+          "probability": 0.00036793138133361936
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0003204541280865669
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 8.715561853023246e-05
+        },
+        {
+          "tag": "$REPLACE_Should",
+          "probability": 1.2433320989657659e-05
+        }
+      ]
+    },
+    {
+      "word_index": 1,
+      "word": "I",
+      "first_subtoken": 3,
+      "tag": "$KEEP",
+      "label_probability": 0.9989057779312134,
+      "error_probability": 0.0014044878771528602,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9989057779312134
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.00051141093717888
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 6.819082045694813e-05
+        },
+        {
+          "tag": "$REPLACE_I",
+          "probability": 5.515718294191174e-05
+        },
+        {
+          "tag": "$APPEND_not",
+          "probability": 5.0210743211209774e-05
+        }
+      ]
+    },
+    {
+      "word_index": 2,
+      "word": "would",
+      "first_subtoken": 4,
+      "tag": "$KEEP",
+      "label_probability": 0.9167861342430115,
+      "error_probability": 0.062154944986104965,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9167861342430115
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.07543585449457169
+        },
+        {
+          "tag": "$REPLACE_had",
+          "probability": 0.0026771051343530416
+        },
+        {
+          "tag": "$REPLACE_could",
+          "probability": 0.001062882598489523
+        },
+        {
+          "tag": "$REPLACE_was",
+          "probability": 0.0009517683065496385
+        }
+      ]
+    },
+    {
+      "word_index": 3,
+      "word": "have",
+      "first_subtoken": 5,
+      "tag": "$KEEP",
+      "label_probability": 0.961622953414917,
+      "error_probability": 0.04432368651032448,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.961622953414917
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.03370695188641548
+        },
+        {
+          "tag": "$REPLACE_had",
+          "probability": 0.00229851808398962
+        },
+        {
+          "tag": "$APPEND_had",
+          "probability": 0.0007239836268126965
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.00020803624647669494
+        }
+      ]
+    },
+    {
+      "word_index": 4,
+      "word": "known,",
+      "first_subtoken": 6,
+      "tag": "$KEEP",
+      "label_probability": 0.9932191967964172,
+      "error_probability": 0.021178944036364555,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9932191967964172
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0008323282236233354
+        },
+        {
+          "tag": "$APPEND_,",
+          "probability": 0.0005284022190608084
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0005190960364416242
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VBN_VBD",
+          "probability": 0.0004747578932438046
+        }
+      ]
+    },
+    {
+      "word_index": 5,
+      "word": "I",
+      "first_subtoken": 8,
+      "tag": "$KEEP",
+      "label_probability": 0.9986170530319214,
+      "error_probability": 0.0013241053093224764,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9986170530319214
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0003556587325874716
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0001228296459885314
+        },
+        {
+          "tag": "$REPLACE_I’d",
+          "probability": 0.00010514043970033526
+        },
+        {
+          "tag": "$REPLACE_I'd",
+          "probability": 7.796187128406018e-05
+        }
+      ]
+    },
+    {
+      "word_index": 6,
+      "word": "would",
+      "first_subtoken": 9,
+      "tag": "$KEEP",
+      "label_probability": 0.9964034557342529,
+      "error_probability": 0.003338461508974433,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9964034557342529
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0009763291454873979
+        },
+        {
+          "tag": "$REPLACE_may",
+          "probability": 0.0005568452179431915
+        },
+        {
+          "tag": "$REPLACE_could",
+          "probability": 0.0004731004300992936
+        },
+        {
+          "tag": "$APPEND_not",
+          "probability": 0.00036556084523908794
+        }
+      ]
+    },
+    {
+      "word_index": 7,
+      "word": "have",
+      "first_subtoken": 10,
+      "tag": "$KEEP",
+      "label_probability": 0.9986416697502136,
+      "error_probability": 0.0010554196778684855,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9986416697502136
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0005436341161839664
+        },
+        {
+          "tag": "$APPEND_have",
+          "probability": 0.00012260573566891253
+        },
+        {
+          "tag": "$APPEND_not",
+          "probability": 9.852333460003138e-05
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 9.147669334197417e-05
+        }
+      ]
+    },
+    {
+      "word_index": 8,
+      "word": "acted",
+      "first_subtoken": 11,
+      "tag": "$KEEP",
+      "label_probability": 0.9927533268928528,
+      "error_probability": 0.009066401049494743,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9927533268928528
+        },
+        {
+          "tag": "$REPLACE_done",
+          "probability": 0.0017919638194143772
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VBD_VBN",
+          "probability": 0.001026876620016992
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0008470903849229217
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VB_VBN",
+          "probability": 0.0008099738042801619
+        }
+      ]
+    },
+    {
+      "word_index": 9,
+      "word": "differently.",
+      "first_subtoken": 12,
+      "tag": "$KEEP",
+      "label_probability": 0.9980621933937073,
+      "error_probability": 0.0019631064496934414,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9980621933937073
+        },
+        {
+          "tag": "$APPEND_.",
+          "probability": 0.00041296565905213356
+        },
+        {
+          "tag": "$REPLACE_differently",
+          "probability": 0.0002663568302523345
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.00021130182722117752
+        },
+        {
+          "tag": "$APPEND_…",
+          "probability": 0.00020571803906932473
+        }
+      ]
+    }
+  ],
+  "proposals": [],
+  "rejected": [],
+  "input_ids": [
+    0,
+    50265,
+    318,
+    38,
+    74,
+    33,
+    684,
+    6,
+    38,
+    74,
+    33,
+    8337,
+    8225,
+    4,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "attention_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "label_probs_shape": [
+    1,
+    80,
+    5000
+  ],
+  "error_probs_shape": [
+    1,
+    80
+  ],
+  "raw_label_probs_sha256": "52d4aca40321563fa30ed3ed443770b0c099762a6852d2aea7115094919bb8dd",
+  "raw_error_probs_sha256": "d73c505f9a6dd728de21670b0bb07aa9e94460877bd01cdbe5955b1ace0d2eac"
+}

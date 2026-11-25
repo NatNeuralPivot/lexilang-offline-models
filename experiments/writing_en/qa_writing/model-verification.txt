@@ -1,0 +1,8 @@
+{
+  "status": "verified_research_bytes_not_a_production_release",
+  "revision": "2232e0ef109dd12e11e2c74b565b7318e36379e4",
+  "files": 4,
+  "total_bytes": 264324420,
+  "checksums_ok": true,
+  "runtime_verified": false
+}

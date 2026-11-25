@@ -1,0 +1,32 @@
+{
+  "kind": "small_smoke_test_not_production_quality_metric",
+  "model_execution_unverified_by_this_script": false,
+  "observations_from_supplied_outputs_only": 20,
+  "known_error_inputs": 12,
+  "errors_causing_a_change": 7,
+  "valid_inputs": 8,
+  "valid_inputs_preserved": 8,
+  "failures": [
+    {
+      "id": "A1-002",
+      "reason": "missed_known_error"
+    },
+    {
+      "id": "A2-001",
+      "reason": "missed_known_error"
+    },
+    {
+      "id": "B2-001",
+      "reason": "missed_known_error"
+    },
+    {
+      "id": "B2-002",
+      "reason": "missed_known_error"
+    },
+    {
+      "id": "C2-001",
+      "reason": "missed_known_error"
+    }
+  ],
+  "warning": "A changed error sentence may be corrected WRONG. Review every change manually. This check is NOT grammar precision/recall or a CEFR grade."
+}

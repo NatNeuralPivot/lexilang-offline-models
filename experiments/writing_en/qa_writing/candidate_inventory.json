@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "id": "lexi-writing-gec-deepquill",
+  "model_kind": "english_grammar_edit_tagger",
+  "status": "research_candidate_not_release_ready",
+  "source": "deepquillapp/gector-grammar",
+  "revision": "2232e0ef109dd12e11e2c74b565b7318e36379e4",
+  "license_declared": "apache-2.0",
+  "assets": {
+    "model.onnx": {
+      "bytes": 256279090,
+      "sha256": "c8ce4fcc952f33d399cd668e200527f28b94136b61bec24d7852504d5c7c53e9"
+    },
+    "tokenizer.json": {
+      "bytes": 3558978,
+      "sha256": "c9cbd55a5b79c5b8d99108dcd4978c16610a5f9cb5f7b27502efc2f893b5e720"
+    },
+    "labels.json": {
+      "bytes": 96276,
+      "sha256": "753bb8bd179ba56c169d950bce77ad40893490bce47be9f74281263582d3ec43"
+    },
+    "verb-form-vocab.txt": {
+      "bytes": 4390076,
+      "sha256": "5906804ec8a1acd8cbfc2918522bf429ce5edded8bbc46ffc2be861d280d3abf"
+    }
+  },
+  "gates": {
+    "licensing_provenance_approved": false,
+    "macos_onnx_inference_passed": false,
+    "iphone_onnx_inference_passed": false,
+    "gec_quality_benchmark_passed": false,
+    "utf16_offset_accuracy_passed": false,
+    "russian_spanish_explanations_passed": false,
+    "no_auto_replace_in_original_draft": true
+  },
+  "notes": [
+    "Model score does not certify English CEFR proficiency.",
+    "LanguageTool, speech recognition and WordNet are NOT substitutes for this GEC model.",
+    "Model remains separate from the public packs.json release registry.",
+    "Do not publish or enable until legal audit + offline Apple QA passes."
+  ]
+}

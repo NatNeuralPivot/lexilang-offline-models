@@ -1,0 +1,546 @@
+{
+  "id": "C2-001",
+  "original": "Neither the methodology nor the findings warrants such a sweeping conclusion.",
+  "revised_text": "Neither the methodology nor the findings warrants such a sweeping conclusion.",
+  "original_sha256": "b4665ffeca8116a3ae91752710c94354b0f47f670cc538850cbdcef10931f38c",
+  "sentence_error_probability": 0.03739112243056297,
+  "tags": [
+    {
+      "word_index": -1,
+      "word": "$START",
+      "first_subtoken": 1,
+      "tag": "$KEEP",
+      "label_probability": 0.9996248483657837,
+      "error_probability": 0.0003176662139594555,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9996248483657837
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 8.115862146951258e-05
+        },
+        {
+          "tag": "$APPEND_No",
+          "probability": 6.580497574759647e-05
+        },
+        {
+          "tag": "$APPEND_1",
+          "probability": 3.853830276057124e-05
+        },
+        {
+          "tag": "$APPEND_2",
+          "probability": 2.6880579753196798e-05
+        }
+      ]
+    },
+    {
+      "word_index": 0,
+      "word": "Neither",
+      "first_subtoken": 2,
+      "tag": "$KEEP",
+      "label_probability": 0.9979336261749268,
+      "error_probability": 0.000953979732003063,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9979336261749268
+        },
+        {
+          "tag": "$TRANSFORM_CASE_LOWER",
+          "probability": 0.001055978354997933
+        },
+        {
+          "tag": "$REPLACE_neither",
+          "probability": 0.0005891366163268685
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 8.930279727792367e-05
+        },
+        {
+          "tag": "$APPEND_,",
+          "probability": 4.587458897731267e-05
+        }
+      ]
+    },
+    {
+      "word_index": 1,
+      "word": "the",
+      "first_subtoken": 3,
+      "tag": "$KEEP",
+      "label_probability": 0.9989880919456482,
+      "error_probability": 0.0004971914459019899,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9989880919456482
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.000293309916742146
+        },
+        {
+          "tag": "$APPEND_overall",
+          "probability": 0.0001800800528144464
+        },
+        {
+          "tag": "$APPEND_quality",
+          "probability": 0.00010768156789708883
+        },
+        {
+          "tag": "$APPEND_public",
+          "probability": 5.1348612032597885e-05
+        }
+      ]
+    },
+    {
+      "word_index": 2,
+      "word": "methodology",
+      "first_subtoken": 4,
+      "tag": "$KEEP",
+      "label_probability": 0.9904220104217529,
+      "error_probability": 0.006822787690907717,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9904220104217529
+        },
+        {
+          "tag": "$APPEND_,",
+          "probability": 0.006691363174468279
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0009007326443679631
+        },
+        {
+          "tag": "$TRANSFORM_CASE_CAPITAL",
+          "probability": 0.00025975360767915845
+        },
+        {
+          "tag": "$APPEND_(",
+          "probability": 0.00019708371837623417
+        }
+      ]
+    },
+    {
+      "word_index": 3,
+      "word": "nor",
+      "first_subtoken": 5,
+      "tag": "$KEEP",
+      "label_probability": 0.9963510036468506,
+      "error_probability": 0.002168601844459772,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9963510036468506
+        },
+        {
+          "tag": "$REPLACE_or",
+          "probability": 0.002339552156627178
+        },
+        {
+          "tag": "$REPLACE_and",
+          "probability": 0.0005198377184569836
+        },
+        {
+          "tag": "$REPLACE_nor",
+          "probability": 0.0003220366779714823
+        },
+        {
+          "tag": "$APPEND_did",
+          "probability": 9.804221917875111e-05
+        }
+      ]
+    },
+    {
+      "word_index": 4,
+      "word": "the",
+      "first_subtoken": 6,
+      "tag": "$KEEP",
+      "label_probability": 0.9976624250411987,
+      "error_probability": 0.002079182071611285,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9976624250411987
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0012475382536649704
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.00013920865603722632
+        },
+        {
+          "tag": "$APPEND_overall",
+          "probability": 9.587600652594119e-05
+        },
+        {
+          "tag": "$APPEND_public",
+          "probability": 8.166666520992294e-05
+        }
+      ]
+    },
+    {
+      "word_index": 5,
+      "word": "findings",
+      "first_subtoken": 7,
+      "tag": "$KEEP",
+      "label_probability": 0.9880983233451843,
+      "error_probability": 0.013640940189361572,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9880983233451843
+        },
+        {
+          "tag": "$TRANSFORM_AGREEMENT_SINGULAR",
+          "probability": 0.003256404772400856
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.002827805234119296
+        },
+        {
+          "tag": "$REPLACE_findings",
+          "probability": 0.0012131159892305732
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VBZ_VB",
+          "probability": 0.001012809807434678
+        }
+      ]
+    },
+    {
+      "word_index": 6,
+      "word": "warrants",
+      "first_subtoken": 8,
+      "tag": "$KEEP",
+      "label_probability": 0.8081260919570923,
+      "error_probability": 0.03739112243056297,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.8081260919570923
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VBZ_VB",
+          "probability": 0.18144899606704712
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VBZ_VBN",
+          "probability": 0.006185528356581926
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0015655633760616183
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VBZ_VBD",
+          "probability": 0.0006087464280426502
+        }
+      ]
+    },
+    {
+      "word_index": 7,
+      "word": "such",
+      "first_subtoken": 9,
+      "tag": "$KEEP",
+      "label_probability": 0.9989687204360962,
+      "error_probability": 0.001464524189941585,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9989687204360962
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0007659208495169878
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 9.023216261994094e-05
+        },
+        {
+          "tag": "$REPLACE_such",
+          "probability": 5.053072527516633e-05
+        },
+        {
+          "tag": "$REPLACE_this",
+          "probability": 3.1981249776436016e-05
+        }
+      ]
+    },
+    {
+      "word_index": 8,
+      "word": "a",
+      "first_subtoken": 10,
+      "tag": "$KEEP",
+      "label_probability": 0.9743515849113464,
+      "error_probability": 0.011345206759870052,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9743515849113464
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.02475321851670742
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.00034191360464319587
+        },
+        {
+          "tag": "$APPEND_“",
+          "probability": 0.00011281546176178381
+        },
+        {
+          "tag": "$REPLACE_an",
+          "probability": 0.00010580641537671909
+        }
+      ]
+    },
+    {
+      "word_index": 9,
+      "word": "sweeping",
+      "first_subtoken": 11,
+      "tag": "$KEEP",
+      "label_probability": 0.9977179765701294,
+      "error_probability": 0.0018910195212811232,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9977179765701294
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0012959125451743603
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.00030838887323625386
+        },
+        {
+          "tag": "$REPLACE_broad",
+          "probability": 3.1553128792438656e-05
+        },
+        {
+          "tag": "$APPEND_\"",
+          "probability": 3.087715958827175e-05
+        }
+      ]
+    },
+    {
+      "word_index": 10,
+      "word": "conclusion.",
+      "first_subtoken": 12,
+      "tag": "$KEEP",
+      "label_probability": 0.9965093731880188,
+      "error_probability": 0.0041794367134571075,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9965093731880188
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0007198504754342139
+        },
+        {
+          "tag": "$APPEND_,",
+          "probability": 0.0006599196349270642
+        },
+        {
+          "tag": "$TRANSFORM_AGREEMENT_PLURAL",
+          "probability": 0.0002812565362546593
+        },
+        {
+          "tag": "$APPEND_as",
+          "probability": 9.654649329604581e-05
+        }
+      ]
+    }
+  ],
+  "proposals": [],
+  "rejected": [],
+  "input_ids": [
+    0,
+    50265,
+    9081,
+    5,
+    18670,
+    3486,
+    5,
+    4139,
+    11958,
+    215,
+    10,
+    9893,
+    6427,
+    4,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "attention_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "label_probs_shape": [
+    1,
+    80,
+    5000
+  ],
+  "error_probs_shape": [
+    1,
+    80
+  ],
+  "raw_label_probs_sha256": "d6186fe0696f029c04259747c4e5d8162318aa1f23165e95258ef76a2478e96d",
+  "raw_error_probs_sha256": "067dba7161df58ad0853a573e6e58a49a8ed133d8d32b318326903a9f2b51278"
+}

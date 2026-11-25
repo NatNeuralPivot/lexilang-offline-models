@@ -1,0 +1,24 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Experimental GEC model staged, NOT installed in Lexi Lang
+Upstream pinned revision: 2232e0ef109dd12e11e2c74b565b7318e36379e4
+Files: model.onnx, tokenizer.json, labels.json, verb-form-vocab.txt
+Status: research_candidate_not_release_ready
+No GitHub Release, no packs.json update, no UI changes.
+      139.15 real         2.24 user         1.60 sys
+            86523904  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               69100  page reclaims
+                 229  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  58  messages sent
+               66305  messages received
+                   0  signals received
+                1171  voluntary context switches
+              103541  involuntary context switches
+          9626288839  instructions retired
+         10181689792  cycles elapsed
+            92504784  peak memory footprint

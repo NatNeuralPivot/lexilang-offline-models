@@ -1,0 +1,276 @@
+{
+  "id": "FRAGMENT-KEEP",
+  "original": "Not necessarily.",
+  "revised_text": "Not necessarily.",
+  "original_sha256": "897fc17c8b842dc71370c4dfd29c880c045a97a932cafd21b7deb67b7ef680ff",
+  "sentence_error_probability": 0.00012541402247734368,
+  "tags": [
+    {
+      "word_index": -1,
+      "word": "$START",
+      "first_subtoken": 1,
+      "tag": "$KEEP",
+      "label_probability": 0.9999831914901733,
+      "error_probability": 3.275420021964237e-05,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9999831914901733
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 6.4999649111996405e-06
+        },
+        {
+          "tag": "$APPEND_For",
+          "probability": 1.9665601485030493e-06
+        },
+        {
+          "tag": "$APPEND_2",
+          "probability": 1.5322875697165728e-06
+        },
+        {
+          "tag": "$APPEND_1",
+          "probability": 8.673995353092323e-07
+        }
+      ]
+    },
+    {
+      "word_index": 0,
+      "word": "Not",
+      "first_subtoken": 2,
+      "tag": "$KEEP",
+      "label_probability": 0.9999350309371948,
+      "error_probability": 0.0001244877785211429,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9999350309371948
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 2.0993622456444427e-05
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 1.4394607205758803e-05
+        },
+        {
+          "tag": "$TRANSFORM_CASE_LOWER",
+          "probability": 1.0794106856337748e-05
+        },
+        {
+          "tag": "$APPEND_the",
+          "probability": 3.268788077548379e-06
+        }
+      ]
+    },
+    {
+      "word_index": 1,
+      "word": "necessarily.",
+      "first_subtoken": 3,
+      "tag": "$KEEP",
+      "label_probability": 0.9999066591262817,
+      "error_probability": 0.00012541402247734368,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9999066591262817
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 2.338332706131041e-05
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 1.9731620341190137e-05
+        },
+        {
+          "tag": "$APPEND_…",
+          "probability": 8.864178198564332e-06
+        },
+        {
+          "tag": "$APPEND_.",
+          "probability": 5.374878128350247e-06
+        }
+      ]
+    }
+  ],
+  "proposals": [],
+  "rejected": [],
+  "input_ids": [
+    0,
+    50265,
+    1491,
+    4784,
+    4,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "attention_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "label_probs_shape": [
+    1,
+    80,
+    5000
+  ],
+  "error_probs_shape": [
+    1,
+    80
+  ],
+  "raw_label_probs_sha256": "882584a93f94ab47805a35d52f31ca4fd4877786406913ea32b3f356d65d675a",
+  "raw_error_probs_sha256": "39da55469fceafc4af8f9da84cf242eeb5a3dc11de10bef34fc5f44de1ce3ba6"
+}

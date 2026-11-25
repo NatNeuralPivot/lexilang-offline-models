@@ -1,0 +1,44 @@
+{
+  "model": "deepquillapp/gector-grammar",
+  "revision": "2232e0ef109dd12e11e2c74b565b7318e36379e4",
+  "license_declared": "apache-2.0",
+  "files": [
+    {
+      "file": "model.onnx",
+      "bytes": 256279090,
+      "sha256": "c8ce4fcc952f33d399cd668e200527f28b94136b61bec24d7852504d5c7c53e9",
+      "source_url": "https://huggingface.co/deepquillapp/gector-grammar/resolve/2232e0ef109dd12e11e2c74b565b7318e36379e4/model.onnx",
+      "verified_against": "remote LFS SHA-256",
+      "upstream_lfs_sha256": "c8ce4fcc952f33d399cd668e200527f28b94136b61bec24d7852504d5c7c53e9",
+      "upstream_git_blob_oid": "10c8bb786de94efa952c2e46f9214a21775078ee"
+    },
+    {
+      "file": "tokenizer.json",
+      "bytes": 3558978,
+      "sha256": "c9cbd55a5b79c5b8d99108dcd4978c16610a5f9cb5f7b27502efc2f893b5e720",
+      "source_url": "https://huggingface.co/deepquillapp/gector-grammar/resolve/2232e0ef109dd12e11e2c74b565b7318e36379e4/tokenizer.json",
+      "verified_against": "remote Git blob OID, plus measured SHA-256",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_oid": "4ced911190ce9d4740950168a72ce0de0621516f"
+    },
+    {
+      "file": "labels.json",
+      "bytes": 96276,
+      "sha256": "753bb8bd179ba56c169d950bce77ad40893490bce47be9f74281263582d3ec43",
+      "source_url": "https://huggingface.co/deepquillapp/gector-grammar/resolve/2232e0ef109dd12e11e2c74b565b7318e36379e4/labels.json",
+      "verified_against": "remote Git blob OID, plus measured SHA-256",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_oid": "0fc27a5bc7c3dde6fe3ed426d0b0cc2d43a0e9a4"
+    },
+    {
+      "file": "verb-form-vocab.txt",
+      "bytes": 4390076,
+      "sha256": "5906804ec8a1acd8cbfc2918522bf429ce5edded8bbc46ffc2be861d280d3abf",
+      "source_url": "https://huggingface.co/deepquillapp/gector-grammar/resolve/2232e0ef109dd12e11e2c74b565b7318e36379e4/verb-form-vocab.txt",
+      "verified_against": "remote Git blob OID, plus measured SHA-256",
+      "upstream_lfs_sha256": null,
+      "upstream_git_blob_oid": "049be055645a8cee15c36d196535bf21224650bc"
+    }
+  ],
+  "total_bytes": 264324420
+}

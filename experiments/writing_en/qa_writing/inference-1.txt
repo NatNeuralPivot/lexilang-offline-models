@@ -1,0 +1,20 @@
+{"id": "A1-001", "original": "She go to school every day.", "revised_text": "She goes to school every day."}
+{"id": "A1-002", "original": "I has two books.", "revised_text": "I has two books."}
+{"id": "A1-003", "original": "He is a honest man.", "revised_text": "He is an honest man."}
+{"id": "A2-001", "original": "There is many reasons to disagree.", "revised_text": "There is many reasons to disagree."}
+{"id": "A2-002", "original": "I have went to the library yesterday.", "revised_text": "I have gone to the library yesterday."}
+{"id": "B1-001", "original": "I look forward to meet you.", "revised_text": "I look forward to meeting you."}
+{"id": "B1-002", "original": "Despite of the rain, we continued.", "revised_text": "Despite the rain, we continued."}
+{"id": "B2-001", "original": "The results was inconclusive.", "revised_text": "The results was inconclusive."}
+{"id": "B2-002", "original": "If I would have known, I would have acted differently.", "revised_text": "If I would have known, I would have acted differently."}
+{"id": "C1-001", "original": "The policy was implemented last year, despite it had faced considerable opposition.", "revised_text": "The policy was implemented last year, despite it had facing considerable opposition."}
+{"id": "C1-002", "original": "The evidence suggest that the intervention had a limited impact.", "revised_text": "The evidence suggests that the intervention had a limited impact."}
+{"id": "C2-001", "original": "Neither the methodology nor the findings warrants such a sweeping conclusion.", "revised_text": "Neither the methodology nor the findings warrants such a sweeping conclusion."}
+{"id": "A1-KEEP", "original": "She goes to school every day.", "revised_text": "She goes to school every day."}
+{"id": "B2-KEEP", "original": "I would rather not discuss it.", "revised_text": "I would rather not discuss it."}
+{"id": "C1-KEEP", "original": "Nevertheless, the findings warrant further investigation.", "revised_text": "Nevertheless, the findings warrant further investigation."}
+{"id": "C2-KEEP", "original": "Had the evidence been more robust, the committee might have reached a different conclusion.", "revised_text": "Had the evidence been more robust, the committee might have reached a different conclusion."}
+{"id": "UK-KEEP", "original": "The organisation will analyse the colour distribution.", "revised_text": "The organisation will analyse the colour distribution."}
+{"id": "NAME-KEEP", "original": "Dr. O’Connor works at St. John’s College.", "revised_text": "Dr. O’Connor works at St. John’s College."}
+{"id": "STYLE-KEEP", "original": "While the evidence remains equivocal, it would be premature to infer causality.", "revised_text": "While the evidence remains equivocal, it would be premature to infer causality."}
+{"id": "FRAGMENT-KEEP", "original": "Not necessarily.", "revised_text": "Not necessarily."}

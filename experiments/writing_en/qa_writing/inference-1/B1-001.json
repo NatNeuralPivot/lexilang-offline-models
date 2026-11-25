@@ -1,0 +1,408 @@
+{
+  "id": "B1-001",
+  "original": "I look forward to meet you.",
+  "revised_text": "I look forward to meeting you.",
+  "original_sha256": "3a7e04a02c02c692da637d8e82f7cf360e31147ab27d02f8223524b473b20f4e",
+  "sentence_error_probability": 0.8373396992683411,
+  "tags": [
+    {
+      "word_index": -1,
+      "word": "$START",
+      "first_subtoken": 1,
+      "tag": "$KEEP",
+      "label_probability": 0.9995396137237549,
+      "error_probability": 0.000994937145151198,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9995396137237549
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.00022359592549037188
+        },
+        {
+          "tag": "$APPEND_I",
+          "probability": 6.38845594949089e-05
+        },
+        {
+          "tag": "$APPEND_The",
+          "probability": 9.205971764458809e-06
+        },
+        {
+          "tag": "$APPEND_My",
+          "probability": 8.242049261752982e-06
+        }
+      ]
+    },
+    {
+      "word_index": 0,
+      "word": "I",
+      "first_subtoken": 2,
+      "tag": "$KEEP",
+      "label_probability": 0.9947879314422607,
+      "error_probability": 0.004655476193875074,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9947879314422607
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0018655038438737392
+        },
+        {
+          "tag": "$APPEND_would",
+          "probability": 0.0004560770757962018
+        },
+        {
+          "tag": "$APPEND_do",
+          "probability": 0.0003313746419735253
+        },
+        {
+          "tag": "$APPEND_really",
+          "probability": 0.00023926158610265702
+        }
+      ]
+    },
+    {
+      "word_index": 1,
+      "word": "look",
+      "first_subtoken": 3,
+      "tag": "$KEEP",
+      "label_probability": 0.9964346885681152,
+      "error_probability": 0.0063909548334777355,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9964346885681152
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VB_VBG",
+          "probability": 0.001224120962433517
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VB_VBN",
+          "probability": 0.00039838021621108055
+        },
+        {
+          "tag": "$TRANSFORM_CASE_CAPITAL",
+          "probability": 0.0003093693230766803
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0002960698038805276
+        }
+      ]
+    },
+    {
+      "word_index": 2,
+      "word": "forward",
+      "first_subtoken": 4,
+      "tag": "$KEEP",
+      "label_probability": 0.9994683861732483,
+      "error_probability": 0.0006034988327883184,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9994683861732483
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.00016240509285125881
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.00012834087829105556
+        },
+        {
+          "tag": "$REPLACE_forward",
+          "probability": 8.036899089347571e-05
+        },
+        {
+          "tag": "$REPLACE_pleased",
+          "probability": 1.9042723579332232e-05
+        }
+      ]
+    },
+    {
+      "word_index": 3,
+      "word": "to",
+      "first_subtoken": 5,
+      "tag": "$KEEP",
+      "label_probability": 0.9985143542289734,
+      "error_probability": 0.002570867771282792,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9985143542289734
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.00033887181780301034
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0001834789291024208
+        },
+        {
+          "tag": "$APPEND_having",
+          "probability": 0.00012283763498999178
+        },
+        {
+          "tag": "$APPEND_being",
+          "probability": 5.7100725825876e-05
+        }
+      ]
+    },
+    {
+      "word_index": 4,
+      "word": "meet",
+      "first_subtoken": 6,
+      "tag": "$TRANSFORM_VERB_VB_VBG",
+      "label_probability": 0.8302589654922485,
+      "error_probability": 0.8373396992683411,
+      "top5": [
+        {
+          "tag": "$TRANSFORM_VERB_VB_VBG",
+          "probability": 0.8302589654922485
+        },
+        {
+          "tag": "$KEEP",
+          "probability": 0.14150318503379822
+        },
+        {
+          "tag": "$REPLACE_meeting",
+          "probability": 0.012798795476555824
+        },
+        {
+          "tag": "$REPLACE_seeing",
+          "probability": 0.006044745445251465
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0025471593253314495
+        }
+      ]
+    },
+    {
+      "word_index": 5,
+      "word": "you.",
+      "first_subtoken": 7,
+      "tag": "$KEEP",
+      "label_probability": 0.9916895627975464,
+      "error_probability": 0.008444197475910187,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9916895627975464
+        },
+        {
+          "tag": "$APPEND_too",
+          "probability": 0.0009233610471710563
+        },
+        {
+          "tag": "$APPEND_all",
+          "probability": 0.0007952745072543621
+        },
+        {
+          "tag": "$APPEND_again",
+          "probability": 0.0007716883555985987
+        },
+        {
+          "tag": "$APPEND_.",
+          "probability": 0.0005937507376074791
+        }
+      ]
+    }
+  ],
+  "proposals": [
+    {
+      "start_codepoint": 18,
+      "end_codepoint": 22,
+      "locationUTF16": 18,
+      "lengthUTF16": 4,
+      "original": "meet",
+      "replacement": "meeting",
+      "tag": "$TRANSFORM_VERB_VB_VBG",
+      "confidence": 0.8302589654922485,
+      "word_index": 4
+    }
+  ],
+  "rejected": [],
+  "input_ids": [
+    0,
+    50265,
+    38,
+    356,
+    556,
+    7,
+    972,
+    47,
+    4,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "attention_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "label_probs_shape": [
+    1,
+    80,
+    5000
+  ],
+  "error_probs_shape": [
+    1,
+    80
+  ],
+  "raw_label_probs_sha256": "a603a3b159c7d5ee6131b45e692fd7870f6cadf304519cda692a3c1fc5887114",
+  "raw_error_probs_sha256": "58ec6bddaca4fcad017ce872251915db8a3539e45810a557e4a91adc65c27d3b"
+}

@@ -1,0 +1,287 @@
+{
+  "status": "PASS_EXECUTION_NOT_QUALITY_APPROVAL",
+  "model_revision": "2232e0ef109dd12e11e2c74b565b7318e36379e4",
+  "cases_sha256": "0f6067d416eb74f67cc3e6d115fe99e04eeae21860fc1ac3e04d29d78be2396d",
+  "network_disabled": true,
+  "passes_per_case": 1,
+  "threads": 4,
+  "sentence_error_threshold": 0.6,
+  "edit_probability_threshold": 0.6,
+  "word_segmentation": "original non-whitespace spans; same as whitespace split for these 20 cases",
+  "case_transforms": "dropped per model card",
+  "versions": {
+    "numpy": "2.5.5",
+    "onnxruntime": "1.32.0",
+    "tokenizers": "0.23.3",
+    "huggingface_hub": "2.4.0"
+  },
+  "cases": [
+    {
+      "id": "A1-001",
+      "model_seconds": 0.012924666050821543,
+      "wall_seconds": 0.017834790982306004,
+      "changed": true,
+      "accepted_proposals": 1,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 10,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "A1-002",
+      "model_seconds": 0.012043124996125698,
+      "wall_seconds": 0.014266041107475758,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 8,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "A1-003",
+      "model_seconds": 0.01232279185205698,
+      "wall_seconds": 0.0147404158487916,
+      "changed": true,
+      "accepted_proposals": 1,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 9,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "A2-001",
+      "model_seconds": 0.012665084097534418,
+      "wall_seconds": 0.015211207792162895,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 10,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "A2-002",
+      "model_seconds": 0.013570958282798529,
+      "wall_seconds": 0.016328375320881605,
+      "changed": true,
+      "accepted_proposals": 1,
+      "rejected_nonkeep": 1,
+      "input_tokens_nonpad": 11,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "B1-001",
+      "model_seconds": 0.013433624990284443,
+      "wall_seconds": 0.015985624864697456,
+      "changed": true,
+      "accepted_proposals": 1,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 10,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "B1-002",
+      "model_seconds": 0.013423791155219078,
+      "wall_seconds": 0.015952832996845245,
+      "changed": true,
+      "accepted_proposals": 1,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 11,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "B2-001",
+      "model_seconds": 0.017618915997445583,
+      "wall_seconds": 0.02007750002667308,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 9,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "B2-002",
+      "model_seconds": 0.01785699976608157,
+      "wall_seconds": 0.02266270900145173,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 15,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "C1-001",
+      "model_seconds": 0.01668166695162654,
+      "wall_seconds": 0.021230333019047976,
+      "changed": true,
+      "accepted_proposals": 1,
+      "rejected_nonkeep": 1,
+      "input_tokens_nonpad": 17,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "C1-002",
+      "model_seconds": 0.01655291672796011,
+      "wall_seconds": 0.020366791170090437,
+      "changed": true,
+      "accepted_proposals": 1,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 14,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "C2-001",
+      "model_seconds": 0.014098749961704016,
+      "wall_seconds": 0.018070167396217585,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 15,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "A1-KEEP",
+      "model_seconds": 0.017607707995921373,
+      "wall_seconds": 0.02041504206135869,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 10,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "B2-KEEP",
+      "model_seconds": 0.015098500065505505,
+      "wall_seconds": 0.019722874742001295,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 10,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "C1-KEEP",
+      "model_seconds": 0.015536541119217873,
+      "wall_seconds": 0.020010499749332666,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 11,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "C2-KEEP",
+      "model_seconds": 0.01418945798650384,
+      "wall_seconds": 0.01948637468740344,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 19,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "UK-KEEP",
+      "model_seconds": 0.014919375069439411,
+      "wall_seconds": 0.017944374587386847,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 11,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "NAME-KEEP",
+      "model_seconds": 0.014128332957625389,
+      "wall_seconds": 0.01737895794212818,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 19,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "STYLE-KEEP",
+      "model_seconds": 0.013987834099680185,
+      "wall_seconds": 0.01816816721111536,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 20,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    },
+    {
+      "id": "FRAGMENT-KEEP",
+      "model_seconds": 0.04003791697323322,
+      "wall_seconds": 0.04320845892652869,
+      "changed": false,
+      "accepted_proposals": 0,
+      "rejected_nonkeep": 0,
+      "input_tokens_nonpad": 6,
+      "padded_tokens": 80,
+      "peak_rss_so_far_bytes": 1000177664
+    }
+  ],
+  "nonfinite": [],
+  "tokenizer_vocab_load_seconds": 0.12636879179626703,
+  "onnx_load_seconds": 0.30549112521111965,
+  "peak_rss_after_load_bytes": 1000177664,
+  "inputs": [
+    {
+      "name": "input_ids",
+      "shape": [
+        "batch",
+        "tokens"
+      ],
+      "type": "tensor(int64)"
+    },
+    {
+      "name": "attention_mask",
+      "shape": [
+        "batch",
+        "tokens"
+      ],
+      "type": "tensor(int64)"
+    }
+  ],
+  "outputs": [
+    {
+      "name": "label_probs",
+      "shape": [
+        "batch",
+        "tokens",
+        5000
+      ],
+      "type": "tensor(float)"
+    },
+    {
+      "name": "error_probs",
+      "shape": [
+        "batch",
+        "tokens"
+      ],
+      "type": "tensor(float)"
+    }
+  ],
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "source_file_and_all_original_strings_preserved": true,
+  "run_seconds": 5.610943167004734,
+  "max_rss_bytes": 1000177664
+}

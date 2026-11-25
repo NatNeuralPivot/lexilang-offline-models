@@ -1,0 +1,396 @@
+{
+  "id": "B2-KEEP",
+  "original": "I would rather not discuss it.",
+  "revised_text": "I would rather not discuss it.",
+  "original_sha256": "2822943ea7696f7c6d503531f5cd69f9ce391284d52bd20ccb45961d834f8bd5",
+  "sentence_error_probability": 0.008136922493577003,
+  "tags": [
+    {
+      "word_index": -1,
+      "word": "$START",
+      "first_subtoken": 1,
+      "tag": "$KEEP",
+      "label_probability": 0.9998148083686829,
+      "error_probability": 0.0005656583234667778,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9998148083686829
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 7.980443479027599e-05
+        },
+        {
+          "tag": "$APPEND_I",
+          "probability": 6.8518402258632705e-06
+        },
+        {
+          "tag": "$APPEND_My",
+          "probability": 6.587038114957977e-06
+        },
+        {
+          "tag": "$APPEND_No",
+          "probability": 6.15656381341978e-06
+        }
+      ]
+    },
+    {
+      "word_index": 0,
+      "word": "I",
+      "first_subtoken": 2,
+      "tag": "$KEEP",
+      "label_probability": 0.9986762404441833,
+      "error_probability": 0.0012841001152992249,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9986762404441833
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.00040307242306880653
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.00012608313409145921
+        },
+        {
+          "tag": "$REPLACE_I'd",
+          "probability": 0.00012594470172189176
+        },
+        {
+          "tag": "$TRANSFORM_CASE_LOWER",
+          "probability": 0.00012362193956505507
+        }
+      ]
+    },
+    {
+      "word_index": 1,
+      "word": "would",
+      "first_subtoken": 3,
+      "tag": "$KEEP",
+      "label_probability": 0.9967478513717651,
+      "error_probability": 0.002268293173983693,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9967478513717651
+        },
+        {
+          "tag": "$REPLACE_will",
+          "probability": 0.0010000683832913637
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.000543634407222271
+        },
+        {
+          "tag": "$REPLACE_would",
+          "probability": 0.00047303183237090707
+        },
+        {
+          "tag": "$REPLACE_do",
+          "probability": 0.0003311531327199191
+        }
+      ]
+    },
+    {
+      "word_index": 2,
+      "word": "rather",
+      "first_subtoken": 4,
+      "tag": "$KEEP",
+      "label_probability": 0.9768323302268982,
+      "error_probability": 0.007927652448415756,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9768323302268982
+        },
+        {
+          "tag": "$APPEND_you",
+          "probability": 0.01830350048840046
+        },
+        {
+          "tag": "$APPEND_we",
+          "probability": 0.0019209468737244606
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0006843574810773134
+        },
+        {
+          "tag": "$APPEND_they",
+          "probability": 0.00048326735850423574
+        }
+      ]
+    },
+    {
+      "word_index": 3,
+      "word": "not",
+      "first_subtoken": 5,
+      "tag": "$KEEP",
+      "label_probability": 0.9970006346702576,
+      "error_probability": 0.004193238448351622,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9970006346702576
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0008831272134557366
+        },
+        {
+          "tag": "$APPEND_have",
+          "probability": 0.0002700473996810615
+        },
+        {
+          "tag": "$REPLACE_don't",
+          "probability": 0.0002548740594647825
+        },
+        {
+          "tag": "$APPEND_be",
+          "probability": 0.00015893764793872833
+        }
+      ]
+    },
+    {
+      "word_index": 4,
+      "word": "discuss",
+      "first_subtoken": 6,
+      "tag": "$KEEP",
+      "label_probability": 0.9983639121055603,
+      "error_probability": 0.0020264238119125366,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9983639121055603
+        },
+        {
+          "tag": "$TRANSFORM_VERB_VB_VBN",
+          "probability": 0.00013988325372338295
+        },
+        {
+          "tag": "<OOV>",
+          "probability": 0.0001232848735526204
+        },
+        {
+          "tag": "$APPEND_with",
+          "probability": 0.00012011127546429634
+        },
+        {
+          "tag": "$REPLACE_tell",
+          "probability": 0.00010693386138882488
+        }
+      ]
+    },
+    {
+      "word_index": 5,
+      "word": "it.",
+      "first_subtoken": 7,
+      "tag": "$KEEP",
+      "label_probability": 0.9954816102981567,
+      "error_probability": 0.008136922493577003,
+      "top5": [
+        {
+          "tag": "$KEEP",
+          "probability": 0.9954816102981567
+        },
+        {
+          "tag": "$REPLACE_this",
+          "probability": 0.0014471944887191057
+        },
+        {
+          "tag": "$DELETE",
+          "probability": 0.0005253837443888187
+        },
+        {
+          "tag": "$REPLACE_that",
+          "probability": 0.0004405425861477852
+        },
+        {
+          "tag": "$REPLACE_them",
+          "probability": 0.00022690948389936239
+        }
+      ]
+    }
+  ],
+  "proposals": [],
+  "rejected": [],
+  "input_ids": [
+    0,
+    50265,
+    38,
+    74,
+    1195,
+    45,
+    2268,
+    24,
+    4,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "attention_mask": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "label_probs_shape": [
+    1,
+    80,
+    5000
+  ],
+  "error_probs_shape": [
+    1,
+    80
+  ],
+  "raw_label_probs_sha256": "8ec9936fc9423d626697ac40e69e4e1ecbb68987251fa9dc6c91ef25c419777b",
+  "raw_error_probs_sha256": "d8174f9307e7ba0598450f814d2494840aadc1d3b563e9b4ec9d12c393498823"
+}
