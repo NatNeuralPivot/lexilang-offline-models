@@ -34,3 +34,19 @@ No model weights are committed in `main`; do not create placeholder binary asset
 - [ ] Writing feedback benchmarked for precision, false positive rate and CEFR B2–C2
 - [ ] Apple device tests confirm no recording or draft is sent to a server
 - [ ] GitHub Release assets published and verified; only then registry switched from unpublished
+
+## Pronunciada first-pass source audit (25 November 2026)
+
+Checked directly against [Pronunciada README](https://github.com/moglearn/pronunciada),
+[its licensing audit](https://github.com/moglearn/pronunciada/blob/main/docs/LICENSING.md)
+and [NOTICE](https://github.com/moglearn/pronunciada/blob/main/NOTICE).
+
+- The upstream code is Apache-2.0. Its runtime acoustic ZIPA model `anyspeech/zipa-small-crctc-500k` is separately licensed **CC BY 4.0** and is downloaded from its original host on first use. The upstream author reports `model.int8.onnx` at roughly **67 MB** and `model.onnx` at roughly **248 MB**, *before* our pack overhead or iOS conversion.
+- The upstream README explicitly says **no iOS, Android or WebAssembly builds**. An existing ONNX file does not by itself prove the full Python-based scoring, lexicon, alignment and calibration pipeline can run on an iPhone.
+- Lexicons have different rights: EN CMUdict (BSD-2-Clause-style); DE/FR and ES (MIT/derived rules); IT/PT/RU sources and some output adapters (CC BY-SA). A package containing **all** upstream language support requires extra individual licensing and compatibility checks.
+- The upstream license audit says that L2-ARCTIC/other non-commercial training dependencies were removed from the shipped word model on 17 November 2026; this is an **upstream claim**, not yet independently reproduced for Lexi. It also lists open attribution/share-alike questions for some downstream trained models.
+- The upstream releases currently do **not** contain downloadable binary assets. We are **not** copying its source checkout and pretending it is a device-ready model package.
+
+**Decision:** hold actual binary redistribution while verifying exact upstream artifact revisions/licenses, the Apple runtime implementation and independent pronunciation assessment. For Lexi's immediate English learning needs, ship EN acoustic resources only after proof of compatibility; if a later multi-language pack is approved, install its full language set as one versioned logical pack and hide UI languages not supported by Lexi.
+
+This first-pass technical check does not constitute legal approval for any artifact.
