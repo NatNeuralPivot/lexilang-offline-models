@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "$QA_ROOT/acoustic-evidence/run_acoustic_smoke.py", line 174, in <module>
+    main()
+    ~~~~^^
+  File "$QA_ROOT/acoustic-evidence/run_acoustic_smoke.py", line 128, in main
+    result = scorer.score(up/f'site/samples/{name}.mp3', text)
+  File "~/.cache/lexilang/en-pronunciation-experiment/pronunciada-4619a298e5e2de927120122585683d18eda1f7c4/pronunciada/scorer.py", line 295, in score
+    lpa, fb, emb = self._posteriors(wav, timing)
+                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+  File "~/.cache/lexilang/en-pronunciation-experiment/pronunciada-4619a298e5e2de927120122585683d18eda1f7c4/pronunciada/scorer.py", line 249, in _posteriors
+    return self._lp_cache[key]
+           ~~~~~~~~~~~~~~^^^^^
+KeyError: '5f2eeb1b01467240a76e8c903e2baf26c77ed372'

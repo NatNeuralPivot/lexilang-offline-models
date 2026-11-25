@@ -1,0 +1,82 @@
+{
+  "method": "upstream balanced coaching; predicted review flags, not verified errors",
+  "items": [
+    {
+      "schema_version": 2,
+      "schema_minor": 6,
+      "kind": "stress",
+      "word": "register",
+      "word_index": 5,
+      "syllable_index": 0,
+      "phone_index": null,
+      "position": null,
+      "expected": 0,
+      "heard": 1,
+      "expected_ipa": null,
+      "heard_ipa": null,
+      "diff_keys": [
+        "stress_position"
+      ],
+      "error_prob": null,
+      "prob": 0.0208,
+      "confidence": 0.942,
+      "start": 2.37,
+      "end": 3.09,
+      "gate": {
+        "heard_post": 0.9386,
+        "n_syllables": 3
+      },
+      "features": []
+    },
+    {
+      "schema_version": 2,
+      "schema_minor": 6,
+      "kind": "substitution",
+      "word": "register",
+      "word_index": 5,
+      "syllable_index": 0,
+      "phone_index": 1,
+      "position": "medial",
+      "expected": "ɛ",
+      "heard": null,
+      "expected_ipa": "ɛ",
+      "heard_ipa": null,
+      "diff_keys": [],
+      "error_prob": 0.614,
+      "prob": 0.8265,
+      "confidence": null,
+      "start": 2.43,
+      "end": 2.45,
+      "gate": {
+        "error_prob": 0.614,
+        "candidate": "i",
+        "heard_post": 0.1712,
+        "log_ratio": 1.419
+      },
+      "features": []
+    },
+    {
+      "schema_version": 2,
+      "schema_minor": 6,
+      "kind": "mispronounced_word",
+      "word": "register",
+      "word_index": 5,
+      "syllable_index": null,
+      "phone_index": null,
+      "position": null,
+      "expected": "register",
+      "heard": null,
+      "expected_ipa": null,
+      "heard_ipa": null,
+      "diff_keys": [],
+      "error_prob": 0.614,
+      "prob": 0.4164,
+      "confidence": null,
+      "start": 2.37,
+      "end": 3.09,
+      "gate": null,
+      "n_sounds_flagged": 1,
+      "features": []
+    }
+  ]
+}

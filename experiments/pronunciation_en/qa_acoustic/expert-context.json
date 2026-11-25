@@ -1,0 +1,74 @@
+[
+  {
+    "file": "en-clean.json",
+    "source": "upstream sample metadata only; precomputed result excluded",
+    "metadata": {
+      "lang": "en",
+      "text": "It was good for me",
+      "source": "speechocean762 (CC BY 4.0), test split",
+      "speaker": "adult learner of English",
+      "experts": {
+        "sentence": {
+          "accuracy": 9,
+          "fluency": 10,
+          "prosodic": 9,
+          "completeness": 10.0,
+          "total": 9
+        },
+        "marked": []
+      }
+    }
+  },
+  {
+    "file": "en-learner-1.json",
+    "source": "upstream sample metadata only; precomputed result excluded",
+    "metadata": {
+      "lang": "en",
+      "text": "It was a beautiful day for a float",
+      "source": "speechocean762 (CC BY 4.0), test split",
+      "speaker": "adult learner of English",
+      "experts": {
+        "sentence": {
+          "accuracy": 8,
+          "fluency": 9,
+          "prosodic": 9,
+          "completeness": 10.0,
+          "total": 8
+        },
+        "marked": [
+          {
+            "word": "FLOAT",
+            "said": "<DEL>",
+            "expected": "L"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "file": "en-learner-2.json",
+    "source": "upstream sample metadata only; precomputed result excluded",
+    "metadata": {
+      "lang": "en",
+      "text": "Follow the link below to register",
+      "source": "speechocean762 (CC BY 4.0), test split",
+      "speaker": "adult learner of English",
+      "experts": {
+        "sentence": {
+          "accuracy": 8,
+          "fluency": 8,
+          "prosodic": 8,
+          "completeness": 10.0,
+          "total": 8
+        },
+        "marked": [
+          {
+            "word": "REGISTER",
+            "said": "IH",
+            "expected": "EH"
+          }
+        ]
+      }
+    }
+  }
+]

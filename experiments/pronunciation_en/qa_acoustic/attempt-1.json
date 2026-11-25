@@ -1,0 +1,133 @@
+{
+  "status": "FAIL",
+  "upstream_revision": "4619a298e5e2de927120122585683d18eda1f7c4",
+  "model_revision": "dfe87c97662606fa6db90ad06f627d4363314744",
+  "model_sha256": "d0e28b68164e8b1fbd6105100c01798828aa0855000ce9bbbd1a2cec233adf13",
+  "tokens_sha256": "f8e042a0c9130532b22d03ec7cae2f75a23fbec70c450c31a8efb51787b2b8fe",
+  "network_disabled": true,
+  "threads": 4,
+  "precision": "int8",
+  "strictness": 0.5,
+  "posterior_cache_size": 0,
+  "imports_seconds": 0.17869387520477176,
+  "versions": {
+    "numpy": "2.5.5",
+    "onnxruntime": "1.32.0",
+    "kaldi-native-fbank": "1.23.3",
+    "soundfile": "0.14.0"
+  },
+  "clips": [],
+  "nonfinite_fields_serialized_as_null": [],
+  "scorer_load_seconds": 0.7165969582274556,
+  "rss_after_load_bytes": 244170752,
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "encoder_outputs": [
+    "enc0",
+    "enc1",
+    "enc2",
+    "enc3",
+    "enc4",
+    "enc5",
+    "final"
+  ],
+  "prosody_initialization_error": null,
+  "error": {
+    "type": "KeyError",
+    "message": "'5f2eeb1b01467240a76e8c903e2baf26c77ed372'",
+    "traceback": "Traceback (most recent call last):\n  File \"$QA_ROOT/acoustic-evidence/run_acoustic_smoke.py\", line 128, in main\n    result = scorer.score(up/f'site/samples/{name}.mp3', text)\n  File \"~/.cache/lexilang/en-pronunciation-experiment/pronunciada-4619a298e5e2de927120122585683d18eda1f7c4/pronunciada/scorer.py\", line 295, in score\n    lpa, fb, emb = self._posteriors(wav, timing)\n                   ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^\n  File \"~/.cache/lexilang/en-pronunciation-experiment/pronunciada-4619a298e5e2de927120122585683d18eda1f7c4/pronunciada/scorer.py\", line 249, in _posteriors\n    return self._lp_cache[key]\n           ~~~~~~~~~~~~~~^^^^^\nKeyError: '5f2eeb1b01467240a76e8c903e2baf26c77ed372'\n"
+  },
+  "run_seconds": 1.0005576661787927,
+  "max_rss_bytes": 261259264,
+  "opened_runtime_resources": [
+    {
+      "path": "pronunciada/data/adapters/en.npz",
+      "sha256": "e4d6f84fee528ee89cb2aa491eb43ddb890114c83e7c606a39214fd53a37b4e6"
+    },
+    {
+      "path": "pronunciada/data/calib/config.json",
+      "sha256": "3373f65cb3ddad4650627e5e32639dbb8412cd36609d14a0b93bb45ccd2da372"
+    },
+    {
+      "path": "pronunciada/data/calib/omission.json",
+      "sha256": "1125c323512bb9d6cd708a9e19415b33b55bd5629ac0e4d0a2b5dc1d142bedc6"
+    },
+    {
+      "path": "pronunciada/data/calib/prosody/en.json",
+      "sha256": "7c91d52124c988583460697662ebc6f1086509be322239c6a6c5e005c6aa0bda"
+    },
+    {
+      "path": "pronunciada/data/calib/sentence_r19.npz",
+      "sha256": "f9d60525e14b2930c16d8e42fa5dfa5bdef54af5178bee405e98d38d8320c817"
+    },
+    {
+      "path": "pronunciada/data/calib/seqhead_en.npz",
+      "sha256": "a0853d3c3274d158eb47c2412067a94f6a85a9b70efdeeb78eb5d9c71d39db07"
+    },
+    {
+      "path": "pronunciada/data/calib/sound_B.npz",
+      "sha256": "4331fd3400fa7bb96c4f3d781e17fae90be076d8f721ee0f99fbf66f730e99c2"
+    },
+    {
+      "path": "pronunciada/data/calib/sound_E.npz",
+      "sha256": "3673ea818d8788137456be0753808746eb4a275d0e9fa3992b34c729f98bda3c"
+    },
+    {
+      "path": "pronunciada/data/calib/sound_E_emb.npz",
+      "sha256": "1c76c9c610c3851c4e92ddeeab114b757375dc9f2de240fb3880ba1912e35744"
+    },
+    {
+      "path": "pronunciada/data/calib/sound_U.npz",
+      "sha256": "a33b101bbf08522c0001cd902dca9bc087c9878e594643f3d4dc97b13a1418a7"
+    },
+    {
+      "path": "pronunciada/data/calib/word.npz",
+      "sha256": "b16205808546befe211b5ef6a0926a1d98276d4eb3b5ebe9a95fd33de56d73b4"
+    },
+    {
+      "path": "pronunciada/data/calib/word_reg.npz",
+      "sha256": "26f7adec684ee75f81f734de16aa92b9d542611e0d490122c9824f5671c527bb"
+    },
+    {
+      "path": "pronunciada/data/calib/word_reg_r6.npz",
+      "sha256": "191bb4e3916f8b7acebe59f876285ccbd942e4e7e67a2a1edff20aad43bb16ab"
+    },
+    {
+      "path": "pronunciada/data/lex/en.tsv.gz",
+      "sha256": "21ebd189bcf236e9b2820040d1ff018955de8ab77e74a2308b4d9939975e3be0"
+    },
+    {
+      "path": "pronunciada/data/lex/en_lts.tsv.gz",
+      "sha256": "a45806e22f85617cfc6813a10bb8c360a6dd053d9fe1dd2660f8062650171cec"
+    },
+    {
+      "path": "pronunciada/data/native/en.json",
+      "sha256": "9064e49942b097ff2e2bd6a3671c88cabcd6414a8dc7320a3f2f42dba936e14f"
+    },
+    {
+      "path": "pronunciada/data/prosody/stress_v3.json",
+      "sha256": "155574124e98699cceedabf1b21906aba7dc140fd05f18d1607dcb839278073c"
+    },
+    {
+      "path": "pronunciada/data/prosody/stress_v3.zemb.npz",
+      "sha256": "75435e56de70e13079b156aa457226ee904177f96337af17530784fd12611a5d"
+    },
+    {
+      "path": "pronunciada/data/zipa_tokens.txt",
+      "sha256": "f8e042a0c9130532b22d03ec7cae2f75a23fbec70c450c31a8efb51787b2b8fe"
+    }
+  ],
+  "local_model_files": [
+    {
+      "name": "model.int8.emb-enc0-enc1-enc2-enc3-enc4-enc5-final.onnx",
+      "bytes": 70678887,
+      "sha256": "36a7cdc229e08c57b6c568fc0a4b6dc697c01f435b09183699b9a1f5b19c034c"
+    },
+    {
+      "name": "model.int8.onnx",
+      "bytes": 70677672,
+      "sha256": "d0e28b68164e8b1fbd6105100c01798828aa0855000ce9bbbd1a2cec233adf13"
+    }
+  ]
+}

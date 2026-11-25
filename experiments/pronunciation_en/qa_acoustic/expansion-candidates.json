@@ -1,0 +1,80 @@
+{
+  "repository": "jimbozhang/speechocean762",
+  "revision": "613968e3b0b789fc33936fb5eba1973176ba7d11",
+  "split": "test",
+  "selection": "first sorted utterance from each of 7 distinct adults aged >=18, excluding the three existing speakers; model outputs were not used",
+  "additional_candidates": [
+    {
+      "id": "001200015",
+      "speaker": "0120",
+      "age": 19,
+      "relative_audio_path": "WAVE/SPEAKER0120/001200015.WAV",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0120/001200015.WAV",
+      "head_status": 200,
+      "content_type": "audio/wav",
+      "content_length": "144428"
+    },
+    {
+      "id": "001570024",
+      "speaker": "0157",
+      "age": 21,
+      "relative_audio_path": "WAVE/SPEAKER0157/001570024.WAV",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0157/001570024.WAV",
+      "head_status": 200,
+      "content_type": "audio/wav",
+      "content_length": "122284"
+    },
+    {
+      "id": "003060002",
+      "speaker": "0306",
+      "age": 21,
+      "relative_audio_path": "WAVE/SPEAKER0306/003060002.WAV",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0306/003060002.WAV",
+      "head_status": 200,
+      "content_type": "audio/wav",
+      "content_length": "127404"
+    },
+    {
+      "id": "004570010",
+      "speaker": "0457",
+      "age": 21,
+      "relative_audio_path": "WAVE/SPEAKER0457/004570010.WAV",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0457/004570010.WAV",
+      "head_status": 200,
+      "content_type": "audio/wav",
+      "content_length": "180652"
+    },
+    {
+      "id": "004610037",
+      "speaker": "0461",
+      "age": 23,
+      "relative_audio_path": "WAVE/SPEAKER0461/004610037.WAV",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0461/004610037.WAV",
+      "head_status": 200,
+      "content_type": "audio/wav",
+      "content_length": "168652"
+    },
+    {
+      "id": "005630017",
+      "speaker": "0563",
+      "age": 22,
+      "relative_audio_path": "WAVE/SPEAKER0563/005630017.WAV",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0563/005630017.WAV",
+      "head_status": 200,
+      "content_type": "audio/wav",
+      "content_length": "120524"
+    },
+    {
+      "id": "005670043",
+      "speaker": "0567",
+      "age": 21,
+      "relative_audio_path": "WAVE/SPEAKER0567/005670043.WAV",
+      "source_url": "https://raw.githubusercontent.com/jimbozhang/speechocean762/613968e3b0b789fc33936fb5eba1973176ba7d11/WAVE/SPEAKER0567/005670043.WAV",
+      "head_status": 200,
+      "content_type": "audio/wav",
+      "content_length": "105964"
+    }
+  ],
+  "downloaded": false,
+  "inference_run": false
+}

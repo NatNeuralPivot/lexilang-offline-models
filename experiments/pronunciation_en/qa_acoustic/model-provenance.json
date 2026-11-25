@@ -1,0 +1,30 @@
+{
+  "repository": "anyspeech/zipa-small-crctc-500k",
+  "revision": "dfe87c97662606fa6db90ad06f627d4363314744",
+  "declared_license": "CC-BY-4.0",
+  "model_card_url": "https://huggingface.co/anyspeech/zipa-small-crctc-500k/blob/dfe87c97662606fa6db90ad06f627d4363314744/README.md",
+  "assets": [
+    {
+      "path": "model.int8.onnx",
+      "bytes": 70677672,
+      "sha256": "d0e28b68164e8b1fbd6105100c01798828aa0855000ce9bbbd1a2cec233adf13",
+      "revision": "dfe87c97662606fa6db90ad06f627d4363314744",
+      "source_url": "https://huggingface.co/anyspeech/zipa-small-crctc-500k/resolve/dfe87c97662606fa6db90ad06f627d4363314744/model.int8.onnx",
+      "seconds": 34.4959,
+      "remote_lfs_sha256": "d0e28b68164e8b1fbd6105100c01798828aa0855000ce9bbbd1a2cec233adf13",
+      "git_blob_oid": "aee3512eb73931858215e870b6a24783ee469b01"
+    },
+    {
+      "path": "tokens.txt",
+      "bytes": 769,
+      "sha256": "f8e042a0c9130532b22d03ec7cae2f75a23fbec70c450c31a8efb51787b2b8fe",
+      "revision": "dfe87c97662606fa6db90ad06f627d4363314744",
+      "source_url": "https://huggingface.co/anyspeech/zipa-small-crctc-500k/resolve/dfe87c97662606fa6db90ad06f627d4363314744/tokens.txt",
+      "seconds": 1.3766,
+      "remote_lfs_sha256": null,
+      "git_blob_oid": "9a2a315cdea10b01c59893ad42d211237813ea2e"
+    }
+  ],
+  "tokens_byte_identical_to_pronunciada": true,
+  "cache": "~/.cache/lexilang/en-pronunciation-acoustic-qa/zipa-small-int8-dfe87c97662606fa6db90ad06f627d4363314744"
+}

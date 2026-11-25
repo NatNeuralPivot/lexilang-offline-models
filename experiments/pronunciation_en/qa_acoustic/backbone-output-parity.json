@@ -1,0 +1,15 @@
+{
+  "audio": "en-clean.mp3",
+  "test": "official INT8 vs extra-output graph; backbone log_probs and lengths only, not full/trimmed scoring parity",
+  "bit_identical": true,
+  "max_abs_log_probs_delta": 0.0,
+  "log_probs_shape": [
+    1,
+    107,
+    127
+  ],
+  "output_lengths": [
+    107
+  ],
+  "max_rss_bytes": 262307840
+}

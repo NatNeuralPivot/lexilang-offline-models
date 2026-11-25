@@ -1,0 +1,425 @@
+{
+  "status": "PASS_ACOUSTIC_EXECUTION_NOT_ACCURACY_VALIDATION",
+  "upstream_revision": "4619a298e5e2de927120122585683d18eda1f7c4",
+  "model_revision": "dfe87c97662606fa6db90ad06f627d4363314744",
+  "model_sha256": "d0e28b68164e8b1fbd6105100c01798828aa0855000ce9bbbd1a2cec233adf13",
+  "tokens_sha256": "f8e042a0c9130532b22d03ec7cae2f75a23fbec70c450c31a8efb51787b2b8fe",
+  "network_disabled": true,
+  "threads": 4,
+  "precision": "int8",
+  "strictness": 0.5,
+  "posterior_cache_size": 1,
+  "imports_seconds": 0.12361199967563152,
+  "versions": {
+    "numpy": "2.5.5",
+    "onnxruntime": "1.32.0",
+    "kaldi-native-fbank": "1.23.3",
+    "soundfile": "0.14.0"
+  },
+  "clips": [
+    {
+      "id": "en-clean",
+      "corpus_id": "000240010",
+      "audio_sha256": "cc84cf34130ac5cdd0c5000fbfa7b3c5ef037029b27fe4fd145a632154b24384",
+      "text": "It was good for me",
+      "duration_seconds": 2.211,
+      "score_wall_seconds": 1.2341439169831574,
+      "timing_ms": {
+        "g2p": 0.308,
+        "load": 9.933,
+        "audio_check": 5.211,
+        "fbank": 5.892,
+        "model": 20.887,
+        "adapter": 0.133,
+        "align": 8.291,
+        "features": 4.576,
+        "delivery": 1163.737,
+        "calibrate": 6.512,
+        "sentence_head": 2.115,
+        "prosody": 1.614,
+        "assemble": 0.19,
+        "total": 1232.076
+      },
+      "coaching_seconds": 0.010448832996189594,
+      "rss_peak_so_far_bytes": 294191104,
+      "sentence_prob": 0.9926893696580574,
+      "scores": {
+        "accuracy": 0.9393129814697015,
+        "fluency": 0.9600722988591883,
+        "prosodic": 0.930327561274607,
+        "total": 0.9040080602107023
+      },
+      "words": 5,
+      "phones": 13,
+      "stress": [],
+      "phones_below_0_5": [],
+      "words_below_0_5_or_omitted": [],
+      "warnings": [],
+      "audio_quality": {
+        "schema_version": 1,
+        "duration_s": 2.211,
+        "clipped_share": 0.0,
+        "peak_dbfs": -7.4228,
+        "noise_db": -68.25,
+        "speech_db": -29.9993,
+        "snr_db": 50.8139,
+        "speech_s": 1.08,
+        "speech_share": 0.4909,
+        "lead_sil_s": 0.58,
+        "trail_sil_s": 0.551,
+        "expected_s": 0.96,
+        "speech_ratio": 1.125,
+        "issues": [],
+        "retry_recommended": false
+      },
+      "coaching_items": 0
+    },
+    {
+      "id": "en-learner-1",
+      "corpus_id": "014200206",
+      "audio_sha256": "48d9c362250c3d19971286a101af582e04d5fae4dcafa7d912396852247be4b4",
+      "text": "It was a beautiful day for a float",
+      "duration_seconds": 3.07,
+      "score_wall_seconds": 0.04506491729989648,
+      "timing_ms": {
+        "g2p": 0.261,
+        "load": 0.714,
+        "audio_check": 0.372,
+        "fbank": 3.189,
+        "model": 23.218,
+        "adapter": 0.118,
+        "align": 3.327,
+        "features": 1.421,
+        "delivery": 4.787,
+        "calibrate": 3.894,
+        "sentence_head": 1.256,
+        "prosody": 2.003,
+        "assemble": 0.263,
+        "total": 45.009
+      },
+      "coaching_seconds": 0.006496916990727186,
+      "rss_peak_so_far_bytes": 314277888,
+      "sentence_prob": 0.7428989285369132,
+      "scores": {
+        "accuracy": 0.7636498481324716,
+        "fluency": 0.8461928795385326,
+        "prosodic": 0.7847202232844388,
+        "total": 0.7167409458466714
+      },
+      "words": 8,
+      "phones": 24,
+      "stress": [
+        {
+          "word": "beautiful",
+          "word_stress_prob": 0.9989011803754008,
+          "syllables": [
+            {
+              "expected": 1,
+              "prob": 0.9793385833001063
+            },
+            {
+              "expected": 0,
+              "prob": null
+            },
+            {
+              "expected": 0,
+              "prob": null
+            }
+          ]
+        }
+      ],
+      "phones_below_0_5": [
+        {
+          "word": "float",
+          "ipa": "l",
+          "prob": 0.2730248555098182,
+          "heard": "",
+          "start": 2.11,
+          "end": 2.13
+        },
+        {
+          "word": "float",
+          "ipa": "oʊ",
+          "prob": 0.33844036493006235,
+          "heard": "ɔ",
+          "start": 2.15,
+          "end": 2.23
+        }
+      ],
+      "words_below_0_5_or_omitted": [
+        {
+          "word": "float",
+          "prob": 0.10650012102408231,
+          "omitted": false,
+          "present_prob": 0.899180074869066
+        }
+      ],
+      "warnings": [],
+      "audio_quality": {
+        "schema_version": 1,
+        "duration_s": 3.07,
+        "clipped_share": 0.0,
+        "peak_dbfs": -9.0012,
+        "noise_db": -61.2365,
+        "speech_db": -32.603,
+        "snr_db": 39.0059,
+        "speech_s": 1.78,
+        "speech_share": 0.5817,
+        "lead_sil_s": 0.76,
+        "trail_sil_s": 0.53,
+        "expected_s": 1.92,
+        "speech_ratio": 0.9271,
+        "issues": [],
+        "retry_recommended": false
+      },
+      "coaching_items": 8
+    },
+    {
+      "id": "en-learner-2",
+      "corpus_id": "021160249",
+      "audio_sha256": "cab7ece1ad082eb4539e3a7b63d3daa04bcc9f07a1dfbaf8149fe9674717d822",
+      "text": "Follow the link below to register",
+      "duration_seconds": 3.9989375,
+      "score_wall_seconds": 0.04598770756274462,
+      "timing_ms": {
+        "g2p": 0.209,
+        "load": 0.648,
+        "audio_check": 0.27,
+        "fbank": 3.124,
+        "model": 24.153,
+        "adapter": 0.131,
+        "align": 3.29,
+        "features": 0.994,
+        "delivery": 5.119,
+        "calibrate": 3.272,
+        "sentence_head": 1.217,
+        "prosody": 3.164,
+        "assemble": 0.197,
+        "total": 45.939
+      },
+      "coaching_seconds": 0.001157625112682581,
+      "rss_peak_so_far_bytes": 327401472,
+      "sentence_prob": 0.9824870981765174,
+      "scores": {
+        "accuracy": 0.8843937604476142,
+        "fluency": 0.887225210700483,
+        "prosodic": 0.8392114460449005,
+        "total": 0.8333726435677032
+      },
+      "words": 6,
+      "phones": 23,
+      "stress": [
+        {
+          "word": "Follow",
+          "word_stress_prob": 0.9961058298415236,
+          "syllables": [
+            {
+              "expected": 1,
+              "prob": 0.9207599381780744
+            },
+            {
+              "expected": 0,
+              "prob": null
+            }
+          ]
+        },
+        {
+          "word": "below",
+          "word_stress_prob": 0.9456886220178615,
+          "syllables": [
+            {
+              "expected": 0,
+              "prob": null
+            },
+            {
+              "expected": 1,
+              "prob": 0.37131189206521376
+            }
+          ]
+        },
+        {
+          "word": "register",
+          "word_stress_prob": 0.4640600455342245,
+          "syllables": [
+            {
+              "expected": 1,
+              "prob": 0.02075426055417817
+            },
+            {
+              "expected": 0,
+              "prob": null
+            },
+            {
+              "expected": 0,
+              "prob": null
+            }
+          ]
+        }
+      ],
+      "phones_below_0_5": [],
+      "words_below_0_5_or_omitted": [
+        {
+          "word": "register",
+          "prob": 0.416360931194361,
+          "omitted": false,
+          "present_prob": 0.9999170696123215
+        }
+      ],
+      "warnings": [],
+      "audio_quality": {
+        "schema_version": 1,
+        "duration_s": 3.999,
+        "clipped_share": 0.0,
+        "peak_dbfs": -4.5166,
+        "noise_db": -57.8352,
+        "speech_db": -25.0957,
+        "snr_db": 41.7232,
+        "speech_s": 2.76,
+        "speech_share": 0.6935,
+        "lead_sil_s": 0.56,
+        "trail_sil_s": 0.6789,
+        "expected_s": 1.92,
+        "speech_ratio": 1.4375,
+        "issues": [],
+        "retry_recommended": false
+      },
+      "coaching_items": 3
+    }
+  ],
+  "nonfinite_fields_serialized_as_null": [],
+  "scorer_load_seconds": 0.4748082500882447,
+  "rss_after_load_bytes": 263733248,
+  "providers": [
+    "CPUExecutionProvider"
+  ],
+  "encoder_outputs": [
+    "enc0",
+    "enc1",
+    "enc2",
+    "enc3",
+    "enc4",
+    "enc5",
+    "final"
+  ],
+  "prosody_initialization_error": null,
+  "run_seconds": 1.958523124922067,
+  "max_rss_bytes": 327401472,
+  "opened_runtime_resources": [
+    {
+      "path": "pronunciada/data/adapters/en.npz",
+      "sha256": "e4d6f84fee528ee89cb2aa491eb43ddb890114c83e7c606a39214fd53a37b4e6"
+    },
+    {
+      "path": "pronunciada/data/calib/config.json",
+      "sha256": "3373f65cb3ddad4650627e5e32639dbb8412cd36609d14a0b93bb45ccd2da372"
+    },
+    {
+      "path": "pronunciada/data/calib/contrast_caps.json",
+      "sha256": "f256823245d08773360cf0e57931328b0c99adf44efcd01b2f5bbc001cf8cbf1"
+    },
+    {
+      "path": "pronunciada/data/calib/omission.json",
+      "sha256": "1125c323512bb9d6cd708a9e19415b33b55bd5629ac0e4d0a2b5dc1d142bedc6"
+    },
+    {
+      "path": "pronunciada/data/calib/phone_dist.npz",
+      "sha256": "a4f1e4b10ffdfd96049a170350e818b328fe48590df5c097d0df1bc2b380987e"
+    },
+    {
+      "path": "pronunciada/data/calib/prosody/en.json",
+      "sha256": "7c91d52124c988583460697662ebc6f1086509be322239c6a6c5e005c6aa0bda"
+    },
+    {
+      "path": "pronunciada/data/calib/sentence_r19.npz",
+      "sha256": "f9d60525e14b2930c16d8e42fa5dfa5bdef54af5178bee405e98d38d8320c817"
+    },
+    {
+      "path": "pronunciada/data/calib/seqhead_en.npz",
+      "sha256": "a0853d3c3274d158eb47c2412067a94f6a85a9b70efdeeb78eb5d9c71d39db07"
+    },
+    {
+      "path": "pronunciada/data/calib/sound_B.npz",
+      "sha256": "4331fd3400fa7bb96c4f3d781e17fae90be076d8f721ee0f99fbf66f730e99c2"
+    },
+    {
+      "path": "pronunciada/data/calib/sound_E.npz",
+      "sha256": "3673ea818d8788137456be0753808746eb4a275d0e9fa3992b34c729f98bda3c"
+    },
+    {
+      "path": "pronunciada/data/calib/sound_E_emb.npz",
+      "sha256": "1c76c9c610c3851c4e92ddeeab114b757375dc9f2de240fb3880ba1912e35744"
+    },
+    {
+      "path": "pronunciada/data/calib/sound_U.npz",
+      "sha256": "a33b101bbf08522c0001cd902dca9bc087c9878e594643f3d4dc97b13a1418a7"
+    },
+    {
+      "path": "pronunciada/data/calib/word.npz",
+      "sha256": "b16205808546befe211b5ef6a0926a1d98276d4eb3b5ebe9a95fd33de56d73b4"
+    },
+    {
+      "path": "pronunciada/data/calib/word_reg.npz",
+      "sha256": "26f7adec684ee75f81f734de16aa92b9d542611e0d490122c9824f5671c527bb"
+    },
+    {
+      "path": "pronunciada/data/calib/word_reg_r6.npz",
+      "sha256": "191bb4e3916f8b7acebe59f876285ccbd942e4e7e67a2a1edff20aad43bb16ab"
+    },
+    {
+      "path": "pronunciada/data/coach/attr_heads.npz",
+      "sha256": "6feb9580df9bc4379a3f7ffa25dae41a241f63bed5d64c1a7878e3fb4ab68b0a"
+    },
+    {
+      "path": "pronunciada/data/coach/contrast_heads.json",
+      "sha256": "f17e87bcb4429a06c56f0145dd30bbd478747a0fec32e41a360ef61784722427"
+    },
+    {
+      "path": "pronunciada/data/coach/gate.json",
+      "sha256": "e6998329a6823042e191d6ef23307695838706e85e55d838eaca61af0a057b24"
+    },
+    {
+      "path": "pronunciada/data/coach/inventory.json",
+      "sha256": "5a1070230e376414e93f260e9e1c15470364d9db1bffc06f1fa0827d2acc5247"
+    },
+    {
+      "path": "pronunciada/data/coach/model.json",
+      "sha256": "306df39ba3ebdcf31adebdbb0ba09ba1d26ae83b3978c1c6b8a4a9ab2e40eba3"
+    },
+    {
+      "path": "pronunciada/data/lex/en.tsv.gz",
+      "sha256": "21ebd189bcf236e9b2820040d1ff018955de8ab77e74a2308b4d9939975e3be0"
+    },
+    {
+      "path": "pronunciada/data/lex/en_lts.tsv.gz",
+      "sha256": "a45806e22f85617cfc6813a10bb8c360a6dd053d9fe1dd2660f8062650171cec"
+    },
+    {
+      "path": "pronunciada/data/native/en.json",
+      "sha256": "9064e49942b097ff2e2bd6a3671c88cabcd6414a8dc7320a3f2f42dba936e14f"
+    },
+    {
+      "path": "pronunciada/data/prosody/stress_v3.json",
+      "sha256": "155574124e98699cceedabf1b21906aba7dc140fd05f18d1607dcb839278073c"
+    },
+    {
+      "path": "pronunciada/data/prosody/stress_v3.zemb.npz",
+      "sha256": "75435e56de70e13079b156aa457226ee904177f96337af17530784fd12611a5d"
+    },
+    {
+      "path": "pronunciada/data/zipa_tokens.txt",
+      "sha256": "f8e042a0c9130532b22d03ec7cae2f75a23fbec70c450c31a8efb51787b2b8fe"
+    }
+  ],
+  "local_model_files": [
+    {
+      "name": "model.int8.emb-enc0-enc1-enc2-enc3-enc4-enc5-final.onnx",
+      "bytes": 70678887,
+      "sha256": "36a7cdc229e08c57b6c568fc0a4b6dc697c01f435b09183699b9a1f5b19c034c"
+    },
+    {
+      "name": "model.int8.onnx",
+      "bytes": 70677672,
+      "sha256": "d0e28b68164e8b1fbd6105100c01798828aa0855000ce9bbbd1a2cec233adf13"
+    }
+  ]
+}
