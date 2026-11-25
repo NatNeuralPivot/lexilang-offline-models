@@ -1,0 +1,236 @@
+{
+  "versions": {
+    "numpy": "2.5.5",
+    "onnxruntime": "1.32.0",
+    "kaldi-native-fbank": "1.23.3",
+    "soundfile": "0.14.0"
+  },
+  "libsndfile": "1.2.2",
+  "providers_available": [
+    "CoreMLExecutionProvider",
+    "AzureExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "onnx_heads": [
+    {
+      "file": "calib__seqhead_en.onnx",
+      "load_seconds": 0.0203,
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "inputs": [
+        {
+          "name": "x_enc0",
+          "shape": [
+            1,
+            "n",
+            192
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "x_enc1",
+          "shape": [
+            1,
+            "n",
+            256
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "x_enc2",
+          "shape": [
+            1,
+            "n",
+            384
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "x_enc3",
+          "shape": [
+            1,
+            "n",
+            512
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "x_enc4",
+          "shape": [
+            1,
+            "n",
+            384
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "x_enc5",
+          "shape": [
+            1,
+            "n",
+            256
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "x_final",
+          "shape": [
+            1,
+            "n",
+            512
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "xt",
+          "shape": [
+            1,
+            "n",
+            48
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "pid",
+          "shape": [
+            1,
+            "n"
+          ],
+          "type": "tensor(int64)"
+        },
+        {
+          "name": "ppos",
+          "shape": [
+            1,
+            "n"
+          ],
+          "type": "tensor(int64)"
+        },
+        {
+          "name": "xu",
+          "shape": [
+            1,
+            67
+          ],
+          "type": "tensor(float)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "sentence",
+          "shape": [
+            "Divsentence_dim_0",
+            "Divsentence_dim_1"
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "phone",
+          "shape": [
+            "Divphone_dim_0",
+            "n"
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "word_part",
+          "shape": [
+            "Divword_part_dim_0",
+            "n"
+          ],
+          "type": "tensor(float)"
+        }
+      ]
+    },
+    {
+      "file": "prosody__stress_v3.onnx",
+      "load_seconds": 0.0031,
+      "providers": [
+        "CPUExecutionProvider"
+      ],
+      "inputs": [
+        {
+          "name": "x",
+          "shape": [
+            "n",
+            160,
+            65
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "extra",
+          "shape": [
+            "n",
+            7
+          ],
+          "type": "tensor(float)"
+        },
+        {
+          "name": "lang",
+          "shape": [
+            "n"
+          ],
+          "type": "tensor(int64)"
+        }
+      ],
+      "outputs": [
+        {
+          "name": "logits",
+          "shape": [
+            "n",
+            1
+          ],
+          "type": "tensor(float)"
+        }
+      ]
+    }
+  ],
+  "audio_preprocessing": [
+    {
+      "file": "en-clean.mp3",
+      "sha256": "cc84cf34130ac5cdd0c5000fbfa7b3c5ef037029b27fe4fd145a632154b24384",
+      "seconds": 2.211,
+      "samples": 35376,
+      "feature_shape": [
+        221,
+        80
+      ],
+      "elapsed_seconds": 0.0029,
+      "acoustic_inference": false
+    },
+    {
+      "file": "en-learner-1.mp3",
+      "sha256": "48d9c362250c3d19971286a101af582e04d5fae4dcafa7d912396852247be4b4",
+      "seconds": 3.07,
+      "samples": 49120,
+      "feature_shape": [
+        307,
+        80
+      ],
+      "elapsed_seconds": 0.0033,
+      "acoustic_inference": false
+    },
+    {
+      "file": "en-learner-2.mp3",
+      "sha256": "cab7ece1ad082eb4539e3a7b63d3daa04bcc9f07a1dfbaf8149fe9674717d822",
+      "seconds": 3.9989375,
+      "samples": 63983,
+      "feature_shape": [
+        400,
+        80
+      ],
+      "elapsed_seconds": 0.0047,
+      "acoustic_inference": false
+    }
+  ],
+  "backbone": {
+    "cache_root": "~/.cache/pronunciada",
+    "int8_cached": false,
+    "fp32_cached": false,
+    "inference": "BLOCKED: acoustic backbone absent; not downloaded in this QA"
+  },
+  "elapsed_seconds": 4.2273,
+  "max_rss_bytes": 88440832
+}

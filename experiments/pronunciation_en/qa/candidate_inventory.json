@@ -1,0 +1,270 @@
+{
+  "schema_version": 1,
+  "kind": "english_assessment_resources_candidate",
+  "status": "not_for_release",
+  "upstream": "moglearn/pronunciada",
+  "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4",
+  "license_issues_to_resolve": [
+    "prosody/stress_v3.json",
+    "prosody/stress_v3.onnx"
+  ],
+  "gates": {
+    "redistribution_approved": false,
+    "acoustic_backbone_present": false,
+    "on_device_parity_verified": false,
+    "human_rater_calibration_verified": false,
+    "source_license_reviewed": false
+  },
+  "lexicon_stats": {
+    "entries": 126052,
+    "pronunciations": 134497,
+    "variants_above_primary": 8445,
+    "with_stress_marked_pronunciations": 134413,
+    "metadata_lines": 1,
+    "duplicate_keys": 0
+  },
+  "runtime_paths": {
+    "adapters/en.npz": "adapters__en.npz",
+    "calib/config.json": "calib__config.json",
+    "calib/contrast_caps.json": "calib__contrast_caps.json",
+    "calib/omission.json": "calib__omission.json",
+    "calib/phone_dist.npz": "calib__phone_dist.npz",
+    "calib/prosody/en.json": "calib__prosody__en.json",
+    "calib/sentence_r19.npz": "calib__sentence_r19.npz",
+    "calib/seqhead_en.npz": "calib__seqhead_en.npz",
+    "calib/seqhead_en.onnx": "calib__seqhead_en.onnx",
+    "calib/sound_B.npz": "calib__sound_B.npz",
+    "calib/sound_E.npz": "calib__sound_E.npz",
+    "calib/sound_E_emb.npz": "calib__sound_E_emb.npz",
+    "calib/sound_U.npz": "calib__sound_U.npz",
+    "calib/word.npz": "calib__word.npz",
+    "calib/word_reg.npz": "calib__word_reg.npz",
+    "calib/word_reg_r6.npz": "calib__word_reg_r6.npz",
+    "coach/contrast_heads.json": "coach__contrast_heads.json",
+    "lex/en.tsv.gz": "lex__en.tsv.gz",
+    "lex/en_lts.tsv.gz": "lex__en_lts.tsv.gz",
+    "native/en.json": "native__en.json",
+    "prosody/stress_v3.json": "prosody__stress_v3.json",
+    "prosody/stress_v3.onnx": "prosody__stress_v3.onnx",
+    "prosody/stress_v3.zemb.npz": "prosody__stress_v3.zemb.npz",
+    "zipa_tokens.txt": "zipa_tokens.txt"
+  },
+  "assets": [
+    {
+      "original_path": "adapters/en.npz",
+      "asset_name": "adapters__en.npz",
+      "bytes": 66278,
+      "sha256": "e4d6f84fee528ee89cb2aa491eb43ddb890114c83e7c606a39214fd53a37b4e6",
+      "license": "Apache-2.0",
+      "source": "FLEURS (CC BY 4.0) train (CTC training), validation (early stopping); targets from the text front-end",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/config.json",
+      "asset_name": "calib__config.json",
+      "bytes": 3968,
+      "sha256": "3373f65cb3ddad4650627e5e32639dbb8412cd36609d14a0b93bb45ccd2da372",
+      "license": "Apache-2.0",
+      "source": "FLEURS train / validation natives (biases, guards), Common Voice cv-real dev half (CC0) (guards)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/contrast_caps.json",
+      "asset_name": "calib__contrast_caps.json",
+      "bytes": 3361,
+      "sha256": "f256823245d08773360cf0e57931328b0c99adf44efcd01b2f5bbc001cf8cbf1",
+      "license": "Apache-2.0",
+      "source": "FLEURS validation (thresholds)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/omission.json",
+      "asset_name": "calib__omission.json",
+      "bytes": 8343,
+      "sha256": "1125c323512bb9d6cd708a9e19415b33b55bd5629ac0e4d0a2b5dc1d142bedc6",
+      "license": "Apache-2.0",
+      "source": "FLEURS validation planted extra words",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/phone_dist.npz",
+      "asset_name": "calib__phone_dist.npz",
+      "bytes": 13323,
+      "sha256": "a4f1e4b10ffdfd96049a170350e818b328fe48590df5c097d0df1bc2b380987e",
+      "license": "Apache-2.0",
+      "source": "panphon feature table (MIT), computed offline",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/prosody/en.json",
+      "asset_name": "calib__prosody__en.json",
+      "bytes": 2449,
+      "sha256": "7c91d52124c988583460697662ebc6f1086509be322239c6a6c5e005c6aa0bda",
+      "license": "Apache-2.0",
+      "source": "FLEURS validation (calibration of the stress / tone evidence)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/sentence_r19.npz",
+      "asset_name": "calib__sentence_r19.npz",
+      "bytes": 197293,
+      "sha256": "f9d60525e14b2930c16d8e42fa5dfa5bdef54af5178bee405e98d38d8320c817",
+      "license": "Apache-2.0",
+      "source": "speechocean762 (CC BY 4.0 on OpenSLR SLR101) train (training); FLEURS validation English natives (native guard)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/seqhead_en.npz",
+      "asset_name": "calib__seqhead_en.npz",
+      "bytes": 25812,
+      "sha256": "a0853d3c3274d158eb47c2412067a94f6a85a9b70efdeeb78eb5d9c71d39db07",
+      "license": "Apache-2.0",
+      "source": "speechocean762 (CC BY 4.0 on OpenSLR SLR101) train (normalisation / vocabulary of the sequence head)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/seqhead_en.onnx",
+      "asset_name": "calib__seqhead_en.onnx",
+      "bytes": 2509278,
+      "sha256": "1f657828c95a8dcbf88bd7f0d59d38bce6cb35f317af2f2501bf5b359a5626e8",
+      "license": "Apache-2.0",
+      "source": "speechocean762 (CC BY 4.0 on OpenSLR SLR101) train (training; blend weights chosen on train CV folds)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/sound_B.npz",
+      "asset_name": "calib__sound_B.npz",
+      "bytes": 321966,
+      "sha256": "4331fd3400fa7bb96c4f3d781e17fae90be076d8f721ee0f99fbf66f730e99c2",
+      "license": "Apache-2.0",
+      "source": "speechocean762 (CC BY 4.0 on OpenSLR SLR101) train",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/sound_E.npz",
+      "asset_name": "calib__sound_E.npz",
+      "bytes": 324623,
+      "sha256": "3673ea818d8788137456be0753808746eb4a275d0e9fa3992b34c729f98bda3c",
+      "license": "Apache-2.0",
+      "source": "speechocean762 (CC BY 4.0 on OpenSLR SLR101) train",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/sound_E_emb.npz",
+      "asset_name": "calib__sound_E_emb.npz",
+      "bytes": 96935,
+      "sha256": "1c76c9c610c3851c4e92ddeeab114b757375dc9f2de240fb3880ba1912e35744",
+      "license": "Apache-2.0",
+      "source": "FLEURS-en train (native prototypes)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/sound_U.npz",
+      "asset_name": "calib__sound_U.npz",
+      "bytes": 291115,
+      "sha256": "a33b101bbf08522c0001cd902dca9bc087c9878e594643f3d4dc97b13a1418a7",
+      "license": "Apache-2.0",
+      "source": "speechocean762 (CC BY 4.0 on OpenSLR SLR101) train",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/word.npz",
+      "asset_name": "calib__word.npz",
+      "bytes": 118562,
+      "sha256": "b16205808546befe211b5ef6a0926a1d98276d4eb3b5ebe9a95fd33de56d73b4",
+      "license": "Apache-2.0",
+      "source": "speechocean762 (CC BY 4.0 on OpenSLR SLR101) train + FLEURS validation planted errors (refit 2026-11-17)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/word_reg.npz",
+      "asset_name": "calib__word_reg.npz",
+      "bytes": 21874,
+      "sha256": "26f7adec684ee75f81f734de16aa92b9d542611e0d490122c9824f5671c527bb",
+      "license": "Apache-2.0",
+      "source": "speechocean762 (CC BY 4.0 on OpenSLR SLR101) train",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "calib/word_reg_r6.npz",
+      "asset_name": "calib__word_reg_r6.npz",
+      "bytes": 32688,
+      "sha256": "191bb4e3916f8b7acebe59f876285ccbd942e4e7e67a2a1edff20aad43bb16ab",
+      "license": "Apache-2.0",
+      "source": "speechocean762 (CC BY 4.0 on OpenSLR SLR101) train",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "coach/contrast_heads.json",
+      "asset_name": "coach__contrast_heads.json",
+      "bytes": 2083,
+      "sha256": "f17e87bcb4429a06c56f0145dd30bbd478747a0fec32e41a360ef61784722427",
+      "license": "Apache-2.0",
+      "source": "FLEURS validation natives + contrast-audit swaps (thresholds)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "lex/en.tsv.gz",
+      "asset_name": "lex__en.tsv.gz",
+      "bytes": 882360,
+      "sha256": "21ebd189bcf236e9b2820040d1ff018955de8ab77e74a2308b4d9939975e3be0",
+      "license": "BSD-2-Clause-style (CMUdict; attribution required)",
+      "source": "CMUdict -> pronunciada English lexicon",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "lex/en_lts.tsv.gz",
+      "asset_name": "lex__en_lts.tsv.gz",
+      "bytes": 88142,
+      "sha256": "a45806e22f85617cfc6813a10bb8c360a6dd053d9fe1dd2660f8062650171cec",
+      "license": "BSD-2-Clause-style (CMUdict; attribution required)",
+      "source": "CMUdict -> pronunciada English lexicon",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "native/en.json",
+      "asset_name": "native__en.json",
+      "bytes": 148050,
+      "sha256": "9064e49942b097ff2e2bd6a3671c88cabcd6414a8dc7320a3f2f42dba936e14f",
+      "license": "Apache-2.0",
+      "source": "FLEURS (CC BY 4.0) train / validation natives (per-phone statistics, learned native variants)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "prosody/stress_v3.json",
+      "asset_name": "prosody__stress_v3.json",
+      "bytes": 626,
+      "sha256": "155574124e98699cceedabf1b21906aba7dc140fd05f18d1607dcb839278073c",
+      "license": "Apache-2.0",
+      "source": "FLEURS (CC BY 4.0) train of en de es it pt ru (training, labels = the front-end's primary stress), FLEURS validation (selection, Platt maps)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "prosody/stress_v3.onnx",
+      "asset_name": "prosody__stress_v3.onnx",
+      "bytes": 357541,
+      "sha256": "7a93506dbbde0167cbe3599eafb3b4fac1465f5fa0f0702df5ef29e4cdd06ccd",
+      "license": "Apache-2.0",
+      "source": "FLEURS (CC BY 4.0) train of en de es it pt ru (training, labels = the front-end's primary stress), FLEURS validation (selection, Platt maps)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "prosody/stress_v3.zemb.npz",
+      "asset_name": "prosody__stress_v3.zemb.npz",
+      "bytes": 101868,
+      "sha256": "75435e56de70e13079b156aa457226ee904177f96337af17530784fd12611a5d",
+      "license": "Apache-2.0",
+      "source": "FLEURS (CC BY 4.0) train of en de es it pt ru (training, labels = the front-end's primary stress), FLEURS validation (selection, Platt maps)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    },
+    {
+      "original_path": "zipa_tokens.txt",
+      "asset_name": "zipa_tokens.txt",
+      "bytes": 769,
+      "sha256": "f8e042a0c9130532b22d03ec7cae2f75a23fbec70c450c31a8efb51787b2b8fe",
+      "license": "CC-BY-4.0",
+      "source": "token list of anyspeech/zipa-small-crctc-500k (CC BY 4.0)",
+      "upstream_commit": "4619a298e5e2de927120122585683d18eda1f7c4"
+    }
+  ]
+}

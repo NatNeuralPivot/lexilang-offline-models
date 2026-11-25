@@ -1,0 +1,60 @@
+Fetching audited Pronunciada source revision (not ZIPA model weights)
+Cloning into '~/.cache/lexilang/en-pronunciation-experiment/pronunciada-4619a298e5e2de927120122585683d18eda1f7c4'...
+HEAD is now at 4619a29 Benchmark page: shorter note under the combined score
+Running synthetic local unit tests
+test_builds_24_verified_flat_resources (test_en_experiment.CandidateBuilderTests.test_builds_24_verified_flat_resources) ... ok
+test_cannot_overwrite_candidate (test_en_experiment.CandidateBuilderTests.test_cannot_overwrite_candidate) ... ok
+test_duplicate_unsorted_lexicon_is_rejected (test_en_experiment.CandidateBuilderTests.test_duplicate_unsorted_lexicon_is_rejected) ... ok
+test_missing_calibration_resource_is_rejected (test_en_experiment.CandidateBuilderTests.test_missing_calibration_resource_is_rejected) ... ok
+test_small_lexicon_is_rejected (test_en_experiment.CandidateBuilderTests.test_small_lexicon_is_rejected) ... ok
+test_upstream_inventory_change_is_blocked (test_en_experiment.CandidateBuilderTests.test_upstream_inventory_change_is_blocked) ... ok
+test_wrong_upstream_commit_rejected (test_en_experiment.CandidateBuilderTests.test_wrong_upstream_commit_rejected) ... ok
+test_c1_c2_oov_report_is_only_dictionary_coverage (test_en_experiment.CourseCoverageTests.test_c1_c2_oov_report_is_only_dictionary_coverage) ... ok
+test_asr_confidence_is_not_accepted_as_acoustic_calibration (test_en_experiment.ExpertCalibrationTests.test_asr_confidence_is_not_accepted_as_acoustic_calibration) ... ok
+test_fit_uses_speaker_disjoint_holdout_and_never_publishes (test_en_experiment.ExpertCalibrationTests.test_fit_uses_speaker_disjoint_holdout_and_never_publishes) ... ok
+test_mixed_phone_and_word_scores_block_fitting (test_en_experiment.ExpertCalibrationTests.test_mixed_phone_and_word_scores_block_fitting) ... ok
+test_no_human_label_diversity_blocks_fitting (test_en_experiment.ExpertCalibrationTests.test_no_human_label_diversity_blocks_fitting) ... ok
+test_rejects_asr_or_bad_acoustic_score (test_en_experiment.ExpertCalibrationTests.test_rejects_asr_or_bad_acoustic_score) ... ok
+test_speaker_leakage_blocks_fitting (test_en_experiment.ExpertCalibrationTests.test_speaker_leakage_blocks_fitting) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.048s
+
+OK
+Preparing immutable dictionary + calibration candidate
+Prepared 24 validated resource files
+EN lexicon: {'entries': 126052, 'pronunciations': 134497, 'variants_above_primary': 8445, 'with_stress_marked_pronunciations': 134413, 'metadata_lines': 1, 'duplicate_keys': 0}
+Unresolved licensing: ['prosody/stress_v3.json', 'prosody/stress_v3.onnx']
+NOT a release, NOT an iOS model, NOT a pronunciation score.
+{
+  "files": 24,
+  "total_bytes": 5619307,
+  "license_issues_to_resolve": [
+    "prosody/stress_v3.json",
+    "prosody/stress_v3.onnx"
+  ],
+  "release_ready": false,
+  "on_device_tested": false
+}
+
+Candidate at: ~/.cache/lexilang/en-pronunciation-experiment/candidate-4619a298e5e2de927120122585683d18eda1f7c4
+Missing: ZIPA weights, Apple runtime parity and human-score QA.
+DO NOT publish the candidate or switch packs.json to published.
+       31.11 real         1.86 user         0.95 sys
+            91385856  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               70534  page reclaims
+                3067  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                  42  messages sent
+               17959  messages received
+                   1  signals received
+               11895  voluntary context switches
+               16629  involuntary context switches
+            27524018  instructions retired
+            17837555  cycles elapsed
+             1442104  peak memory footprint
