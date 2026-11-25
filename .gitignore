@@ -1,0 +1,24 @@
+# Never commit model weights or staging directories into Git history.
+dist/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.onnx
+*.safetensors
+*.gguf
+*.ggml
+*.tflite
+*.mlmodel
+*.mlpackage/
+*.mlmodelc/
+*.pt
+*.pth
+*.ckpt
+*.bin
+*.zip
+*.tar
+*.tar.gz
+*.7z
+*.m4a
+*.wav
